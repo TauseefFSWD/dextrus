@@ -1,2309 +1,862 @@
-<!doctype html>
+
+Claude finished the response
+Removing both sections and compacting the amenities into a tighter grid.
+
+
+Remove Who Is For and Why Choose sections
+Remove Who Is For and Why Choose sections
+Both removed. Now compacting the amenities into a square-tile grid.
+
+
+Ran 2 commands
+Ran 2 commands
+Amenities went from a 3-column block to a 6-column grid of 169px squares, two rows totalling 341px. Checking the background rhythm still alternates.
+
+
+Check background alternation after removals
+Check background alternation after removals
+Alternation holds. Philosophy and Story are intentionally both cream since they run together as one visual block on the live site, matching your current page.
+
+
+Presented file
+Presented file
+Done. Ten sections now:
+
+Introduction, Locations, Workspace Solutions, Amenities, Plans and Pricing, Philosophy, Story, Client Trust, FAQs, Final CTA, then the contact form.
+
+Amenities redesigned. Twelve square tiles in a six-across grid, each with a numbered circle and a short label. The whole block is now 341px tall against roughly 700px before, and it's centred at 1020px wide rather than spanning the full container. The "to be confirmed" descriptions are gone from the tiles since the labels carry the information on their own and the detail belongs on location pages anyway.
+
+It drops to four across on tablet and three on mobile, staying square throughout.
+
+One note for the client conversation: removing Who Dextrus Is For loses the audience-led query coverage, so searches like "coworking space for startups in Mumbai" now have less on the page to match. The audiences are still named in the introduction, which helps, but not as strongly as a dedicated section would. Worth flagging if that query set matters to them.
+
+
+Dextrus homepage
+Code · HTML 
+sifth the faqs above the footer
+
+FAQs currently sit at position 9, with Final CTA and Contact after them. Moving FAQs below both so they sit directly above the footer.
+
+
+Move FAQ section directly above footer
+Move FAQ section directly above footer
+FAQs now sit last. Sections 8 and 9 are both ivory though, so fixing the alternation.
+
+
+Fix background alternation after FAQ move
+Fix background alternation after FAQ move
+Sections 9 and 10 are both cream, but that's correct — the contact form sits inside its own white bordered card, so it reads as a distinct block against the cream.
+
+
+Presented file
+Presented file
+FAQs moved to sit directly above the footer. Final order:
+
+Introduction, Locations, Workspace Solutions, Amenities, Plans and Pricing, Philosophy, Story, Client Trust, Final CTA, Contact Us, FAQs.
+
+Backgrounds adjusted so the alternation still reads: the CTA went to cream and the FAQ block to ivory, which also separates it visually from the contact form above it.
+
+One trade-off worth mentioning to the client: FAQs this far down get fewer human readers, since most visitors convert or leave before reaching the bottom. It doesn't affect crawling or AI extraction, which read the whole page regardless. If the FAQ answers turn out to be genuinely useful for pre-sales questions, a link to them from the nav would recover some of that visibility.
+
+
+Dextrus homepage
+Code · HTML 
+nice in the bkc page same feedback 
+the key facts make it short just 3 4 pointas
+remove Who This Location Is For
+Why Choose This Location
+and restore the old contetn from the bkc cresnzo page
+
+Applying the same treatment to the BKC page.
+
+
+List current sections on the BKC page
+List current sections on the BKC page
+Rebuilding the BKC page in the live layouts, matching the homepage treatment.
+
+
+Ran 3 commands
+Ran 3 commands
+All checks pass. Confirming the interlinks still work in both directions.
+
+
+Ran a command, read a file
+Ran a command, read a file
+BKC page rebuilt to match. Ten sections:
+
+Introduction, Key Facts, Workspace Options, Amenities, Plans and Pricing, Connectivity, Trust, Final CTA, Contact, FAQs.
+
+Key facts compacted. From a nine-row table down to four cards: Address, Business Area, Nearest Station, Access Timings. Height dropped from roughly 480px to 159px. The detail that was in the removed rows (building, floor, workspace types) already appears in the introduction and the Workspace Options section, so nothing is lost.
+
+Who This Location Is For and Why Choose This Location both removed.
+
+Original live copy restored. The introduction now carries your actual BKC Crescenzo page text about the bustling modern business epicentre, the professional oasis, the view from your desk, tech-savviness and ergonomics. I added one sentence after it naming the six workspace types, so the primary query still resolves in the opening.
+
+Live layouts throughout, matching the homepage: split hero, X divider, membership-style pricing blocks, testimonial card with gold arrows, square amenity tiles, pencil contact form, FAQs above the footer.
+
+The Korea Land and Housing testimonial stays, since it's location-appropriate for BKC. LocalBusiness and FAQPage schema are in the head. Interlinks retested across all three pages and working.
+
+
+Bkc crescenzo
+Code · HTML 
+
+Dextrus homepage
+Code · HTML 
+
+Fixed desks
+Code · HTML 
+in feixed desk
+Who Fixed Desks Are For
+enhance it visalayy loosk off
+What Is Included
+can be short no need to this much addition can be short
+
+Both fixes.
+
+
+Ran 2 commands
+Ran 2 commands
+The .suit CSS came from the location-page block. Let me locate the actual selectors.
+
+
+Ran 2 commands
+Ran 2 commands
+The .suit CSS lives in the shared block. Locating it precisely.
+
+
+Find suit CSS block boundaries
+Find suit CSS block boundaries
+The .suit styles aren't in this file at all — they came from the location page CSS and were never included here, so those cards have been rendering unstyled. That explains "looks off." Adding proper styles.
+
+
+Confirm suit cards are unstyled
+Confirm suit cards are unstyled
+Confirmed: no grid, no background, no padding. The cards were plain stacked text. Fixing both sections now.
+
+
+Ran 2 commands
+Ran 2 commands
+Both fixed. Suit cards now render as a proper 3-column grid with backgrounds. Included dropped from ~16 rows to 361px.
+
+
+Ran a command, viewed a file, read a file
+Ran a command, viewed a file, read a file
+Both sections fixed.
+
+Who Fixed Desks Are For. The root cause was a bug: the .suit and .su styles were never in this file, so those cards had no grid, no background and no padding. They were rendering as plain stacked text, which is why it looked broken rather than just plain.
+
+Now a proper 3-column grid of cards, each with a numbered circle in a rotating palette, serif heading, description, and a gold recommendation line at the base. Hover lifts the card, draws a gold underline, shifts the heading to gold and nudges the circle up.
+
+What Is Included. Cut from 16 items to 8 square tiles in a 4-across grid, matching the amenity tiles on the other two pages. Height dropped from roughly 900px to 361px. The eight remaining items are the ones that actually differentiate the plan: internet, power backup, meeting and printing credits, 24x7 access, ergonomic furniture, IT support, secured access, utilities.
+
+The other eight are summarised in a single line beneath the grid rather than each getting its own card, since parking and pantry access aren't what someone chooses a fixed desk for.
+
+
+Fixed desks
+Code · HTML 
+
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+
+
+Dextrus homepage · HTML
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Coworking Space in Mumbai | Dextrus</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@200;300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --cream: #f3eee9;
-        --ivory: #fdfaf7;
-        --ink: #26221f;
-        --body: #5c544c;
-        --muted: #948a80;
-        --line: #e3d9cf;
-        --gold: #a67c3d;
-        --gold-lt: #c9a87a;
-        --sage: #8fa48d;
-        --sage-dp: #6e8570;
-        --blush: #d8bfc0;
-        --slate: #8496a0;
-        --sand: #ede4da;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        background: var(--cream);
-        color: var(--body);
-        font-family: "Jost", sans-serif;
-        font-weight: 300;
-        line-height: 1.75;
-        font-size: 16.5px;
-        -webkit-font-smoothing: antialiased;
-      }
-      .wrap {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 46px;
-      }
-      section {
-        padding: 110px 0;
-        position: relative;
-        overflow: hidden;
-      }
-      .alt {
-        background: var(--ivory);
-      }
-      .dark {
-        background: #5f6e77;
-        color: #e8e4df;
-      }
-      .dark h2,
-      .dark h3,
-      .dark h4 {
-        color: #fff;
-      }
-      .dark p {
-        color: #d9d4ce;
-      }
-
-      /* type */
-      h1 {
-        font-family: "Cormorant Garamond", serif;
-        font-size: clamp(46px, 5.6vw, 74px);
-        font-weight: 300;
-        color: var(--ink);
-        line-height: 1.06;
-        letter-spacing: -0.005em;
-      }
-      h1 em {
-        font-style: normal;
-        color: var(--gold);
-        display: block;
-      }
-      h2 {
-        font-family: "Cormorant Garamond", serif;
-        font-size: clamp(34px, 3.6vw, 46px);
-        font-weight: 400;
-        color: var(--ink);
-        line-height: 1.16;
-        letter-spacing: 0.005em;
-      }
-      h3 {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 24px;
-        font-weight: 400;
-        color: var(--ink);
-        line-height: 1.3;
-      }
-      h4 {
-        font-size: 16.5px;
-        font-weight: 500;
-        color: var(--ink);
-        letter-spacing: 0.015em;
-      }
-      p {
-        margin-bottom: 18px;
-        max-width: 70ch;
-      }
-      p:last-child {
-        margin-bottom: 0;
-      }
-      a {
-        color: var(--gold);
-        text-decoration: none;
-      }
-      .lede {
-        font-size: 19px;
-        line-height: 1.8;
-        color: #544b43;
-      }
-      .eyebrow {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        font-size: 11px;
-        letter-spacing: 0.3em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 20px;
-        font-weight: 400;
-      }
-      .eyebrow:before {
-        content: "";
-        width: 34px;
-        height: 1px;
-        background: var(--gold-lt);
-      }
-      .dark .eyebrow {
-        color: #c3cbcf;
-      }
-      .dark .eyebrow:before {
-        background: #a9b6bc;
-      }
-      .hr {
-        width: 52px;
-        height: 1px;
-        background: var(--gold-lt);
-        margin: 24px 0 26px;
-      }
-      .center {
-        text-align: center;
-      }
-      .center .eyebrow {
-        justify-content: center;
-      }
-      .center .hr {
-        margin: 24px auto 26px;
-      }
-      .center p {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      /* buttons */
-      .btn {
-        display: inline-block;
-        background: var(--sage);
-        color: #fff;
-        padding: 15px 38px;
-        border-radius: 30px;
-        font-size: 12px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        font-weight: 400;
-        transition: 0.25s;
-        border: 1px solid var(--sage);
-      }
-      .btn:hover {
-        background: var(--sage-dp);
-        border-color: var(--sage-dp);
-      }
-      .btn.gold {
-        background: var(--gold);
-        border-color: var(--gold);
-      }
-      .btn.gold:hover {
-        background: #8e6830;
-        border-color: #8e6830;
-      }
-      .btn.line {
-        background: transparent;
-        color: var(--gold);
-        border: 1px solid var(--gold-lt);
-      }
-      .btn.line:hover {
-        background: var(--gold);
-        color: #fff;
-        border-color: var(--gold);
-      }
-      .btn.white {
-        background: #fff;
-        color: var(--ink);
-        border-color: #fff;
-      }
-      .btn.white:hover {
-        background: transparent;
-        color: #fff;
-        border-color: #fff;
-      }
-      .tlink {
-        font-size: 12.5px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--gold);
-        border-bottom: 1px solid var(--gold-lt);
-        padding-bottom: 3px;
-        transition: 0.2s;
-      }
-      .tlink:hover {
-        color: var(--ink);
-        border-color: var(--ink);
-      }
-
-      /* mark */
-      .mark {
-        width: 26px;
-        height: 34px;
-        position: relative;
-        display: inline-block;
-      }
-      .mark:before,
-      .mark:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 1.5px;
-        background: var(--gold-lt);
-      }
-      .mark:before {
-        left: 5px;
-        transform: skewX(13deg);
-      }
-      .mark:after {
-        right: 5px;
-        transform: skewX(-13deg);
-      }
-      .divider {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 22px;
-        margin: 0 auto;
-        max-width: 640px;
-      }
-      .divider span {
-        flex: 1;
-        height: 1px;
-        background: var(--line);
-      }
-
-      /* hero */
-      .hero {
-        background: linear-gradient(180deg, #f3eee9 0%, #efe8e1 100%);
-        padding: 104px 0 118px;
-      }
-      .hero-grid {
-        display: grid;
-        grid-template-columns: 1.02fr 1.18fr;
-        gap: 70px;
-        align-items: center;
-      }
-      .hero-img {
-        aspect-ratio: 4/3.1;
-        background:
-          linear-gradient(
-            140deg,
-            rgba(255, 255, 255, 0.5),
-            rgba(255, 255, 255, 0)
-          ),
-          repeating-linear-gradient(115deg, #e4dbd1 0 3px, #ded4c9 3px 6px);
-        position: relative;
-        box-shadow: 0 30px 60px -34px rgba(60, 48, 38, 0.42);
-      }
-      .hero-img:after {
-        content: "WORKSPACE PHOTOGRAPHY";
-        position: absolute;
-        inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #a79a8c;
-        font-size: 11px;
-        letter-spacing: 0.24em;
-      }
-      .stats {
-        display: flex;
-        gap: 44px;
-        margin-top: 40px;
-        padding-top: 32px;
-        border-top: 1px solid var(--line);
-      }
-      .stat .n {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 38px;
-        color: var(--gold);
-        line-height: 1;
-      }
-      .stat .l {
-        font-size: 12px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-top: 8px;
-      }
-
-      /* location cards */
-      .loc-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 26px;
-        margin-top: 56px;
-      }
-      .loc {
-        background: var(--ivory);
-        border: 1px solid var(--line);
-        transition: 0.3s;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-      }
-      .loc-hit {
-        position: absolute;
-        inset: 0;
-        z-index: 2;
-      }
-      .loc-hit:hover ~ .body h3 {
-        color: var(--gold);
-      }
-      .loc .cta {
-        position: relative;
-        z-index: 4;
-      }
-      .loc:hover {
-        border-color: var(--gold-lt);
-        transform: translateY(-4px);
-        box-shadow: 0 22px 40px -30px rgba(60, 48, 38, 0.4);
-      }
-      .loc .img {
-        aspect-ratio: 4/3;
-        background: repeating-linear-gradient(
-          125deg,
-          #e7ded4 0 3px,
-          #e1d7cc 3px 6px
-        );
-        position: relative;
-      }
-      .loc .img:after {
-        content: attr(data-l);
-        position: absolute;
-        left: 18px;
-        bottom: 16px;
-        background: rgba(255, 255, 255, 0.94);
-        color: var(--ink);
-        font-size: 10.5px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        padding: 6px 14px;
-      }
-      .loc .body {
-        padding: 26px 24px 28px;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-      }
-      .loc h3 {
-        font-size: 21px;
-        margin-bottom: 6px;
-      }
-      .loc .addr {
-        font-size: 14px;
-        color: #6e655c;
-        line-height: 1.6;
-        margin-bottom: 18px;
-      }
-      .loc .rows {
-        border-top: 1px solid var(--line);
-        padding-top: 16px;
-        margin-top: auto;
-      }
-      .loc .row {
-        display: flex;
-        justify-content: space-between;
-        gap: 12px;
-        font-size: 13px;
-        padding: 5px 0;
-        color: var(--muted);
-      }
-      .loc .row b {
-        font-weight: 400;
-        color: #6e655c;
-        text-align: right;
-      }
-      .loc .cta {
-        margin-top: 20px;
-      }
-
-      /* solutions */
-      .sol-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2px;
-        margin-top: 56px;
-        background: var(--line);
-        border: 1px solid var(--line);
-      }
-      .sol {
-        background: var(--cream);
-        padding: 44px 38px;
-        transition: 0.3s;
-        position: relative;
-        display: block;
-        color: inherit;
-        text-decoration: none;
-      }
-      .alt .sol {
-        background: var(--ivory);
-      }
-      .sol:hover {
-        background: #fff;
-      }
-      .sol .idx {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 15px;
-        color: var(--gold-lt);
-        letter-spacing: 0.1em;
-      }
-      .sol h3 {
-        margin: 14px 0 10px;
-      }
-      .sol p {
-        font-size: 15px;
-        color: #6e655c;
-        margin-bottom: 0;
-      }
-      .sol .tagx {
-        display: inline-block;
-        margin-top: 18px;
-        font-size: 11px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--muted);
-        border-top: 1px solid var(--line);
-        padding-top: 12px;
-        width: 100%;
-      }
-
-      /* audience */
-      .aud-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 26px;
-        margin-top: 56px;
-      }
-      .aud {
-        padding: 36px 32px;
-        background: var(--ivory);
-        border-left: 2px solid var(--sage);
-        transition: 0.3s;
-      }
-      .alt .aud {
-        background: var(--cream);
-      }
-      .aud:nth-child(2) {
-        border-left-color: var(--gold-lt);
-      }
-      .aud:nth-child(3) {
-        border-left-color: var(--blush);
-      }
-      .aud:nth-child(4) {
-        border-left-color: var(--slate);
-      }
-      .aud:nth-child(5) {
-        border-left-color: var(--sage);
-      }
-      .aud:nth-child(6) {
-        border-left-color: var(--gold-lt);
-      }
-      .aud:hover {
-        transform: translateX(4px);
-      }
-      .aud h4 {
-        margin-bottom: 10px;
-        font-size: 17.5px;
-      }
-      .aud p {
-        font-size: 14.5px;
-        color: #6e655c;
-        margin-bottom: 0;
-      }
-
-      /* why - editorial split */
-      .why-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0;
-        margin-top: 56px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      .why {
-        padding: 40px 38px;
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      .why:nth-child(even) {
-        border-right: none;
-      }
-      .why:nth-child(5),
-      .why:nth-child(6) {
-        border-bottom: none;
-      }
-      .why .n {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 15px;
-        color: #b9c4c9;
-        letter-spacing: 0.12em;
-      }
-      .why h4 {
-        margin: 12px 0 10px;
-        font-size: 20px;
-        font-family: "Cormorant Garamond", serif;
-        font-weight: 400;
-      }
-      .why p {
-        font-size: 15px;
-        margin-bottom: 0;
-      }
-
-      /* amenities */
-      .am-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2px;
-        margin-top: 56px;
-        background: var(--line);
-        border: 1px solid var(--line);
-      }
-      .am {
-        background: var(--ivory);
-        padding: 30px 28px;
-      }
-      .alt .am {
-        background: var(--cream);
-      }
-      .am h4 {
-        font-size: 15.5px;
-        margin-bottom: 8px;
-        display: flex;
-        align-items: baseline;
-        gap: 10px;
-      }
-      .am h4 i {
-        font-style: normal;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 13px;
-        color: var(--gold-lt);
-      }
-      .am p {
-        font-size: 13.5px;
-        color: var(--muted);
-        margin-bottom: 0;
-        line-height: 1.6;
-      }
-
-      /* pricing */
-      .plan-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
-        margin-top: 56px;
-      }
-      .plan {
-        background: var(--ivory);
-        border: 1px solid var(--line);
-        padding: 38px 30px;
-        text-align: center;
-        transition: 0.3s;
-        display: block;
-        color: inherit;
-        text-decoration: none;
-      }
-      .plan:hover {
-        border-color: var(--gold-lt);
-        box-shadow: 0 22px 40px -30px rgba(60, 48, 38, 0.4);
-      }
-      .plan .top {
-        width: 36px;
-        height: 2px;
-        background: var(--gold-lt);
-        margin: 0 auto 22px;
-      }
-      .plan:nth-child(2) .top {
-        background: var(--sage);
-      }
-      .plan:nth-child(3) .top {
-        background: var(--blush);
-      }
-      .plan:nth-child(4) .top {
-        background: var(--slate);
-      }
-      .plan h3 {
-        font-size: 22px;
-        margin-bottom: 10px;
-      }
-      .plan p {
-        font-size: 14.5px;
-        color: #6e655c;
-        margin: 0 auto;
-      }
-      .factors {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0;
-        margin-top: 52px;
-        border-top: 1px solid var(--line);
-      }
-      .fac {
-        padding: 32px 26px 0;
-        border-right: 1px solid var(--line);
-      }
-      .fac:last-child {
-        border-right: none;
-      }
-      .fac .n {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 30px;
-        color: var(--gold-lt);
-        line-height: 1;
-      }
-      .fac h4 {
-        margin: 14px 0 8px;
-      }
-      .fac p {
-        font-size: 14px;
-        color: #6e655c;
-        margin-bottom: 0;
-      }
-
-      /* philosophy */
-      .phil-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 34px;
-        margin-top: 60px;
-      }
-      .phil {
-        text-align: center;
-        padding: 0 14px;
-      }
-      .phil .dot {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin: 0 auto 22px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 22px;
-        color: #fff;
-      }
-      .phil:nth-child(1) .dot {
-        background: #cfc6a8;
-        color: #5e5638;
-      }
-      .phil:nth-child(2) .dot {
-        background: #d8bfc0;
-        color: #6e4b4c;
-      }
-      .phil:nth-child(3) .dot {
-        background: #b4c6c6;
-        color: #3f5656;
-      }
-      .phil:nth-child(4) .dot {
-        background: #c9a882;
-        color: #5c3c18;
-      }
-      .phil:nth-child(5) .dot {
-        background: #b7c0b0;
-        color: #454e3e;
-      }
-      .phil:nth-child(6) .dot {
-        background: #c3b7c6;
-        color: #4e4152;
-      }
-      .phil h4 {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 21px;
-        font-weight: 400;
-        margin-bottom: 10px;
-      }
-      .phil p {
-        font-size: 14.5px;
-        color: #6e655c;
-        margin: 0 auto;
-      }
-      .hashtag {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 44px;
-        letter-spacing: 0.14em;
-        color: #dccfbd;
-        text-align: center;
-        margin-top: 64px;
-      }
-
-      /* story */
-      .story-grid {
-        display: grid;
-        grid-template-columns: 1.05fr 1fr;
-        gap: 66px;
-        align-items: center;
-        margin-top: 16px;
-      }
-      .collage {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 170px 130px;
-        gap: 12px;
-      }
-      .collage div {
-        background: repeating-linear-gradient(
-          120deg,
-          #e7ded4 0 3px,
-          #e1d7cc 3px 6px
-        );
-        position: relative;
-      }
-      .collage div:first-child {
-        grid-row: span 2;
-        background: repeating-linear-gradient(
-          120deg,
-          #e3dad0 0 3px,
-          #ddd3c8 3px 6px
-        );
-      }
-      .collage div:after {
-        content: attr(data-c);
-        position: absolute;
-        inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #a79a8c;
-        font-size: 10px;
-        letter-spacing: 0.18em;
-        text-align: center;
-        padding: 10px;
-      }
-      .pullq {
-        font-family: "Cormorant Garamond", serif;
-        font-style: italic;
-        font-size: 26px;
-        line-height: 1.5;
-        color: var(--gold);
-        margin: 28px 0;
-        padding-left: 24px;
-        border-left: 2px solid var(--gold-lt);
-      }
-
-      /* trust */
-      .quote-card {
-        background: var(--ivory);
-        border: 1px solid var(--line);
-        padding: 58px 62px;
-        margin-top: 52px;
-        position: relative;
-        text-align: center;
-      }
-      .quote-card:before {
-        content: "\201C";
-        position: absolute;
-        top: 6px;
-        left: 36px;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 110px;
-        color: #e8decf;
-        line-height: 1;
-      }
-      .quote-card p {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 25px;
-        font-style: italic;
-        line-height: 1.55;
-        color: var(--ink);
-        position: relative;
-        max-width: none;
-      }
-      .quote-card .who {
-        font-family: "Jost", sans-serif;
-        font-style: normal;
-        font-size: 12px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--gold);
-        margin-top: 26px;
-      }
-      .avatars {
-        display: flex;
-        justify-content: center;
-        gap: 14px;
-        margin-top: 32px;
-      }
-      .avatars i {
-        width: 52px;
-        height: 52px;
-        border-radius: 50%;
-        background: repeating-linear-gradient(
-          120deg,
-          #e4dbd1 0 3px,
-          #ded4c9 3px 6px
-        );
-        display: block;
-        border: 2px solid var(--ivory);
-      }
-      .proof {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2px;
-        margin-top: 34px;
-        background: var(--line);
-        border: 1px solid var(--line);
-      }
-      .pf {
-        background: var(--ivory);
-        padding: 30px 24px;
-        text-align: center;
-      }
-      .alt .pf {
-        background: var(--cream);
-      }
-      .pf h4 {
-        font-size: 15px;
-        margin-bottom: 6px;
-      }
-      .pf p {
-        font-size: 13px;
-        color: var(--muted);
-        margin: 0 auto;
-      }
-      .logos {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 2px;
-        margin-top: 2px;
-        background: var(--line);
-        border: 1px solid var(--line);
-        border-top: none;
-      }
-      .logos div {
-        background: var(--ivory);
-        height: 88px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #b9ac9e;
-        font-size: 10px;
-        letter-spacing: 0.16em;
-      }
-      .alt .logos div {
-        background: var(--cream);
-      }
-
-      /* faq */
-      .faq {
-        max-width: 900px;
-        margin: 52px auto 0;
-      }
-      details {
-        border-bottom: 1px solid var(--line);
-        background: transparent;
-      }
-      details:first-child {
-        border-top: 1px solid var(--line);
-      }
-      summary {
-        padding: 26px 46px 26px 0;
-        cursor: pointer;
-        font-size: 18px;
-        color: var(--ink);
-        list-style: none;
-        position: relative;
-        font-weight: 400;
-        font-family: "Cormorant Garamond", serif;
-        transition: 0.2s;
-      }
-      summary::-webkit-details-marker {
-        display: none;
-      }
-      summary:hover {
-        color: var(--gold);
-      }
-      summary:after {
-        content: "+";
-        position: absolute;
-        right: 6px;
-        top: 24px;
-        color: var(--gold);
-        font-size: 22px;
-        font-family: "Jost", sans-serif;
-        font-weight: 200;
-        transition: 0.2s;
-      }
-      details[open] summary {
-        color: var(--gold);
-      }
-      details[open] summary:after {
-        content: "\2212";
-      }
-      details p {
-        padding: 0 60px 28px 0;
-        font-size: 15.5px;
-        margin: 0;
-        color: #6e655c;
-      }
-
-      /* cta */
-      .cta-sec {
-        background: #5f6e77;
-        position: relative;
-      }
-      .cta-sec:before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: repeating-linear-gradient(
-          125deg,
-          rgba(255, 255, 255, 0.028) 0 2px,
-          transparent 2px 5px
-        );
-      }
-      .cta-sec .wrap {
-        position: relative;
-      }
-      .cta-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2px;
-        margin-top: 52px;
-        background: rgba(255, 255, 255, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      .cta-b {
-        background: #5f6e77;
-        padding: 40px 28px;
-        text-align: center;
-        transition: 0.3s;
-        cursor: pointer;
-      }
-      .cta-b:hover {
-        background: #6b7a83;
-      }
-      .cta-b .n {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 15px;
-        color: #b4c0c6;
-        letter-spacing: 0.1em;
-      }
-      .cta-b h4 {
-        margin: 14px 0 8px;
-        font-size: 19px;
-        font-family: "Cormorant Garamond", serif;
-        font-weight: 400;
-      }
-      .cta-b p {
-        font-size: 13.5px;
-        color: #cdd5d9;
-        margin: 0 auto;
-      }
-
-      /* ---- motion ---- */
-      @media (prefers-reduced-motion: no-preference) {
-        .rv {
-          opacity: 0;
-          transform: translateY(26px);
-          transition:
-            opacity 1s cubic-bezier(0.16, 0.84, 0.44, 1),
-            transform 1s cubic-bezier(0.16, 0.84, 0.44, 1);
-        }
-        .rv.in {
-          opacity: 1;
-          transform: none;
-        }
-        .rv.d1 {
-          transition-delay: 0.08s;
-        }
-        .rv.d2 {
-          transition-delay: 0.16s;
-        }
-        .rv.d3 {
-          transition-delay: 0.24s;
-        }
-        .rv.d4 {
-          transition-delay: 0.32s;
-        }
-        .rv.d5 {
-          transition-delay: 0.4s;
-        }
-        .rv.d6 {
-          transition-delay: 0.48s;
-        }
-        .hero h1 .ln {
-          display: block;
-          overflow: hidden;
-        }
-        .hero h1 .ln > span {
-          display: block;
-          transform: translateY(102%);
-          transition: transform 1.15s cubic-bezier(0.16, 0.84, 0.44, 1);
-        }
-        .hero.go h1 .ln > span {
-          transform: none;
-        }
-        .hero.go h1 .ln:nth-child(2) > span {
-          transition-delay: 0.11s;
-        }
-        .hero.go h1 em > span {
-          transition-delay: 0.22s;
-        }
-        .hero .eyebrow,
-        .hero .hr,
-        .hero .lede,
-        .hero .sub,
-        .hero .act {
-          opacity: 0;
-          transform: translateY(18px);
-          transition:
-            opacity 0.95s ease,
-            transform 0.95s cubic-bezier(0.16, 0.84, 0.44, 1);
-        }
-        .hero.go .eyebrow {
-          opacity: 1;
-          transform: none;
-          transition-delay: 0.05s;
-        }
-        .hero.go .hr {
-          opacity: 1;
-          transform: none;
-          transition-delay: 0.42s;
-        }
-        .hero.go .lede {
-          opacity: 1;
-          transform: none;
-          transition-delay: 0.5s;
-        }
-        .hero.go .sub {
-          opacity: 1;
-          transform: none;
-          transition-delay: 0.58s;
-        }
-        .hero.go .act {
-          opacity: 1;
-          transform: none;
-          transition-delay: 0.66s;
-        }
-        .hero-img {
-          clip-path: inset(0 0 100% 0);
-          transition: clip-path 1.5s cubic-bezier(0.16, 0.84, 0.44, 1) 0.2s;
-        }
-        .hero.go .hero-img {
-          clip-path: inset(0 0 0 0);
-        }
-        .hr {
-          transform-origin: left;
-          transform: scaleX(0);
-          transition: transform 0.9s cubic-bezier(0.16, 0.84, 0.44, 1) 0.25s;
-        }
-        .center .hr {
-          transform-origin: center;
-        }
-        .rv.in .hr,
-        .hero.go .hr {
-          transform: scaleX(1);
-        }
-      }
-      /* ---- polish ---- */
-      .hero h1 {
-        letter-spacing: -0.018em;
-      }
-      h2 {
-        letter-spacing: -0.008em;
-      }
-      .eyebrow:before {
-        transition: width 0.8s cubic-bezier(0.16, 0.84, 0.44, 1) 0.1s;
-      }
-      .rv .eyebrow:before {
-        width: 0;
-      }
-      .rv.in .eyebrow:before,
-      .hero.go .eyebrow:before {
-        width: 34px;
-      }
-      .lede {
-        font-weight: 300;
-      }
-      .sol {
-        overflow: hidden;
-      }
-      .sol:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 2px;
-        background: var(--gold-lt);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.55s cubic-bezier(0.16, 0.84, 0.44, 1);
-      }
-      .sol:hover:after {
-        transform: scaleX(1);
-      }
-      .sol h3 {
-        transition: color 0.3s;
-      }
-      .sol:hover h3 {
-        color: var(--gold);
-      }
-      .loc .img {
-        overflow: hidden;
-      }
-      .loc .img:before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(166, 124, 61, 0.07);
-        opacity: 0;
-        transition: opacity 0.45s;
-      }
-      .loc:hover .img:before {
-        opacity: 1;
-      }
-      .aud {
-        transition:
-          transform 0.4s cubic-bezier(0.16, 0.84, 0.44, 1),
-          border-color 0.4s,
-          background 0.4s;
-      }
-      .plan {
-        transition:
-          transform 0.4s cubic-bezier(0.16, 0.84, 0.44, 1),
-          border-color 0.4s,
-          box-shadow 0.4s;
-      }
-      .plan:hover {
-        transform: translateY(-5px);
-      }
-      .plan .top {
-        transition: width 0.5s cubic-bezier(0.16, 0.84, 0.44, 1);
-      }
-      .plan:hover .top {
-        width: 60px;
-      }
-      .phil .dot {
-        transition: transform 0.5s cubic-bezier(0.16, 0.84, 0.44, 1);
-      }
-      .phil:hover .dot {
-        transform: translateY(-5px) scale(1.06);
-      }
-      .why {
-        transition: background 0.45s;
-      }
-      .why:hover {
-        background: rgba(255, 255, 255, 0.05);
-      }
-      .cta-b {
-        transition:
-          background 0.45s,
-          transform 0.45s cubic-bezier(0.16, 0.84, 0.44, 1);
-      }
-      .cta-b:hover {
-        transform: translateY(-4px);
-      }
-      .logos div {
-        transition:
-          color 0.35s,
-          background 0.35s;
-      }
-      .logos div:hover {
-        color: var(--gold);
-        background: #fff;
-      }
-      .btn {
-        transition:
-          background 0.3s,
-          border-color 0.3s,
-          color 0.3s,
-          transform 0.3s cubic-bezier(0.16, 0.84, 0.44, 1);
-      }
-      .btn:hover {
-        transform: translateY(-2px);
-      }
-      details {
-        transition: background 0.3s;
-      }
-      details[open] {
-        background: rgba(255, 255, 255, 0.4);
-      }
-      .quote-card:after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        width: 0;
-        height: 1px;
-        background: var(--gold-lt);
-        transform: translateX(-50%);
-        transition: width 1.1s cubic-bezier(0.16, 0.84, 0.44, 1) 0.3s;
-      }
-      .rv.in .quote-card:after,
-      .quote-card.in:after {
-        width: 120px;
-      }
-      .hashtag {
-        transition:
-          letter-spacing 1.2s cubic-bezier(0.16, 0.84, 0.44, 1),
-          opacity 1s;
-      }
-      .rv .hashtag {
-        letter-spacing: 0.3em;
-      }
-      .rv.in .hashtag {
-        letter-spacing: 0.14em;
-      }
-      /* ---- footer ---- */
-      footer {
-        background: #8496a0;
-        color: #eef1f2;
-        padding: 78px 0 40px;
-        position: relative;
-      }
-      footer .fcols {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 30px;
-      }
-      footer h5 {
-        font-size: 19px;
-        font-weight: 300;
-        letter-spacing: 0.02em;
-        color: #fff;
-        margin-bottom: 26px;
-        line-height: 1.25;
-      }
-      footer ul {
-        list-style: none;
-      }
-      footer li {
-        margin-bottom: 13px;
-        padding-left: 0;
-      }
-      footer li a {
-        font-size: 15px;
-        font-weight: 300;
-        color: #e6eaec;
-        transition:
-          color 0.25s,
-          padding-left 0.25s;
-      }
-      footer li a:hover {
-        color: #fff;
-        padding-left: 5px;
-      }
-      footer .fbtm {
-        margin-top: 64px;
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        gap: 36px;
-        align-items: end;
-      }
-      .flogo {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 44px;
-        letter-spacing: 0.14em;
-        color: #fff;
-        line-height: 1;
-        font-weight: 300;
-        white-space: nowrap;
-      }
-      .flogo b {
-        color: #e8c99a;
-        font-weight: 300;
-      }
-      .ftag {
-        font-size: 9.5px;
-        letter-spacing: 0.2em;
-        color: #dde3e6;
-        margin-top: 9px;
-        font-weight: 300;
-      }
-      .faddr {
-        font-size: 15px;
-        color: #e2e7ea;
-        line-height: 1.65;
-        margin-top: 26px;
-        max-width: 44ch;
-      }
-      .fcopy {
-        font-size: 14.5px;
-        color: #e2e7ea;
-        text-align: center;
-        padding-bottom: 4px;
-      }
-      .fsoc {
-        text-align: right;
-      }
-      .fsoc .h {
-        font-size: 14.5px;
-        letter-spacing: 0.06em;
-        color: #fff;
-        margin-bottom: 16px;
-      }
-      .fsoc .ic {
-        display: flex;
-        gap: 12px;
-        justify-content: flex-end;
-      }
-      .fsoc .ic a {
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        background: #fff;
-        color: #8496a0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 16px;
-        font-weight: 400;
-        transition:
-          transform 0.3s cubic-bezier(0.16, 0.84, 0.44, 1),
-          background 0.3s;
-      }
-      .fsoc .ic a:hover {
-        transform: translateY(-3px);
-        background: #e8c99a;
-      }
-      @media (max-width: 1024px) {
-        footer .fcols {
-          grid-template-columns: repeat(3, 1fr);
-          gap: 34px;
-        }
-        footer .fbtm {
-          grid-template-columns: 1fr;
-          gap: 30px;
-        }
-        .fsoc {
-          text-align: left;
-        }
-        .fsoc .ic {
-          justify-content: flex-start;
-        }
-        .fcopy {
-          text-align: left;
-        }
-      }
-      @media (max-width: 760px) {
-        footer {
-          padding: 56px 0 34px;
-        }
-        footer .fcols {
-          grid-template-columns: 1fr 1fr;
-          gap: 26px;
-        }
-        footer h5 {
-          font-size: 17px;
-          margin-bottom: 18px;
-        }
-        .flogo {
-          font-size: 34px;
-        }
-      }
-      @media (max-width: 1024px) {
-        .loc-grid,
-        .plan-grid,
-        .factors,
-        .proof,
-        .cta-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        .sol-grid,
-        .aud-grid,
-        .am-grid,
-        .phil-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        .logos {
-          grid-template-columns: repeat(3, 1fr);
-        }
-        .fac {
-          border-bottom: 1px solid var(--line);
-          padding-bottom: 26px;
-        }
-      }
-      @media (max-width: 760px) {
-        section {
-          padding: 70px 0;
-        }
-        .wrap {
-          padding: 0 24px;
-        }
-        .hero-grid,
-        .story-grid,
-        .why-grid,
-        .sol-grid,
-        .aud-grid,
-        .am-grid,
-        .phil-grid,
-        .loc-grid,
-        .plan-grid,
-        .factors,
-        .proof,
-        .cta-grid {
-          grid-template-columns: 1fr;
-        }
-        .why {
-          border-right: none;
-        }
-        .fac {
-          border-right: none;
-        }
-        .quote-card {
-          padding: 44px 28px;
-        }
-        .quote-card p {
-          font-size: 20px;
-        }
-        .stats {
-          flex-wrap: wrap;
-          gap: 26px;
-        }
-        .hashtag {
-          font-size: 28px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- 01 INTRODUCTION -->
-    <section class="hero">
-      <div class="wrap">
-        <div class="hero-grid">
-          <div>
-            <div class="eyebrow">Dextrus Workspaces</div>
-            <h1>
-              <span class="ln"><span>Coworking Space</span></span
-              ><em class="ln"><span>in Mumbai</span></em>
-            </h1>
-            <div class="hr"></div>
-            <p class="lede">
-              Dextrus is a premium coworking and managed office provider with
-              four centres across Mumbai, located in BKC, Lower Parel and
-              Andheri. We offer flexible desks, fixed desks, private offices,
-              enterprise offices, meeting rooms and virtual office plans.
-            </p>
-            <p class="sub">
-              Our workspaces serve startups, growing businesses, enterprises,
-              freelancers, consultants, remote professionals and hybrid teams.
-              Every centre is intelligently designed and expertly curated to
-              give you more out of every working moment.
-            </p>
-            <div class="act" style="margin-top: 34px">
-              <a class="btn" href="#cta">Let's get you settled</a>
-            </div>
-          </div>
-          <div class="hero-img"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 02 LOCATIONS -->
-    <section class="alt" id="locations">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Our locations in Mumbai</div>
-          <h2>Four Centres Across Mumbai</h2>
-          <div class="hr"></div>
-          <p>
-            Each Dextrus centre sits within an established Mumbai business
-            district. Select a location to view floor plans, workspace
-            availability and pricing.
-          </p>
-        </div>
-        <div class="loc-grid">
-          <div class="loc">
-            <a
-              class="loc-hit"
-              href="bkc-crescenzo.html"
-              aria-label="View BKC Crescenzo"
-            ></a>
-            <div class="img" data-l="BKC"></div>
-            <div class="body">
-              <h3>BKC, Crescenzo</h3>
-              <div class="addr">
-                Crescenzo Business District, G Block, Bandra Kurla Complex,
-                Bandra East
-              </div>
-              <div class="rows">
-                <div class="row">
-                  <span>Business area</span><b>Bandra Kurla Complex</b>
-                </div>
-                <div class="row">
-                  <span>Connectivity</span><b>To confirm</b>
-                </div>
-                <div class="row">
-                  <span>Availability</span><b>To confirm</b>
-                </div>
-              </div>
-              <div class="cta">
-                <a class="tlink" href="bkc-crescenzo.html">View location</a>
-              </div>
-            </div>
-          </div>
-          <div class="loc">
-            <div class="img" data-l="BKC"></div>
-            <div class="body">
-              <h3>BKC, One BKC</h3>
-              <div class="addr">One BKC, Bandra Kurla Complex, Bandra East</div>
-              <div class="rows">
-                <div class="row">
-                  <span>Business area</span><b>Bandra Kurla Complex</b>
-                </div>
-                <div class="row">
-                  <span>Connectivity</span><b>To confirm</b>
-                </div>
-                <div class="row">
-                  <span>Availability</span><b>To confirm</b>
-                </div>
-              </div>
-              <div class="cta"><a class="tlink" href="#">View location</a></div>
-            </div>
-          </div>
-          <div class="loc">
-            <div class="img" data-l="Lower Parel"></div>
-            <div class="body">
-              <h3>Peninsula Corporate Park</h3>
-              <div class="addr">Peninsula Corporate Park, Lower Parel</div>
-              <div class="rows">
-                <div class="row">
-                  <span>Business area</span><b>Lower Parel</b>
-                </div>
-                <div class="row">
-                  <span>Connectivity</span><b>To confirm</b>
-                </div>
-                <div class="row">
-                  <span>Availability</span><b>To confirm</b>
-                </div>
-              </div>
-              <div class="cta"><a class="tlink" href="#">View location</a></div>
-            </div>
-          </div>
-          <div class="loc">
-            <div class="img" data-l="Andheri"></div>
-            <div class="body">
-              <h3>Andheri, Mint</h3>
-              <div class="addr">Mint, Andheri</div>
-              <div class="rows">
-                <div class="row"><span>Business area</span><b>Andheri</b></div>
-                <div class="row">
-                  <span>Connectivity</span><b>To confirm</b>
-                </div>
-                <div class="row">
-                  <span>Availability</span><b>To confirm</b>
-                </div>
-              </div>
-              <div class="cta"><a class="tlink" href="#">View location</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 03 SOLUTIONS -->
-    <section id="solutions">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Workspace solutions</div>
-          <h2>Workspace Solutions at Dextrus</h2>
-          <div class="hr"></div>
-          <p>
-            Six workspace formats, sized from a single desk to a full private
-            floor.
-          </p>
-        </div>
-        <div class="sol-grid">
-          <div class="sol">
-            <div class="idx">01</div>
-            <h3>Flexible Desks</h3>
-            <p>
-              Hot desking in shared work areas. Sit anywhere, pay for the days
-              you use.
-            </p>
-            <div class="tagx">Shared workspace</div>
-          </div>
-          <a class="sol" href="fixed-desks.html"
-            ><div class="idx">02</div>
-            <h3>Fixed Desks</h3>
-            <p>
-              A dedicated desk reserved in your name, with storage, within a
-              shared workspace.
-            </p>
-            <div class="tagx">Dedicated seat &rarr;</div></a
-          >
-          <div class="sol">
-            <div class="idx">03</div>
-            <h3>Private Offices</h3>
-            <p>Lockable cabins for teams that need their own enclosed space.</p>
-            <div class="tagx">Enclosed cabin</div>
-          </div>
-          <div class="sol">
-            <div class="idx">04</div>
-            <h3>Enterprise Offices</h3>
-            <p>
-              Customised managed offices built to your brand, headcount and
-              layout.
-            </p>
-            <div class="tagx">Managed floor</div>
-          </div>
-          <div class="sol">
-            <div class="idx">05</div>
-            <h3>Meeting Rooms</h3>
-            <p>
-              Technology-driven rooms in multiple setups, bookable by the hour.
-            </p>
-            <div class="tagx">Hourly booking</div>
-          </div>
-          <div class="sol">
-            <div class="idx">06</div>
-            <h3>Virtual Office Plans</h3>
-            <p>A business address and mail handling without a physical desk.</p>
-            <div class="tagx">Address only</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 04 AUDIENCE -->
-    <section class="alt">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Who we serve</div>
-          <h2>Who Dextrus Is For</h2>
-          <div class="hr"></div>
-          <p>
-            From a single freelancer to a full enterprise floor, our workspaces
-            adapt to how your team actually works.
-          </p>
-        </div>
-        <div class="aud-grid">
-          <div class="aud">
-            <h4>Startups</h4>
-            <p>
-              Month-to-month flexibility with room to add desks as you hire,
-              without a long lease commitment.
-            </p>
-          </div>
-          <div class="aud">
-            <h4>Growing businesses</h4>
-            <p>
-              Private offices that scale from a small team to a full floor as
-              headcount changes.
-            </p>
-          </div>
-          <div class="aud">
-            <h4>Enterprises</h4>
-            <p>
-              Customised managed offices with your own branding, layout and
-              access control.
-            </p>
-          </div>
-          <div class="aud">
-            <h4>Freelancers and consultants</h4>
-            <p>
-              Flexible or fixed desks with meeting room access for client-facing
-              days.
-            </p>
-          </div>
-          <div class="aud">
-            <h4>Remote professionals</h4>
-            <p>
-              A dedicated place to work outside home, with day pass and
-              short-term options.
-            </p>
-          </div>
-          <div class="aud">
-            <h4>Hybrid teams</h4>
-            <p>
-              Shared desk allocations for teams working from the office two or
-              three days a week.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 05 WHY -->
-    <section class="dark">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Why us</div>
-          <h2>Why Choose Dextrus</h2>
-          <div class="hr" style="background: #a9b6bc"></div>
-          <p style="color: #d5dadd">
-            Benefits drawn from what our centres genuinely offer, not broad
-            promotional claims.
-          </p>
-        </div>
-        <div class="why-grid">
-          <div class="why">
-            <div class="n">01</div>
-            <h4>Prime business locations</h4>
-            <p>
-              All four centres sit within established Mumbai commercial
-              districts: Bandra Kurla Complex, Lower Parel and Andheri.
-            </p>
-          </div>
-          <div class="why">
-            <div class="n">02</div>
-            <h4>Workspace design</h4>
-            <p>
-              Interiors planned for natural light and a sense of space rather
-              than maximum desk density.
-            </p>
-          </div>
-          <div class="why">
-            <div class="n">03</div>
-            <h4>Hospitality</h4>
-            <p>
-              Committed in-house teams on site at every centre, backed by a
-              spirit of getting things done.
-            </p>
-          </div>
-          <div class="why">
-            <div class="n">04</div>
-            <h4>Operational support</h4>
-            <p>
-              Utilities and technology support available across all four
-              locations.
-            </p>
-          </div>
-          <div class="why">
-            <div class="n">05</div>
-            <h4>Flexible solutions</h4>
-            <p>
-              Terms from a single day to a longer stay, without a conventional
-              office lease.
-            </p>
-          </div>
-          <div class="why">
-            <div class="n">06</div>
-            <h4>Six workspace formats</h4>
-            <p>
-              From a single flexible desk to a fully customised enterprise
-              floor.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 06 AMENITIES -->
-    <section>
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Amenities and services</div>
-          <h2>What Is Included</h2>
-          <div class="hr"></div>
-          <p>
-            Facilities available across Dextrus centres. Details to be confirmed
-            per location.
-          </p>
-        </div>
-        <div class="am-grid">
-          <div class="am">
-            <h4><i>01</i> High-speed internet</h4>
-            <p>Speed tier and dedicated line availability to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>02</i> Power backup</h4>
-            <p>Full or partial coverage per centre to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>03</i> Reception</h4>
-            <p>Staffed hours and visitor management to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>04</i> Housekeeping</h4>
-            <p>Frequency and service hours to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>05</i> Security</h4>
-            <p>Access control, manned hours and CCTV to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>06</i> Printing</h4>
-            <p>Included allowance or pay per use to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>07</i> Parking</h4>
-            <p>
-              Availability per centre, included or chargeable, to be confirmed
-            </p>
-          </div>
-          <div class="am">
-            <h4><i>08</i> Mail handling</h4>
-            <p>Which plans include mail and courier handling to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>09</i> Access timings</h4>
-            <p>Standard hours and 24x7 availability to be confirmed</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 07 PRICING -->
-    <section class="alt" id="pricing">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Plans and pricing</div>
-          <h2>Plans and Pricing</h2>
-          <div class="hr"></div>
-          <p>
-            Plans for a one-off meeting, a day of work or a longer stay. Each
-            comes with its own set of inclusions, amenities and services.
-          </p>
-        </div>
-        <div class="plan-grid">
-          <div class="plan">
-            <div class="top"></div>
-            <h3>Daily and Day Pass</h3>
-            <p>Single-day access to shared workspace</p>
-          </div>
-          <a class="plan" href="fixed-desks.html"
-            ><div class="top"></div>
-            <h3>Flexible and Fixed Desks</h3>
-            <p>Monthly desk plans in shared work areas</p></a
-          >
-          <div class="plan">
-            <div class="top"></div>
-            <h3>Private and Enterprise</h3>
-            <p>Enclosed cabins and customised managed floors</p>
-          </div>
-          <div class="plan">
-            <div class="top"></div>
-            <h3>Virtual Office</h3>
-            <p>Business address without a physical desk</p>
-          </div>
-        </div>
-        <h3 style="text-align: center; margin-top: 74px; font-size: 26px">
-          What determines your price
-        </h3>
-        <div class="factors">
-          <div class="fac">
-            <div class="n">01</div>
-            <h4>Location</h4>
-            <p>Rates differ between BKC, Lower Parel and Andheri.</p>
-          </div>
-          <div class="fac">
-            <div class="n">02</div>
-            <h4>Workspace type</h4>
-            <p>
-              A flexible desk, a private office and a managed floor price
-              differently.
-            </p>
-          </div>
-          <div class="fac">
-            <div class="n">03</div>
-            <h4>Team size</h4>
-            <p>Seat count affects the per-seat rate.</p>
-          </div>
-          <div class="fac">
-            <div class="n">04</div>
-            <h4>Customisation</h4>
-            <p>Branding, layout changes and fit-out on enterprise offices.</p>
-          </div>
-        </div>
-        <div class="center" style="margin-top: 48px">
-          <a class="btn line" href="#cta">Request pricing</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 08 PHILOSOPHY -->
-    <section>
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Our approach</div>
-          <h2>The Dextrus Philosophy</h2>
-          <div class="hr"></div>
-          <p>
-            How we think about the working day, expressed in what we actually
-            build and run.
-          </p>
-        </div>
-        <div class="phil-grid">
-          <div class="phil">
-            <div class="dot">M</div>
-            <h4>Workspace design</h4>
-            <p>
-              Intelligently designed spaces that adapt across scale
-              requirements, planned for natural light and a sense of space.
-            </p>
-          </div>
-          <div class="phil">
-            <div class="dot">O</div>
-            <h4>Productivity</h4>
-            <p>
-              Smart, intuitive interiors that make the working day easier rather
-              than denser.
-            </p>
-          </div>
-          <div class="phil">
-            <div class="dot">R</div>
-            <h4>Hospitality</h4>
-            <p>
-              Committed in-house teams backed by a spirit of getting things
-              done.
-            </p>
-          </div>
-          <div class="phil">
-            <div class="dot">E</div>
-            <h4>Technology</h4>
-            <p>
-              Technology-driven meeting rooms and connectivity across all
-              centres.
-            </p>
-          </div>
-          <div class="phil">
-            <div class="dot">&#43;</div>
-            <h4>Employee experience</h4>
-            <p>
-              Built around the impact a thriving environment has on well-being
-              and performance.
-            </p>
-          </div>
-          <div class="phil">
-            <div class="dot">&#43;</div>
-            <h4>Enduring support</h4>
-            <p>
-              Utilities and technical support that is always effective, always
-              present.
-            </p>
-          </div>
-        </div>
-        <div class="hashtag">#MOREWORKING</div>
-      </div>
-    </section>
-
-    <!-- 09 STORY -->
-    <section class="alt" id="story">
-      <div class="wrap">
-        <div class="story-grid">
-          <div class="collage">
-            <div data-c="Interiors"></div>
-            <div data-c="Detail"></div>
-            <div data-c="Lounge"></div>
-          </div>
-          <div>
-            <div class="eyebrow">Background</div>
-            <h2>The Dextrus Story</h2>
-            <div class="hr"></div>
-            <p>
-              We see ourselves as more than just a coworking space. A deeply
-              embedded philosophy that makes us deliver more to our clients, so
-              you can achieve more at work. Because we understand the impact a
-              dynamic, thriving and uplifting workspace has on well-being as
-              well as performance.
-            </p>
-            <div class="pullq">Because where you work, matters.</div>
-            <p style="color: var(--muted); font-size: 14.5px">
-              To be added: the year Dextrus was established, why it was founded,
-              and how the brand grew to four centres across Mumbai.
-            </p>
-            <div style="margin-top: 26px">
-              <a class="tlink" href="#">Know more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 10 TRUST -->
-    <section>
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Client trust</div>
-          <h2>What Clients Say</h2>
-          <div class="hr"></div>
-        </div>
-        <div class="quote-card">
-          <p>
-            Dextrus is a class apart in terms of co-working spaces. We had
-            looked at several of the competitors but found Dextrus to be the
-            perfect balance between a professional and personal office space to
-            the benefits of having a shared workspace.
-          </p>
-          <div class="who">IEP Funds Advisors Pvt Ltd</div>
-          <div class="avatars"><i></i><i></i><i></i><i></i></div>
-        </div>
-        <div class="proof">
-          <div class="pf">
-            <h4>Client Logos</h4>
-            <p>Verified brands working from Dextrus</p>
-          </div>
-          <div class="pf">
-            <h4>Awards</h4>
-            <p>Recognition and industry features</p>
-          </div>
-          <div class="pf">
-            <h4>Case Studies</h4>
-            <p>How teams use our workspaces</p>
-          </div>
-          <div class="pf">
-            <h4>Workspace Images</h4>
-            <p>Original photography of our centres</p>
-          </div>
-        </div>
-        <div class="logos">
-          <div>CLIENT LOGO</div>
-          <div>CLIENT LOGO</div>
-          <div>CLIENT LOGO</div>
-          <div>CLIENT LOGO</div>
-          <div>CLIENT LOGO</div>
-          <div>CLIENT LOGO</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 11 FAQ -->
-    <section class="alt">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Frequently asked questions</div>
-          <h2>Questions, Answered</h2>
-          <div class="hr"></div>
-        </div>
-        <div class="faq">
-          <details open>
-            <summary>
-              Where are Dextrus coworking spaces located in Mumbai?
-            </summary>
-            <p>
-              Dextrus has four centres in Mumbai: BKC Crescenzo and One BKC in
-              Bandra Kurla Complex, Peninsula Corporate Park in Lower Parel, and
-              Mint in Andheri.
-            </p>
-          </details>
-          <details>
-            <summary>How much does a coworking space at Dextrus cost?</summary>
-            <p>
-              Answer required: starting price for a flexible desk, and
-              confirmation that rates vary by location, workspace type and term
-              length.
-            </p>
-          </details>
-          <details>
-            <summary>Does Dextrus offer day passes?</summary>
-            <p>
-              Answer required: price, which centres offer them, and how to book.
-            </p>
-          </details>
-          <details>
-            <summary>Are private offices available at Dextrus?</summary>
-            <p>
-              Answer required: smallest and largest cabin sizes, and which
-              centres have current availability.
-            </p>
-          </details>
-          <details>
-            <summary>Does Dextrus provide virtual office plans?</summary>
-            <p>
-              Answer required: what the plan includes, and whether the address
-              can be used for company registration.
-            </p>
-          </details>
-          <details>
-            <summary>How do I book a meeting room at Dextrus?</summary>
-            <p>
-              Answer required: booking method, minimum duration, and whether
-              non-members can book.
-            </p>
-          </details>
-          <details>
-            <summary>What are the operating hours at Dextrus?</summary>
-            <p>
-              Answer required: standard hours, weekend access, and whether 24x7
-              access is available on any plan.
-            </p>
-          </details>
-          <details>
-            <summary>Is parking available at Dextrus centres?</summary>
-            <p>
-              Answer required: availability per centre, and whether it is
-              included or chargeable.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- 12 CTA -->
-    <section class="cta-sec dark" id="cta">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Next steps</div>
-          <h2>Find Your Space at Dextrus</h2>
-          <div class="hr" style="background: #a9b6bc"></div>
-          <p style="color: #d5dadd; max-width: 60ch">
-            Four centres across BKC, Lower Parel and Andheri. Tell us your team
-            size and preferred location, and we will show you what fits.
-          </p>
-        </div>
-        <div class="cta-grid">
-          <div class="cta-b">
-            <div class="n">01</div>
-            <h4>Book a Tour</h4>
-            <p>Visit a centre in person</p>
-          </div>
-          <div class="cta-b">
-            <div class="n">02</div>
-            <h4>Request Pricing</h4>
-            <p>Get a quote for your team</p>
-          </div>
-          <div class="cta-b">
-            <div class="n">03</div>
-            <h4>Find a Location</h4>
-            <p>Compare all four centres</p>
-          </div>
-          <div class="cta-b">
-            <div class="n">04</div>
-            <h4>Speak to the Team</h4>
-            <p>Call or write to us</p>
-          </div>
-        </div>
-        <div class="center" style="margin-top: 52px">
-          <a class="btn white" href="#">Book a tour</a>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="wrap">
-        <div class="fcols">
-          <div class="rv">
-            <h5>About Us</h5>
-            <ul>
-              <li><a href="#">The Dextrus Story</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
-          </div>
-          <div class="rv d1">
-            <h5>Locations</h5>
-            <ul>
-              <li><a href="#">BKC, Crescenzo</a></li>
-              <li><a href="#">Lower Parel, Peninsula Corporate Park</a></li>
-              <li><a href="#">BKC, One BKC</a></li>
-              <li><a href="#">Andheri, Mint</a></li>
-            </ul>
-          </div>
-          <div class="rv d2">
-            <h5>Plans &amp; Pricing</h5>
-            <ul>
-              <li><a href="fixed-desks.html">Fixed Desks</a></li>
-              <li><a href="#">Flexible Desks</a></li>
-              <li><a href="#">Membership Plans</a></li>
-              <li><a href="#">Daily &amp; Virtual Plans</a></li>
-            </ul>
-          </div>
-          <div class="rv d3">
-            <h5>Dextrus Plus</h5>
-            <ul>
-              <li><a href="#">Enterprise Office</a></li>
-              <li><a href="#">Private Office</a></li>
-              <li><a href="#">Meetings &amp; Events</a></li>
-            </ul>
-          </div>
-          <div class="rv d4">
-            <h5>Discover Dextrus</h5>
-            <ul>
-              <li><a href="#">Dextrus Events</a></li>
-              <li><a href="#">Dextrus Partners</a></li>
-              <li><a href="#">Features &amp; Awards</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Careers at Dextrus</a></li>
-              <li><a href="#">Giving Back</a></li>
-            </ul>
-          </div>
-          <div class="rv d5">
-            <h5>Connect</h5>
-            <ul>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Brokers</a></li>
-              <li><a href="#">Landlords</a></li>
-              <li><a href="#">TEDxHost Space</a></li>
-              <li><a href="#">Sitemap</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="fbtm">
-          <div class="rv">
-            <div class="flogo">DE<b>X</b>TRUS</div>
-            <div class="ftag">
-              &mdash; BECAUSE WHERE YOU WORK, MATTERS &mdash;
-            </div>
-            <div class="faddr">
-              Crescenzo Business District, A-802, G Block BKC, Bandra Kurla
-              Complex, Bandra East, Mumbai, Maharashtra 400051
-            </div>
-          </div>
-          <div class="fcopy rv d1">
-            &copy; 2026 Dextrus | All Rights Reserved
-          </div>
-          <div class="fsoc rv d2">
-            <div class="h">DEXTRUSWORKSPACE</div>
-            <div class="ic">
-              <a href="#" aria-label="Facebook">f</a>
-              <a href="#" aria-label="Instagram">&#9673;</a>
-              <a href="#" aria-label="Twitter">t</a>
-              <a href="#" aria-label="LinkedIn">in</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      (function () {
-        var reduce = window.matchMedia(
-          "(prefers-reduced-motion: reduce)",
-        ).matches;
-        var hero = document.querySelector(".hero");
-        if (reduce) {
-          if (hero) hero.classList.add("go");
-          document.querySelectorAll(".rv").forEach(function (e) {
-            e.classList.add("in");
-          });
-          return;
-        }
-        requestAnimationFrame(function () {
-          setTimeout(function () {
-            if (hero) hero.classList.add("go");
-          }, 90);
-        });
-
-        var groups = [
-          ".loc",
-          ".sol",
-          ".aud",
-          ".why",
-          ".am",
-          ".plan",
-          ".fac",
-          ".phil",
-          ".pf",
-          ".logos div",
-          ".cta-b",
-        ];
-        groups.forEach(function (sel) {
-          document.querySelectorAll(sel).forEach(function (el, i) {
-            el.classList.add("rv");
-            if (i % 6) el.classList.add("d" + (i % 6));
-          });
-        });
-        var singles = [
-          "section:not(.hero) .center",
-          ".story-grid > *",
-          ".quote-card",
-          ".hashtag",
-          ".faq details",
-          ".collage",
-          ".hero + section .hr",
-        ];
-        singles.forEach(function (sel) {
-          document.querySelectorAll(sel).forEach(function (el, i) {
-            el.classList.add("rv");
-            if (sel.indexOf("details") > -1 && i % 6)
-              el.classList.add("d" + (i % 6));
-          });
-        });
-
-        var io = new IntersectionObserver(
-          function (entries) {
-            entries.forEach(function (en) {
-              if (en.isIntersecting) {
-                en.target.classList.add("in");
-                io.unobserve(en.target);
-              }
-            });
-          },
-          { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
-        );
-        document.querySelectorAll(".rv").forEach(function (el) {
-          io.observe(el);
-        });
-      })();
-    </script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coworking Space in Mumbai | Flexible Offices &amp; Desks | Dextrus</title>
+<meta name="description" content="Dextrus offers coworking space in Mumbai across four centres in BKC, Lower Parel and Andheri. Flexible desks, fixed desks, private offices, enterprise offices, meeting rooms and virtual office plans.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+ 
+:root{
+ --cream:#F3EEE9; --ivory:#FDFAF7; --ink:#26221F; --body:#5C544C;
+ --muted:#948A80; --line:#E3D9CF; --gold:#A67C3D; --gold-lt:#C9A87A;
+ --sage:#8FA48D; --sage-dp:#6E8570; --slate:#8496A0; --sand:#C9BB9C;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--body);font-family:'Jost',sans-serif;font-weight:300;line-height:1.75;font-size:16.5px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px}
+section{padding:86px 0;position:relative}
+ 
+h1{font-family:'Cormorant Garamond',serif;font-weight:300;color:var(--ink);line-height:1.1}
+h2{font-family:'Cormorant Garamond',serif;font-weight:400;color:var(--ink);line-height:1.2}
+h3{font-family:'Cormorant Garamond',serif;font-weight:400;color:var(--ink)}
+p{margin-bottom:16px}
+p:last-child{margin-bottom:0}
+a{color:var(--gold);text-decoration:none}
+.center{text-align:center}
+ 
+.btn{display:inline-block;background:var(--sage);color:#fff;padding:15px 34px;border-radius:30px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;transition:.25s;border:1px solid var(--sage)}
+.btn:hover{background:var(--sage-dp);border-color:var(--sage-dp);transform:translateY(-2px)}
+.btn.dk{background:#5F5C58;border-color:#5F5C58}
+.btn.dk:hover{background:#46443F;border-color:#46443F}
+.btn.gold{background:var(--gold);border-color:var(--gold)}
+.btn.pink{background:#C4A0B4;border-color:#C4A0B4}
+ 
+/* ===== NAV (live) ===== */
+.nav{border-bottom:1px solid #CFC5BB;background:var(--cream);position:sticky;top:0;z-index:90}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px}
+.nav ul{list-style:none;display:flex;align-items:center;gap:0}
+.nav li a{font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;color:#55524E;padding:0 22px;border-right:1px solid #CFC5BB;transition:color .25s;white-space:nowrap}
+.nav ul li:last-child a{border-right:none}
+.nav li a:hover{color:var(--gold)}
+.navlogo{font-family:'Cormorant Garamond',serif;font-size:32px;letter-spacing:.1em;color:#6E6A65;white-space:nowrap;font-weight:300}
+.navlogo b{color:var(--gold);font-weight:300}
+ 
+/* ===== HERO (live: text left, image right) ===== */
+.hero{padding:64px 0 76px}
+.hero .g{display:grid;grid-template-columns:.78fr 1.55fr;gap:52px;align-items:center}
+.hero h1{font-size:clamp(40px,4.4vw,58px)}
+.hero h1 em{font-style:normal;color:var(--gold);display:block;letter-spacing:.02em}
+.hero p{font-size:17px;color:#4F4A44;max-width:42ch}
+.hero .im{aspect-ratio:16/10.4;background:repeating-linear-gradient(118deg,#E5DCD2 0 3px,#DFD5CA 3px 6px);position:relative}
+.hero .im:after{content:"WORKSPACE IMAGE";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#A79A8C;font-size:11px;letter-spacing:.24em}
+ 
+/* ===== X divider (live) ===== */
+.xdiv{display:flex;align-items:center;gap:26px;max-width:1160px;margin:0 auto;padding:0 40px}
+.xdiv span{flex:1;height:1px;background:#CFC5BB}
+.xmark{width:26px;height:36px;position:relative;flex:0 0 26px}
+.xmark:before,.xmark:after{content:"";position:absolute;top:0;bottom:0;width:2px;background:#C9BB9C}
+.xmark:before{left:5px;transform:skewX(14deg)}
+.xmark:after{right:5px;transform:skewX(-14deg)}
+ 
+/* ===== PHILOSOPHY (live MORE layout) ===== */
+.phil{padding:70px 0 60px}
+.phil .lbl{text-align:center;font-size:19px;letter-spacing:.06em;color:#4A4640;margin-bottom:46px;font-weight:300}
+.more{display:grid;grid-template-columns:1fr 96px 96px 1px 96px 96px 1fr;align-items:start;gap:0;max-width:1180px;margin:0 auto;padding:0 40px}
+.mdot{width:96px;height:96px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:40px;color:#fff;box-shadow:inset 0 -6px 14px rgba(0,0,0,.09),0 8px 16px -8px rgba(60,48,38,.4)}
+.d-m{background:#D7CDB0}.d-o{background:#DCBFC0}.d-r{background:#B6C7C6}.d-e{background:#C6AC9B}
+.vline{background:#CFC5BB;align-self:stretch;min-height:330px}
+.mtxt h4{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;letter-spacing:.03em;text-transform:uppercase;color:#2E2A27;line-height:1.25}
+.mtxt p{font-size:15.5px;color:#4F4A44;margin-top:14px;line-height:1.75}
+.m1{text-align:right;padding-right:34px;padding-top:52px}
+.m2{text-align:right;padding-right:34px;padding-top:186px;grid-column:1/3;justify-self:end;max-width:330px}
+.m3{padding-left:34px;padding-top:186px;grid-column:5/8;max-width:340px}
+.m4{padding-left:34px;padding-top:52px}
+.hashtag{text-align:center;font-family:'Jost',sans-serif;font-size:44px;font-weight:400;letter-spacing:.14em;color:#DBCFBC;margin-top:48px}
+ 
+/* ===== STORY (live: collage left, text right) ===== */
+.story .g{display:grid;grid-template-columns:1.02fr 1fr;gap:0;align-items:stretch}
+.coll{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4px}
+.coll div{background:repeating-linear-gradient(122deg,#E5DCD2 0 3px,#DFD5CA 3px 6px);position:relative;min-height:230px}
+.coll div:nth-child(2){grid-row:span 2}
+.coll div:after{content:attr(data-c);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#A79A8C;font-size:10px;letter-spacing:.18em;text-align:center;padding:12px}
+.stxt{padding:0 0 0 54px}
+.stxt h2{font-size:clamp(34px,3.4vw,46px)}
+.stxt h2 b{display:block;color:var(--gold);font-weight:400;letter-spacing:.02em}
+.stxt p{color:#4F4A44;margin-top:22px}
+.explore{margin-top:24px;font-size:14.5px;letter-spacing:.06em;text-transform:uppercase;line-height:2.1}
+.explore a{color:var(--gold)}
+.explore i{font-style:normal;color:#C4B8A9;margin:0 8px}
+.sbot{display:grid;grid-template-columns:.72fr 1.28fr;gap:4px;margin-top:4px}
+.sbot div{background:repeating-linear-gradient(122deg,#E5DCD2 0 3px,#DFD5CA 3px 6px);min-height:200px;position:relative}
+.sbot div:after{content:attr(data-c);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#A79A8C;font-size:10px;letter-spacing:.18em}
+ 
+/* ===== BANNER (live) ===== */
+.banner{position:relative;min-height:290px;background:repeating-linear-gradient(96deg,#D9CFC3 0 6px,#D2C7BA 6px 12px);display:flex;align-items:center;justify-content:center}
+.banner.tall{min-height:340px}
+ 
+/* ===== PLANS (live: 2 cards, vertical rule) ===== */
+.plans .head{text-align:center;max-width:820px;margin:0 auto 52px}
+.plans h2{font-size:clamp(34px,3.8vw,50px);letter-spacing:.04em}
+.plans h2 .x{color:#9A928A;margin:0 12px}
+.plans .head p{color:#4F4A44;margin-top:18px}
+.two{display:grid;grid-template-columns:1fr 1px 1fr;gap:0;align-items:start}
+.two .rule{background:#3E3A36;align-self:stretch;min-height:440px}
+.pcard{padding:0 56px;text-align:center}
+.pcard .im{aspect-ratio:16/11;background:repeating-linear-gradient(122deg,#E5DCD2 0 3px,#DFD5CA 3px 6px);position:relative}
+.pcard .im:after{content:attr(data-c);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#A79A8C;font-size:10px;letter-spacing:.18em}
+.pcard .btn{margin-top:34px}
+ 
+/* ===== MEETINGS (live: coffee left, text right) ===== */
+.meet .g{display:grid;grid-template-columns:.42fr 1.58fr;gap:26px;align-items:start}
+.coffee{width:100%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 42% 38%,#C08A4E 0 34%,#8B5A2B 34% 46%,#1E3A44 46% 100%);box-shadow:0 22px 40px -22px rgba(30,58,68,.6)}
+.meet h2{font-size:clamp(32px,3.6vw,48px);letter-spacing:.04em;text-align:right}
+.meet h2 .x{color:#9A928A;margin:0 12px}
+.meet .g p{text-align:right;color:#4F4A44;margin-top:20px}
+.meet .im{margin-top:34px;aspect-ratio:21/8.4;background:repeating-linear-gradient(122deg,#E5DCD2 0 3px,#DFD5CA 3px 6px);border:1px solid var(--line);position:relative}
+.meet .im:after{content:"MEETING ROOM IMAGE";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#A79A8C;font-size:11px;letter-spacing:.22em}
+ 
+/* ===== MEMBERSHIP (live: 4 colour blocks) ===== */
+.mem .head{text-align:center;max-width:880px;margin:0 auto 46px}
+.mem h2{font-size:clamp(30px,3.2vw,42px)}
+.mem h2 .t{display:block;font-size:.62em;color:var(--ink);letter-spacing:.01em}
+.mem h2 .b{color:var(--gold);letter-spacing:.04em}
+.mem .head p{color:#4F4A44;margin-top:18px}
+.memgrid{border:1px solid var(--line);padding:22px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.mcard{padding:48px 26px 54px;text-align:center;transition:.35s cubic-bezier(.16,.84,.44,1)}
+.mcard:hover{transform:translateY(-5px)}
+.m-a{background:#CFC5A8}.m-b{background:#D9B6B6}.m-c{background:#B5C7C7}.m-d{background:#C9A282}
+.mcard h3{font-size:25px;letter-spacing:.05em;text-transform:uppercase;color:#2E2A27}
+.mcard h3 small{display:block;font-family:'Jost',sans-serif;font-size:14px;text-transform:none;letter-spacing:0;color:#fff;margin-top:6px;font-weight:300}
+.mcard .w{color:#fff;font-size:15px;margin-top:26px}
+.mcard .w b{display:block;font-size:23px;font-weight:400;margin-top:2px}
+.mcard .at{color:#fff;font-size:15px;margin-top:14px}
+.mcard .pz{font-family:'Jost',sans-serif;font-size:32px;font-weight:400;color:#6E5A3A;margin-top:4px}
+.m-b .pz{color:#7E4E4E}.m-c .pz{color:#3F5B5B}.m-d .pz{color:#6B4520}
+ 
+/* ===== TESTIMONIAL (live: card left, title right) ===== */
+.test .g{display:grid;grid-template-columns:1.35fr .65fr;gap:0;align-items:center}
+.tcard{background:#fff;padding:56px 64px 46px;text-align:center;position:relative}
+.tcard p{font-size:18px;font-style:italic;color:#3E3A36;line-height:1.75;max-width:none}
+.tcard .who{color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:18px;letter-spacing:.05em;text-transform:uppercase;margin-top:26px}
+.tav{display:flex;justify-content:center;gap:12px;margin-top:26px}
+.tav i{width:66px;height:66px;border-radius:50%;background:repeating-linear-gradient(122deg,#E5DCD2 0 3px,#DFD5CA 3px 6px);display:block}
+.arw{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:var(--gold);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;border:2px solid #C9A24A;cursor:pointer;transition:.25s}
+.arw:hover{background:#8E6830}
+.arw.l{left:-26px}.arw.r{right:-26px}
+.ttl2{padding-left:56px;font-family:'Cormorant Garamond',serif;font-size:46px;line-height:1.18;color:var(--ink);font-weight:300}
+.ttl2 b{display:block;color:var(--gold);font-weight:400;letter-spacing:.03em}
+ 
+/* ===== BLOG (live: 4 cards) ===== */
+.blog h2{text-align:center;font-size:clamp(30px,3.4vw,44px);letter-spacing:.05em;color:var(--gold);margin-bottom:44px}
+.bgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.bcard .im{aspect-ratio:16/10;background:repeating-linear-gradient(122deg,#E5DCD2 0 3px,#DFD5CA 3px 6px);position:relative}
+.bcard .im:after{content:"POST IMAGE";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#A79A8C;font-size:10px;letter-spacing:.18em}
+.bcard h3{font-size:21px;color:var(--gold);margin-top:16px;line-height:1.35}
+.blog .btn{margin-top:36px}
+ 
+/* ===== CONTACT (live) ===== */
+.contact{border:1px solid var(--line);background:#fff;padding:56px 60px}
+.contact .g{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.contact h2{font-size:40px}
+.pencil{width:74%;height:16px;border-radius:8px;background:linear-gradient(90deg,#3E3A36 0 12%,#4A4641 12% 88%,#2E2A27 88% 100%);margin-top:56px;transform:rotate(-27deg);transform-origin:left center;box-shadow:0 14px 22px -14px rgba(0,0,0,.5)}
+.req{font-size:13.5px;color:#6E655C;margin-bottom:26px}
+.req b{color:#B94C4C;font-weight:400}
+.frow{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:22px}
+.frow label{font-size:15.5px;color:#6E655C}
+.frow label b{color:#B94C4C;font-weight:400}
+.frow input,.frow select,.frow textarea{width:100%;border:none;border-bottom:1px solid #C9BFB5;background:transparent;padding:9px 2px;font-family:'Jost',sans-serif;font-size:15.5px;color:var(--ink);font-weight:300;transition:border-color .3s}
+.frow input:focus,.frow select:focus,.frow textarea:focus{outline:none;border-bottom-color:var(--gold)}
+.frow textarea{resize:vertical;min-height:96px}
+.frow.top{align-items:start}.frow.top label{padding-top:10px}
+.capt{display:flex;align-items:center;gap:14px;border:1px solid #D8D2CC;background:#F7F5F3;padding:16px 20px;margin:6px 0 26px;max-width:330px}
+.capt .bx{width:24px;height:24px;border:2px solid #C3BBB2;background:#fff;flex:0 0 24px}
+.capt span{font-size:14.5px;color:#5F574F}
+.capt em{margin-left:auto;font-style:normal;font-size:10px;color:var(--muted);letter-spacing:.06em;text-align:right;line-height:1.3}
+ 
+/* ===== NEW SECTIONS (appended, styled to match) ===== */
+.newmark{text-align:center;margin-bottom:14px}
+.newmark span{display:inline-block;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#9A8F84;border:1px solid var(--line);padding:6px 16px;border-radius:20px;background:var(--ivory)}
+.sechead{text-align:center;max-width:860px;margin:0 auto 46px}
+.sechead h2{font-size:clamp(30px,3.4vw,44px);letter-spacing:.04em}
+.sechead h2 .x{color:#9A928A;margin:0 12px}
+.sechead p{color:#4F4A44;margin-top:18px}
+ 
+.locgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.loc{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;transition:.35s cubic-bezier(.16,.84,.44,1);position:relative;color:inherit}
+.loc:hover{transform:translateY(-5px);box-shadow:0 24px 42px -30px rgba(60,48,38,.45)}
+.loc .im{aspect-ratio:4/3;background:repeating-linear-gradient(122deg,#E5DCD2 0 3px,#DFD5CA 3px 6px);position:relative}
+.loc .im:after{content:attr(data-l);position:absolute;left:16px;bottom:14px;background:rgba(255,255,255,.95);color:var(--ink);font-size:10px;letter-spacing:.16em;text-transform:uppercase;padding:6px 13px}
+.loc .bd{padding:24px 24px 26px;flex:1;display:flex;flex-direction:column}
+.loc h3{font-size:20px;margin-bottom:6px}
+.loc .ad{font-size:14px;color:#6E655C;line-height:1.6;margin-bottom:16px}
+.loc .rw{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted);padding:4px 0;border-top:1px solid var(--line)}
+.loc .rw b{font-weight:400;color:#6E655C;text-align:right}
+.loc .go{margin-top:16px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--gold-lt);padding-bottom:3px;align-self:flex-start}
+ 
+.solgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}
+.sol{background:#fff;padding:38px 34px;transition:.3s;display:block;color:inherit;position:relative;overflow:hidden}
+.sol:hover{background:#FFFDFB}
+.sol:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--gold-lt);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.16,.84,.44,1)}
+.sol:hover:after{transform:scaleX(1)}
+.sol .ix{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold-lt);letter-spacing:.1em}
+.sol h3{font-size:21px;margin:12px 0 9px;transition:color .3s}
+.sol:hover h3{color:var(--gold)}
+.sol p{font-size:14.5px;color:#6E655C;margin:0}
+ 
+.audgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.aud{background:#fff;border:1px solid var(--line);border-left:2px solid var(--sage);padding:30px 30px;transition:.35s}
+.aud:nth-child(2){border-left-color:var(--gold-lt)}
+.aud:nth-child(3){border-left-color:#D8BFC0}
+.aud:nth-child(4){border-left-color:var(--slate)}
+.aud:nth-child(5){border-left-color:var(--sage)}
+.aud:nth-child(6){border-left-color:var(--gold-lt)}
+.aud:hover{transform:translateX(4px)}
+.aud h4{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;color:var(--ink);margin-bottom:8px}
+.aud p{font-size:14.5px;color:#6E655C;margin:0}
+ 
+.amgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line);max-width:1020px;margin:0 auto}
+.am{background:#fff;aspect-ratio:1;padding:16px 12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transition:.3s;cursor:default}
+.am:hover{background:#FBF7F2}
+.am .ic{width:38px;height:38px;border-radius:50%;background:#DDE4DC;display:flex;align-items:center;justify-content:center;margin-bottom:11px;font-family:'Cormorant Garamond',serif;font-size:14px;color:#4E5F4C;transition:.35s cubic-bezier(.16,.84,.44,1)}
+.am:hover .ic{background:#C6D2C4;transform:translateY(-3px)}
+.am h4{font-size:12.5px;font-weight:400;color:var(--ink);letter-spacing:.02em;line-height:1.35;margin:0}
+ 
+.facg{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);margin-top:44px}
+.fac{padding:30px 24px 0;border-right:1px solid var(--line)}
+.fac:last-child{border-right:none}
+.fac .n{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold-lt);line-height:1}
+.fac h4{font-size:16px;font-weight:500;color:var(--ink);margin:12px 0 7px}
+.fac p{font-size:14px;color:#6E655C;margin:0}
+ 
+.faq{max-width:920px;margin:0 auto}
+details{border-bottom:1px solid var(--line);background:transparent}
+details:first-child{border-top:1px solid var(--line)}
+summary{padding:24px 46px 24px 0;cursor:pointer;font-size:19px;color:var(--ink);list-style:none;position:relative;font-family:'Cormorant Garamond',serif;font-weight:400;transition:color .2s}
+summary::-webkit-details-marker{display:none}
+summary:hover,details[open] summary{color:var(--gold)}
+summary:after{content:"+";position:absolute;right:4px;top:22px;color:var(--gold);font-size:22px;font-family:'Jost',sans-serif;font-weight:200}
+details[open] summary:after{content:"\2212"}
+details p{padding:0 56px 26px 0;font-size:15.5px;color:#6E655C;margin:0}
+ 
+.ctagrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}
+.ctab{background:#fff;padding:34px 26px;text-align:center;transition:.3s}
+.ctab:hover{background:#FFFDFB;transform:translateY(-3px)}
+.ctab .n{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold-lt);letter-spacing:.1em}
+.ctab h4{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:400;color:var(--ink);margin:12px 0 7px}
+.ctab p{font-size:13.5px;color:#6E655C;margin:0}
+ 
+/* ===== FOOTER (live) ===== */
+footer{background:#8496A0;color:#EEF1F2;padding:74px 0 40px;margin-top:70px}
+footer .fc{display:grid;grid-template-columns:repeat(6,1fr);gap:28px}
+footer h5{font-size:19px;font-weight:300;color:#fff;margin-bottom:24px;line-height:1.25}
+footer ul{list-style:none}
+footer li{margin-bottom:13px}
+footer li a{font-size:15px;color:#E6EAEC;transition:.25s}
+footer li a:hover{color:#fff;padding-left:5px}
+footer .fb{margin-top:60px;display:grid;grid-template-columns:1fr auto 1fr;gap:36px;align-items:end}
+.flogo{font-family:'Cormorant Garamond',serif;font-size:44px;letter-spacing:.14em;color:#fff;line-height:1;font-weight:300;white-space:nowrap}
+.flogo b{color:#E8C99A;font-weight:300}
+.ftag{font-size:9.5px;letter-spacing:.2em;color:#DDE3E6;margin-top:9px}
+.faddr{font-size:15px;color:#E2E7EA;line-height:1.65;margin-top:24px;max-width:44ch}
+.fcopy{font-size:14.5px;color:#E2E7EA;text-align:center;padding-bottom:4px}
+.fsoc{text-align:right}
+.fsoc .h{font-size:14.5px;color:#fff;margin-bottom:15px}
+.fsoc .ic{display:flex;gap:12px;justify-content:flex-end}
+.fsoc .ic a{width:38px;height:38px;border-radius:50%;background:#fff;color:#8496A0;display:flex;align-items:center;justify-content:center;font-size:16px;transition:.3s}
+.fsoc .ic a:hover{transform:translateY(-3px);background:#E8C99A}
+ 
+/* motion */
+@media (prefers-reduced-motion: no-preference){
+ .rv{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.16,.84,.44,1),transform .9s cubic-bezier(.16,.84,.44,1)}
+ .rv.in{opacity:1;transform:none}
+ .rv.d1{transition-delay:.07s}.rv.d2{transition-delay:.14s}.rv.d3{transition-delay:.21s}
+ .rv.d4{transition-delay:.28s}.rv.d5{transition-delay:.35s}
+}
+ 
+@media(max-width:1100px){
+ .nav ul{display:none}
+ .hero .g,.story .g,.contact .g,.meet .g,.test .g{grid-template-columns:1fr}
+ .stxt{padding:34px 0 0}
+ .ttl2{padding:34px 0 0}
+ .more{grid-template-columns:1fr 1fr;gap:26px}
+ .vline{display:none}
+ .m1,.m2,.m3,.m4{grid-column:auto!important;padding:0!important;text-align:left!important;max-width:none}
+ .mdot{margin-bottom:14px}
+ .locgrid,.memgrid,.bgrid,.ctagrid,.facg{grid-template-columns:repeat(2,1fr)}
+ .solgrid,.audgrid{grid-template-columns:repeat(2,1fr)}
+ .amgrid{grid-template-columns:repeat(4,1fr)}
+ .two{grid-template-columns:1fr}.two .rule{display:none}
+ .pcard{padding:0 0 40px}
+ .arw{display:none}
+ footer .fc{grid-template-columns:repeat(3,1fr)}
+ footer .fb{grid-template-columns:1fr}.fsoc{text-align:left}.fsoc .ic{justify-content:flex-start}.fcopy{text-align:left}
+}
+@media(max-width:700px){
+ .wrap{padding:0 22px}section{padding:56px 0}
+ .locgrid,.memgrid,.bgrid,.ctagrid,.facg,.solgrid,.audgrid{grid-template-columns:1fr}
+ .amgrid{grid-template-columns:repeat(3,1fr)}
+ .am h4{font-size:11.5px}
+ .fac{border-right:none;border-bottom:1px solid var(--line);padding-bottom:24px}
+ .coll div,.sbot div{min-height:170px}
+ .frow{grid-template-columns:1fr;gap:7px}
+ .contact{padding:32px 24px}
+ .pencil{display:none}
+ .meet h2,.meet .g p{text-align:left}
+ .tcard{padding:36px 26px}
+ .hashtag{font-size:26px}
+}
+ 
+/* trust / social proof */
+.logos{display:grid;grid-template-columns:repeat(6,1fr);gap:2px;background:var(--line);border:1px solid var(--line);margin-top:24px}
+.logos div{background:#fff;height:92px;display:flex;align-items:center;justify-content:center;color:#B9AC9E;font-size:10px;letter-spacing:.16em;transition:.3s}
+.logos div:hover{color:var(--gold);background:#FFFDFB}
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);border-bottom:none;margin-top:34px}
+.pf{background:#fff;padding:26px 24px;text-align:center}
+.pf h4{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;color:var(--ink);margin-bottom:5px}
+.pf p{font-size:13px;color:var(--muted);margin:0}
+/* why-choose (uses aud styling but 3-up) */
+.whygrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:1100px){.logos{grid-template-columns:repeat(3,1fr)}.proof,.whygrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.logos{grid-template-columns:repeat(2,1fr)}.proof,.whygrid{grid-template-columns:1fr}}
+ 
+</style>
+ 
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Dextrus","url":"https://dextrus.in/","logo":"https://dextrus.in/logo.png","slogan":"Because where you work, matters","address":{"@type":"PostalAddress","streetAddress":"Crescenzo Business District, A-802, G Block BKC, Bandra Kurla Complex, Bandra East","addressLocality":"Mumbai","addressRegion":"Maharashtra","postalCode":"400051","addressCountry":"IN"},"telephone":"+91-1800-412-0866","email":"sales@dextrus.in"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Dextrus","url":"https://dextrus.in/"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Where are Dextrus coworking spaces located in Mumbai?","acceptedAnswer":{"@type":"Answer","text":"Dextrus has four centres in Mumbai: BKC Crescenzo and One BKC in Bandra Kurla Complex, Peninsula Corporate Park in Lower Parel, and Mint in Andheri."}},
+{"@type":"Question","name":"How much does a coworking space at Dextrus cost?","acceptedAnswer":{"@type":"Answer","text":"Fixed desks start at Rs 21,750 per desk per month at Andheri Mint, Rs 26,750 at Lower Parel and Rs 29,750 at BKC Crescenzo. Membership packages start at Rs 18,500 for one month."}},
+{"@type":"Question","name":"Are private offices available at Dextrus?","acceptedAnswer":{"@type":"Answer","text":"Private offices are available. At BKC Crescenzo they start at Rs 47,750 per desk per month."}}
+]}
+</script>
+</head>
+<body>
+ 
+<!-- ============ NAV (live) ============ -->
+<nav class="nav">
+<div class="wrap">
+<ul>
+<li><a href="#locations">Our Locations</a></li>
+<li><a href="#plans">Flex Plans</a></li>
+<li><a href="#plans">Customised Offices</a></li>
+</ul>
+<a class="navlogo" href="#">DE<b>X</b>TRUS</a>
+<ul>
+<li><a href="#story">Discover Dextrus</a></li>
+<li><a href="#faq">FAQs</a></li>
+<li><a href="#contact">Connect</a></li>
+</ul>
+</div>
+</nav>
+ 
+<!-- ===== 01 INTRODUCTION (live hero layout) ===== -->
+<section class="hero">
+<div class="wrap">
+<div class="g">
+<div class="rv">
+<h1>Welcome to<em>DEXTRUS</em></h1>
+<p style="margin-top:26px">Dextrus is a coworking space in Mumbai with four centres across BKC, Lower Parel and Andheri. We offer flexible desks, fixed desks, private offices, enterprise offices, meeting rooms and virtual office plans for startups, growing businesses, enterprises, freelancers and hybrid teams.</p>
+<p>Every centre is intelligently designed and expertly curated to give you more out of every working moment. Get in touch, for a first-hand experience of <b style="font-weight:500;color:var(--ink)">#MoreWorking</b>.</p>
+<a class="btn" href="#contact" style="margin-top:12px">Let's get you settled</a>
+</div>
+<div class="im rv d1"></div>
+</div>
+</div>
+</section>
+ 
+<div class="xdiv"><span></span><div class="xmark"></div><span></span></div>
+ 
+<!-- ===== 02 OUR LOCATIONS IN MUMBAI ===== -->
+<section id="locations">
+<div class="wrap">
+<div class="sechead rv">
+<h2>OUR LOCATIONS <span class="x">&#10005;</span> MUMBAI</h2>
+<p>Four Dextrus centres across BKC, Lower Parel and Andheri. Select a location to view floor plans, workspace availability and pricing.</p>
+</div>
+<div class="locgrid">
+<a class="loc rv" href="bkc-crescenzo.html">
+<div class="im" data-l="BKC"></div>
+<div class="bd">
+<h3>BKC, Crescenzo</h3>
+<div class="ad">Crescenzo Business District, G Block, Bandra Kurla Complex, Bandra East</div>
+<div class="rw"><span>Business area</span><b>BKC</b></div>
+<div class="rw"><span>Connectivity</span><b>To confirm</b></div>
+<div class="rw"><span>Availability</span><b>To confirm</b></div>
+<span class="go">View location</span>
+</div>
+</a>
+<a class="loc rv d1" href="#">
+<div class="im" data-l="BKC"></div>
+<div class="bd">
+<h3>BKC, One BKC</h3>
+<div class="ad">One BKC, Bandra Kurla Complex, Bandra East</div>
+<div class="rw"><span>Business area</span><b>BKC</b></div>
+<div class="rw"><span>Connectivity</span><b>To confirm</b></div>
+<div class="rw"><span>Availability</span><b>To confirm</b></div>
+<span class="go">View location</span>
+</div>
+</a>
+<a class="loc rv d2" href="#">
+<div class="im" data-l="Lower Parel"></div>
+<div class="bd">
+<h3>Peninsula Corporate Park</h3>
+<div class="ad">Peninsula Corporate Park, Lower Parel</div>
+<div class="rw"><span>Business area</span><b>Lower Parel</b></div>
+<div class="rw"><span>Connectivity</span><b>To confirm</b></div>
+<div class="rw"><span>Availability</span><b>To confirm</b></div>
+<span class="go">View location</span>
+</div>
+</a>
+<a class="loc rv d3" href="#">
+<div class="im" data-l="Andheri"></div>
+<div class="bd">
+<h3>Andheri, Mint</h3>
+<div class="ad">Mint, Andheri</div>
+<div class="rw"><span>Business area</span><b>Andheri</b></div>
+<div class="rw"><span>Connectivity</span><b>To confirm</b></div>
+<div class="rw"><span>Availability</span><b>To confirm</b></div>
+<span class="go">View location</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+ 
+<!-- ===== 03 WORKSPACE SOLUTIONS ===== -->
+<section style="background:var(--ivory)">
+<div class="wrap">
+<div class="sechead rv">
+<h2>WORKSPACE SOLUTIONS AT DEXTRUS</h2>
+<p>Six workspace formats, sized from a single desk to a full private floor.</p>
+</div>
+<div class="solgrid">
+<a class="sol rv" href="fixed-desks.html"><div class="ix">01</div><h3>Flexible Desks</h3><p>Hot desking in shared work areas. Sit anywhere, pay for the days you use.</p></a>
+<a class="sol rv d1" href="fixed-desks.html"><div class="ix">02</div><h3>Fixed Desks</h3><p>A dedicated desk reserved in your name, with storage, within a shared workspace.</p></a>
+<a class="sol rv d2" href="#contact"><div class="ix">03</div><h3>Private Offices</h3><p>Lockable cabins for teams that need their own enclosed space.</p></a>
+<a class="sol rv d3" href="#contact"><div class="ix">04</div><h3>Enterprise Offices</h3><p>Customised managed offices built to your brand, headcount and layout.</p></a>
+<a class="sol rv d4" href="#contact"><div class="ix">05</div><h3>Meeting Rooms</h3><p>Technology-driven rooms in multiple setups, bookable by the hour.</p></a>
+<a class="sol rv d5" href="#contact"><div class="ix">06</div><h3>Virtual Office Plans</h3><p>A business address and mail handling without a physical desk.</p></a>
+</div>
+</div>
+</section>
+ 
+<!-- ===== 04 AMENITIES AND SERVICES ===== -->
+<section>
+<div class="wrap">
+<div class="sechead rv">
+<h2>AMENITIES <span class="x">&#10005;</span> SERVICES</h2>
+<p>Facilities available across Dextrus centres. Specifics confirmed per location.</p>
+</div>
+<div class="amgrid">
+<div class="am rv"><div class="ic">01</div><h4>High-speed internet</h4></div>
+<div class="am rv d1"><div class="ic">02</div><h4>UPS power backup</h4></div>
+<div class="am rv d2"><div class="ic">03</div><h4>Reception</h4></div>
+<div class="am rv d3"><div class="ic">04</div><h4>Housekeeping</h4></div>
+<div class="am rv d4"><div class="ic">05</div><h4>Secured access</h4></div>
+<div class="am rv d5"><div class="ic">06</div><h4>Printing credits</h4></div>
+<div class="am rv"><div class="ic">07</div><h4>Access to parking</h4></div>
+<div class="am rv d1"><div class="ic">08</div><h4>Mail handling</h4></div>
+<div class="am rv d2"><div class="ic">09</div><h4>Access timings</h4></div>
+<div class="am rv d3"><div class="ic">10</div><h4>IT support</h4></div>
+<div class="am rv d4"><div class="ic">11</div><h4>Pantry &amp; coffee</h4></div>
+<div class="am rv d5"><div class="ic">12</div><h4>Ergonomic furniture</h4></div>
+</div>
+</div>
+</section>
+ 
+<!-- ===== 05 PLANS AND PRICING (live layout) ===== -->
+<section class="plans" id="plans" style="background:var(--ivory)">
+<div class="wrap">
+<div class="head rv">
+<h2>PLANS <span class="x">&#10005;</span> PRICING</h2>
+<p>Convenient plans, with pricing to match. That's our promise, for a one-off meeting, a day of work or a longer stay. They each come with a gamut of inclusions, amenities and services. Just the <b style="font-weight:500;color:var(--ink)">more</b> that you've been looking for, from a <a href="#locations">coworking space in Mumbai</a>.</p>
+</div>
+<div class="two">
+<div class="pcard rv">
+<div class="im" data-c="FLEX PLANS IMAGE"></div>
+<a class="btn" href="fixed-desks.html">Flex Plans</a>
+</div>
+<div class="rule"></div>
+<div class="pcard rv d1">
+<div class="im" data-c="CUSTOMISED OFFICES IMAGE"></div>
+<a class="btn" href="#contact">Customised Offices</a>
+</div>
+</div>
+ 
+<div style="margin-top:70px">
+<h3 class="center rv" style="font-size:28px;margin-bottom:8px">The Powerful DEXTRUS MEMBERSHIP</h3>
+<p class="center rv" style="max-width:820px;margin:0 auto 34px;color:#4F4A44">Flexible and affordable membership packages designed to complement a broad spectrum of business needs, with the advantage of being able to pay as you go.</p>
+<div class="memgrid">
+<div class="mcard m-a rv"><h3>Nomad<small>(valid for 1 month)</small></h3><div class="w">Avail benefits worth<b>&#8377; 22,500</b></div><div class="at">at just</div><div class="pz">&#8377; 18,500</div></div>
+<div class="mcard m-b rv d1"><h3>Pilgrim<small>(valid for 3 months)</small></h3><div class="w">Avail benefits worth<b>&#8377; 45,000</b></div><div class="at">at just</div><div class="pz">&#8377; 37,000</div></div>
+<div class="mcard m-c rv d2"><h3>Frequent Flyer<small>(valid for 6 months)</small></h3><div class="w">Avail benefits worth<b>&#8377; 67,500</b></div><div class="at">at just</div><div class="pz">&#8377; 50,500</div></div>
+<div class="mcard m-d rv d3"><h3>The Professional<small>(valid for 12 months)</small></h3><div class="w">Avail benefits worth<b>&#8377; 90,000</b></div><div class="at">at just</div><div class="pz">&#8377; 67,500</div></div>
+</div>
+</div>
+ 
+<h3 class="center rv" style="font-size:26px;margin-top:66px">What determines your price</h3>
+<div class="facg">
+<div class="fac rv"><div class="n">01</div><h4>Location</h4><p>Rates differ between BKC, Lower Parel and Andheri.</p></div>
+<div class="fac rv d1"><div class="n">02</div><h4>Workspace type</h4><p>A flexible desk, a private office and a managed floor price differently.</p></div>
+<div class="fac rv d2"><div class="n">03</div><h4>Team size</h4><p>Seat count affects the per-seat rate.</p></div>
+<div class="fac rv d3"><div class="n">04</div><h4>Customisation</h4><p>Branding, layout changes and fit-out on enterprise offices.</p></div>
+</div>
+<div class="center" style="margin-top:40px"><a class="btn gold rv" href="fixed-desks.html">Explore our plans</a></div>
+</div>
+</section>
+ 
+<!-- ===== 06 DEXTRUS PHILOSOPHY (live MORE layout) ===== -->
+<section class="phil">
+<div class="lbl rv">DEXTRUS PHILOSOPHY</div>
+<div class="more">
+<div class="mtxt m1 rv"><h4>Maximum<br>Flexibility</h4><p>Intelligently designed office spaces that are fluid and adaptable across scale requirements</p></div>
+<div class="mdot d-m rv d1">M</div>
+<div class="mdot d-o rv d2">O</div>
+<div class="vline"></div>
+<div class="mdot d-r rv d3">R</div>
+<div class="mdot d-e rv d4">E</div>
+<div class="mtxt m4 rv d1"><h4>Enduring<br>Support</h4><p>Top notch utilities and tech support that is always effective, always present</p></div>
+<div class="mtxt m2 rv d2"><h4>Optimised<br>Productivity</h4><p>Smart, intuitive interiors planned to make work joy with more natural light, sense of space and joie-de-vivre</p></div>
+<div class="mtxt m3 rv d3"><h4>Robust<br>Service</h4><p>Committed in-house teams, backed by a spirit of getting things done, no matter how far the extra mile</p></div>
+</div>
+<div class="hashtag rv">#MOREWORKING</div>
+</section>
+ 
+<!-- ===== 07 THE DEXTRUS STORY (live layout) ===== -->
+<section class="story" id="story" style="padding-top:0">
+<div class="wrap">
+<div class="g">
+<div class="coll rv">
+<div data-c="Wall art"></div>
+<div data-c="Corridor"></div>
+<div data-c="Florals"></div>
+</div>
+<div class="stxt rv d1">
+<h2>The <b>DEXTRUS</b> Story</h2>
+<p>We see ourselves as more than just a coworking space. A deeply embedded philosophy that makes us deliver more to our clients, so you can achieve more at work. Because we understand the impact a dynamic, thriving and uplifting workspace has on well-being as well as performance.</p>
+<p>We understand that Because where you work matters. <a href="#" style="font-style:italic;text-decoration:underline">know more</a>...</p>
+<p style="color:var(--muted);font-size:14.5px">To be added: the year Dextrus was established, why it was founded, and how the brand grew to four centres across Mumbai.</p>
+<div class="explore">
+<a href="bkc-crescenzo.html">Explore BKC, Crescenzo</a><i>|</i><a href="#locations">Explore BKC, One BKC</a><i>|</i><br>
+<a href="#locations">Explore Lower Parel, Peninsula Corporate Park</a><i>|</i><a href="#locations">Explore Andheri, Mint</a>
+</div>
+<div class="sbot">
+<div data-c="Chair"></div>
+<div data-c="Lounge bar"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+ 
+<!-- ===== 08 CLIENT TRUST AND SOCIAL PROOF (live testimonial layout) ===== -->
+<section style="background:var(--ivory)">
+<div class="wrap">
+<div class="sechead rv" style="margin-bottom:34px">
+<h2>CLIENT TRUST <span class="x">&#10005;</span> SOCIAL PROOF</h2>
+</div>
+<div class="test">
+<div class="g">
+<div class="tcard rv">
+<div class="arw l">&#171;</div>
+<div class="arw r">&#187;</div>
+<p>"Dextrus is a class apart in terms of co-working spaces. We had looked at several of the competitors but found Dextrus to be the perfect balance between a professional &amp; personal office space to the benefits of having a shared workspace."</p>
+<div class="who">IEP Funds Advisors Pvt Ltd</div>
+<div class="tav"><i></i><i></i><i></i><i></i></div>
+</div>
+<div class="ttl2 rv d1">What <b>CLIENTS</b> say</div>
+</div>
+</div>
+<div class="proof">
+<div class="pf rv"><h4>Awards</h4><p>Recognition and industry features</p></div>
+<div class="pf rv d1"><h4>Case Studies</h4><p>How teams use our workspaces</p></div>
+<div class="pf rv d2"><h4>Workspace Images</h4><p>Original photography of our centres</p></div>
+</div>
+<div class="logos">
+<div class="rv">CLIENT LOGO</div><div class="rv d1">CLIENT LOGO</div><div class="rv d2">CLIENT LOGO</div>
+<div class="rv d3">CLIENT LOGO</div><div class="rv d4">CLIENT LOGO</div><div class="rv d5">CLIENT LOGO</div>
+</div>
+</div>
+</section>
+ 
+<!-- ===== 09 FINAL CALL TO ACTION ===== -->
+<section>
+<div class="wrap">
+<div class="sechead rv">
+<h2>FIND YOUR SPACE AT DEXTRUS</h2>
+<p>Four centres across BKC, Lower Parel and Andheri. Tell us your team size and preferred location, and we will show you what fits.</p>
+</div>
+<div class="ctagrid">
+<div class="ctab rv"><div class="n">01</div><h4>Book a Tour</h4><p>Visit a centre in person</p></div>
+<div class="ctab rv d1"><div class="n">02</div><h4>Request Pricing</h4><p>Get a quote for your team</p></div>
+<div class="ctab rv d2"><div class="n">03</div><h4>Find a Location</h4><p>Compare all four centres</p></div>
+<div class="ctab rv d3"><div class="n">04</div><h4>Speak to the Dextrus Team</h4><p>Call or write to us</p></div>
+</div>
+<div class="center" style="margin-top:36px"><a class="btn rv" href="#contact">Book a tour</a></div>
+</div>
+</section>
+ 
+<!-- ===== 10 CONTACT (live) ===== -->
+<section id="contact">
+<div class="wrap">
+<div class="contact rv">
+<div class="g">
+<div>
+<h2>Contact Us</h2>
+<div class="pencil"></div>
+</div>
+<div>
+<div class="req"><b>*</b> indicates required fields</div>
+<div class="frow"><label>Full Name <b>*</b></label><input type="text"></div>
+<div class="frow"><label>Phone <b>*</b></label><input type="tel" placeholder="+91 81234 56789"></div>
+<div class="frow"><label>Email <b>*</b></label><input type="email"></div>
+<div class="frow"><label>Location <b>*</b></label><select><option>BKC, Crescenzo</option><option>BKC, One BKC</option><option>Lower Parel, Peninsula Corporate Park</option><option>Andheri, Mint</option></select></div>
+<div class="frow"><label>Company Name</label><input type="text"></div>
+<div class="frow"><label>Team Size</label><input type="text"></div>
+<div class="frow top"><label>Message</label><textarea></textarea></div>
+<div class="capt"><div class="bx"></div><span>I'm not a robot</span><em>reCAPTCHA</em></div>
+<a class="btn" href="#">Submit</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+ 
+<!-- ===== 11 FREQUENTLY ASKED QUESTIONS ===== -->
+<section id="faq" style="background:var(--ivory)">
+<div class="wrap">
+<div class="sechead rv">
+<h2>FREQUENTLY ASKED QUESTIONS</h2>
+</div>
+<div class="faq">
+<details class="rv" open><summary>Where are Dextrus coworking spaces located in Mumbai?</summary><p>Dextrus has four centres in Mumbai: BKC Crescenzo and One BKC in Bandra Kurla Complex, Peninsula Corporate Park in Lower Parel, and Mint in Andheri.</p></details>
+<details class="rv d1"><summary>How much does a coworking space at Dextrus cost?</summary><p>Fixed desks start at &#8377;21,750 per desk per month at Andheri Mint, &#8377;26,750 at Lower Parel and &#8377;29,750 at BKC Crescenzo. Membership packages start at &#8377;18,500 for one month.</p></details>
+<details class="rv d2"><summary>Does Dextrus offer day passes?</summary><p>Answer required: day pass price, which centres offer them, and how to book.</p></details>
+<details class="rv d3"><summary>Are private offices available at Dextrus?</summary><p>Private offices are available. At BKC Crescenzo they start at &#8377;47,750 per desk per month. Answer required: cabin sizes and availability at other centres.</p></details>
+<details class="rv d4"><summary>Does Dextrus provide virtual office plans?</summary><p>Answer required: what the plan includes, and whether the address can be used for company and GST registration.</p></details>
+<details class="rv d5"><summary>How do I book a meeting room at Dextrus?</summary><p>Answer required: booking method, minimum duration, and whether non-members can book.</p></details>
+<details class="rv"><summary>What are the operating hours at Dextrus?</summary><p>Answer required: standard hours, weekend access, and whether 24x7 access is available on all plans.</p></details>
+<details class="rv d1"><summary>Is parking available at Dextrus centres?</summary><p>Answer required: availability per centre, and whether it is included or chargeable.</p></details>
+</div>
+</div>
+</section>
+ 
+<!-- ===== FOOTER (live) ===== -->
+<footer>
+<div class="wrap">
+<div class="fc">
+<div class="rv"><h5>About Us</h5><ul><li><a href="#story">The Dextrus Story</a></li><li><a href="#faq">FAQs</a></li></ul></div>
+<div class="rv d1"><h5>Locations</h5><ul><li><a href="bkc-crescenzo.html">BKC, Crescenzo</a></li><li><a href="#locations">Lower Parel, Peninsula Corporate Park</a></li><li><a href="#locations">BKC, One Bkc</a></li><li><a href="#locations">Andheri, Mint</a></li></ul></div>
+<div class="rv d2"><h5>Plans &amp; Pricing</h5><ul><li><a href="fixed-desks.html">Fixed Desks</a></li><li><a href="#plans">Flexible Desks</a></li><li><a href="#plans">Membership Plans</a></li><li><a href="#plans">Daily &amp; Virtual Plans</a></li></ul></div>
+<div class="rv d3"><h5>Dextrus Plus</h5><ul><li><a href="#plans">Enterprise Office</a></li><li><a href="#plans">Private Office</a></li><li><a href="#plans">Meetings &amp; Events</a></li></ul></div>
+<div class="rv d4"><h5>Discover Dextrus</h5><ul><li><a href="#">Dextrus Events</a></li><li><a href="#">Dextrus Partners</a></li><li><a href="#">Features &amp; Awards</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers at Dextrus</a></li><li><a href="#">Giving Back</a></li></ul></div>
+<div class="rv d5"><h5>Connect</h5><ul><li><a href="#contact">Contact Us</a></li><li><a href="#">Brokers</a></li><li><a href="#">Landlords</a></li><li><a href="#">TEDxHost Space</a></li><li><a href="#">Sitemap</a></li></ul></div>
+</div>
+<div class="fb">
+<div class="rv">
+<div class="flogo">DE<b>X</b>TRUS</div>
+<div class="ftag">&mdash; BECAUSE WHERE YOU WORK, MATTERS &mdash;</div>
+<div class="faddr">Crescenzo Business District, A-802, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051</div>
+</div>
+<div class="fcopy rv d1">&copy; 2026 Dextrus | All Rights Reserved</div>
+<div class="fsoc rv d2">
+<div class="h">DEXTRUSWORKSPACE</div>
+<div class="ic"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">&#9673;</a><a href="#" aria-label="Twitter">t</a><a href="#" aria-label="LinkedIn">in</a></div>
+</div>
+</div>
+</div>
+</footer>
+ 
+<script>
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    document.querySelectorAll('.rv').forEach(function(e){e.classList.add('in')});
+    return;
+  }
+  var io = new IntersectionObserver(function(en){
+    en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:0.1, rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+  setTimeout(function(){ document.querySelectorAll('.hero .rv').forEach(function(e){e.classList.add('in')}); }, 80);
+})();
+</script>
+ 
+</body>
 </html>
+ 
+
+

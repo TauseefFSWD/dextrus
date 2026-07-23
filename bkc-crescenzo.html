@@ -1,9 +1,107 @@
+Claude finished the response Removing both sections and compacting the amenities
+into a tighter grid. Remove Who Is For and Why Choose sections Remove Who Is For
+and Why Choose sections Both removed. Now compacting the amenities into a
+square-tile grid. Ran 2 commands Ran 2 commands Amenities went from a 3-column
+block to a 6-column grid of 169px squares, two rows totalling 341px. Checking
+the background rhythm still alternates. Check background alternation after
+removals Check background alternation after removals Alternation holds.
+Philosophy and Story are intentionally both cream since they run together as one
+visual block on the live site, matching your current page. Presented file
+Presented file Done. Ten sections now: Introduction, Locations, Workspace
+Solutions, Amenities, Plans and Pricing, Philosophy, Story, Client Trust, FAQs,
+Final CTA, then the contact form. Amenities redesigned. Twelve square tiles in a
+six-across grid, each with a numbered circle and a short label. The whole block
+is now 341px tall against roughly 700px before, and it's centred at 1020px wide
+rather than spanning the full container. The "to be confirmed" descriptions are
+gone from the tiles since the labels carry the information on their own and the
+detail belongs on location pages anyway. It drops to four across on tablet and
+three on mobile, staying square throughout. One note for the client
+conversation: removing Who Dextrus Is For loses the audience-led query coverage,
+so searches like "coworking space for startups in Mumbai" now have less on the
+page to match. The audiences are still named in the introduction, which helps,
+but not as strongly as a dedicated section would. Worth flagging if that query
+set matters to them. Dextrus homepage Code · HTML sifth the faqs above the
+footer FAQs currently sit at position 9, with Final CTA and Contact after them.
+Moving FAQs below both so they sit directly above the footer. Move FAQ section
+directly above footer Move FAQ section directly above footer FAQs now sit last.
+Sections 8 and 9 are both ivory though, so fixing the alternation. Fix
+background alternation after FAQ move Fix background alternation after FAQ move
+Sections 9 and 10 are both cream, but that's correct — the contact form sits
+inside its own white bordered card, so it reads as a distinct block against the
+cream. Presented file Presented file FAQs moved to sit directly above the
+footer. Final order: Introduction, Locations, Workspace Solutions, Amenities,
+Plans and Pricing, Philosophy, Story, Client Trust, Final CTA, Contact Us, FAQs.
+Backgrounds adjusted so the alternation still reads: the CTA went to cream and
+the FAQ block to ivory, which also separates it visually from the contact form
+above it. One trade-off worth mentioning to the client: FAQs this far down get
+fewer human readers, since most visitors convert or leave before reaching the
+bottom. It doesn't affect crawling or AI extraction, which read the whole page
+regardless. If the FAQ answers turn out to be genuinely useful for pre-sales
+questions, a link to them from the nav would recover some of that visibility.
+Dextrus homepage Code · HTML nice in the bkc page same feedback the key facts
+make it short just 3 4 pointas remove Who This Location Is For Why Choose This
+Location and restore the old contetn from the bkc cresnzo page Applying the same
+treatment to the BKC page. List current sections on the BKC page List current
+sections on the BKC page Rebuilding the BKC page in the live layouts, matching
+the homepage treatment. Ran 3 commands Ran 3 commands All checks pass.
+Confirming the interlinks still work in both directions. Ran a command, read a
+file Ran a command, read a file BKC page rebuilt to match. Ten sections:
+Introduction, Key Facts, Workspace Options, Amenities, Plans and Pricing,
+Connectivity, Trust, Final CTA, Contact, FAQs. Key facts compacted. From a
+nine-row table down to four cards: Address, Business Area, Nearest Station,
+Access Timings. Height dropped from roughly 480px to 159px. The detail that was
+in the removed rows (building, floor, workspace types) already appears in the
+introduction and the Workspace Options section, so nothing is lost. Who This
+Location Is For and Why Choose This Location both removed. Original live copy
+restored. The introduction now carries your actual BKC Crescenzo page text about
+the bustling modern business epicentre, the professional oasis, the view from
+your desk, tech-savviness and ergonomics. I added one sentence after it naming
+the six workspace types, so the primary query still resolves in the opening.
+Live layouts throughout, matching the homepage: split hero, X divider,
+membership-style pricing blocks, testimonial card with gold arrows, square
+amenity tiles, pencil contact form, FAQs above the footer. The Korea Land and
+Housing testimonial stays, since it's location-appropriate for BKC.
+LocalBusiness and FAQPage schema are in the head. Interlinks retested across all
+three pages and working. Bkc crescenzo Code · HTML Dextrus homepage Code · HTML
+Fixed desks Code · HTML in feixed desk Who Fixed Desks Are For enhance it
+visalayy loosk off What Is Included can be short no need to this much addition
+can be short Both fixes. Ran 2 commands Ran 2 commands The .suit CSS came from
+the location-page block. Let me locate the actual selectors. Ran 2 commands Ran
+2 commands The .suit CSS lives in the shared block. Locating it precisely. Find
+suit CSS block boundaries Find suit CSS block boundaries The .suit styles aren't
+in this file at all — they came from the location page CSS and were never
+included here, so those cards have been rendering unstyled. That explains "looks
+off." Adding proper styles. Confirm suit cards are unstyled Confirm suit cards
+are unstyled Confirmed: no grid, no background, no padding. The cards were plain
+stacked text. Fixing both sections now. Ran 2 commands Ran 2 commands Both
+fixed. Suit cards now render as a proper 3-column grid with backgrounds.
+Included dropped from ~16 rows to 361px. Ran a command, viewed a file, read a
+file Ran a command, viewed a file, read a file Both sections fixed. Who Fixed
+Desks Are For. The root cause was a bug: the .suit and .su styles were never in
+this file, so those cards had no grid, no background and no padding. They were
+rendering as plain stacked text, which is why it looked broken rather than just
+plain. Now a proper 3-column grid of cards, each with a numbered circle in a
+rotating palette, serif heading, description, and a gold recommendation line at
+the base. Hover lifts the card, draws a gold underline, shifts the heading to
+gold and nudges the circle up. What Is Included. Cut from 16 items to 8 square
+tiles in a 4-across grid, matching the amenity tiles on the other two pages.
+Height dropped from roughly 900px to 361px. The eight remaining items are the
+ones that actually differentiate the plan: internet, power backup, meeting and
+printing credits, 24x7 access, ergonomic furniture, IT support, secured access,
+utilities. The other eight are summarised in a single line beneath the grid
+rather than each getting its own card, since parking and pantry access aren't
+what someone chooses a fixed desk for. Fixed desks Code · HTML Claude is AI and
+can make mistakes. Please double-check responses. Bkc crescenzo · HTML
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Coworking Space in BKC, Mumbai | Dextrus Crescenzo</title>
+    <meta
+      name="description"
+      content="Dextrus BKC Crescenzo is a coworking space at Crescenzo Business District, Bandra Kurla Complex. Flexible desks, fixed desks from Rs 29,750, private offices, meeting rooms and virtual office plans."
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@200;300;400;500&display=swap"
       rel="stylesheet"
@@ -20,9 +118,8 @@
         --gold-lt: #c9a87a;
         --sage: #8fa48d;
         --sage-dp: #6e8570;
-        --blush: #d8bfc0;
         --slate: #8496a0;
-        --sand: #ede4da;
+        --sand: #c9bb9c;
       }
       * {
         margin: 0;
@@ -42,69 +139,34 @@
         -webkit-font-smoothing: antialiased;
       }
       .wrap {
-        max-width: 1200px;
+        max-width: 1240px;
         margin: 0 auto;
-        padding: 0 46px;
+        padding: 0 40px;
       }
       section {
-        padding: 110px 0;
+        padding: 86px 0;
         position: relative;
-        overflow: hidden;
-      }
-      .alt {
-        background: var(--ivory);
-      }
-      .dark {
-        background: #5f6e77;
-        color: #e8e4df;
-      }
-      .dark h2,
-      .dark h3,
-      .dark h4 {
-        color: #fff;
-      }
-      .dark p {
-        color: #d9d4ce;
       }
 
-      /* type */
       h1 {
         font-family: "Cormorant Garamond", serif;
-        font-size: clamp(46px, 5.6vw, 74px);
         font-weight: 300;
         color: var(--ink);
-        line-height: 1.06;
-        letter-spacing: -0.005em;
-      }
-      h1 em {
-        font-style: normal;
-        color: var(--gold);
-        display: block;
+        line-height: 1.1;
       }
       h2 {
         font-family: "Cormorant Garamond", serif;
-        font-size: clamp(34px, 3.6vw, 46px);
         font-weight: 400;
         color: var(--ink);
-        line-height: 1.16;
-        letter-spacing: 0.005em;
+        line-height: 1.2;
       }
       h3 {
         font-family: "Cormorant Garamond", serif;
-        font-size: 24px;
         font-weight: 400;
         color: var(--ink);
-        line-height: 1.3;
-      }
-      h4 {
-        font-size: 16.5px;
-        font-weight: 500;
-        color: var(--ink);
-        letter-spacing: 0.015em;
       }
       p {
-        margin-bottom: 18px;
-        max-width: 70ch;
+        margin-bottom: 16px;
       }
       p:last-child {
         margin-bottom: 0;
@@ -113,177 +175,129 @@
         color: var(--gold);
         text-decoration: none;
       }
-      .lede {
-        font-size: 19px;
-        line-height: 1.8;
-        color: #544b43;
-      }
-      .eyebrow {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        font-size: 11px;
-        letter-spacing: 0.3em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 20px;
-        font-weight: 400;
-      }
-      .eyebrow:before {
-        content: "";
-        width: 34px;
-        height: 1px;
-        background: var(--gold-lt);
-      }
-      .dark .eyebrow {
-        color: #c3cbcf;
-      }
-      .dark .eyebrow:before {
-        background: #a9b6bc;
-      }
-      .hr {
-        width: 52px;
-        height: 1px;
-        background: var(--gold-lt);
-        margin: 24px 0 26px;
-      }
       .center {
         text-align: center;
       }
-      .center .eyebrow {
-        justify-content: center;
-      }
-      .center .hr {
-        margin: 24px auto 26px;
-      }
-      .center p {
-        margin-left: auto;
-        margin-right: auto;
-      }
 
-      /* buttons */
       .btn {
         display: inline-block;
         background: var(--sage);
         color: #fff;
-        padding: 15px 38px;
+        padding: 15px 34px;
         border-radius: 30px;
         font-size: 12px;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-        font-weight: 400;
         transition: 0.25s;
         border: 1px solid var(--sage);
       }
       .btn:hover {
         background: var(--sage-dp);
         border-color: var(--sage-dp);
+        transform: translateY(-2px);
+      }
+      .btn.dk {
+        background: #5f5c58;
+        border-color: #5f5c58;
+      }
+      .btn.dk:hover {
+        background: #46443f;
+        border-color: #46443f;
       }
       .btn.gold {
         background: var(--gold);
         border-color: var(--gold);
       }
-      .btn.gold:hover {
-        background: #8e6830;
-        border-color: #8e6830;
-      }
-      .btn.line {
-        background: transparent;
-        color: var(--gold);
-        border: 1px solid var(--gold-lt);
-      }
-      .btn.line:hover {
-        background: var(--gold);
-        color: #fff;
-        border-color: var(--gold);
-      }
-      .btn.white {
-        background: #fff;
-        color: var(--ink);
-        border-color: #fff;
-      }
-      .btn.white:hover {
-        background: transparent;
-        color: #fff;
-        border-color: #fff;
-      }
-      .tlink {
-        font-size: 12.5px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--gold);
-        border-bottom: 1px solid var(--gold-lt);
-        padding-bottom: 3px;
-        transition: 0.2s;
-      }
-      .tlink:hover {
-        color: var(--ink);
-        border-color: var(--ink);
+      .btn.pink {
+        background: #c4a0b4;
+        border-color: #c4a0b4;
       }
 
-      /* mark */
-      .mark {
-        width: 26px;
-        height: 34px;
-        position: relative;
-        display: inline-block;
-      }
-      .mark:before,
-      .mark:after {
-        content: "";
-        position: absolute;
+      /* ===== NAV (live) ===== */
+      .nav {
+        border-bottom: 1px solid #cfc5bb;
+        background: var(--cream);
+        position: sticky;
         top: 0;
-        bottom: 0;
-        width: 1.5px;
-        background: var(--gold-lt);
+        z-index: 90;
       }
-      .mark:before {
-        left: 5px;
-        transform: skewX(13deg);
-      }
-      .mark:after {
-        right: 5px;
-        transform: skewX(-13deg);
-      }
-      .divider {
+      .nav .wrap {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 22px;
-        margin: 0 auto;
-        max-width: 640px;
+        justify-content: space-between;
+        height: 84px;
+        gap: 24px;
       }
-      .divider span {
-        flex: 1;
-        height: 1px;
-        background: var(--line);
+      .nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 0;
+      }
+      .nav li a {
+        font-size: 13.5px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #55524e;
+        padding: 0 22px;
+        border-right: 1px solid #cfc5bb;
+        transition: color 0.25s;
+        white-space: nowrap;
+      }
+      .nav ul li:last-child a {
+        border-right: none;
+      }
+      .nav li a:hover {
+        color: var(--gold);
+      }
+      .navlogo {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 32px;
+        letter-spacing: 0.1em;
+        color: #6e6a65;
+        white-space: nowrap;
+        font-weight: 300;
+      }
+      .navlogo b {
+        color: var(--gold);
+        font-weight: 300;
       }
 
-      /* hero */
+      /* ===== HERO (live: text left, image right) ===== */
       .hero {
-        background: linear-gradient(180deg, #f3eee9 0%, #efe8e1 100%);
-        padding: 104px 0 118px;
+        padding: 64px 0 76px;
       }
-      .hero-grid {
+      .hero .g {
         display: grid;
-        grid-template-columns: 1.02fr 1.18fr;
-        gap: 70px;
+        grid-template-columns: 0.78fr 1.55fr;
+        gap: 52px;
         align-items: center;
       }
-      .hero-img {
-        aspect-ratio: 4/3.1;
-        background:
-          linear-gradient(
-            140deg,
-            rgba(255, 255, 255, 0.5),
-            rgba(255, 255, 255, 0)
-          ),
-          repeating-linear-gradient(115deg, #e4dbd1 0 3px, #ded4c9 3px 6px);
-        position: relative;
-        box-shadow: 0 30px 60px -34px rgba(60, 48, 38, 0.42);
+      .hero h1 {
+        font-size: clamp(40px, 4.4vw, 58px);
       }
-      .hero-img:after {
-        content: "WORKSPACE PHOTOGRAPHY";
+      .hero h1 em {
+        font-style: normal;
+        color: var(--gold);
+        display: block;
+        letter-spacing: 0.02em;
+      }
+      .hero p {
+        font-size: 17px;
+        color: #4f4a44;
+        max-width: 42ch;
+      }
+      .hero .im {
+        aspect-ratio: 16/10.4;
+        background: repeating-linear-gradient(
+          118deg,
+          #e5dcd2 0 3px,
+          #dfd5ca 3px 6px
+        );
+        position: relative;
+      }
+      .hero .im:after {
+        content: "WORKSPACE IMAGE";
         position: absolute;
         inset: 0;
         display: flex;
@@ -293,182 +307,899 @@
         font-size: 11px;
         letter-spacing: 0.24em;
       }
-      .stats {
+
+      /* ===== X divider (live) ===== */
+      .xdiv {
         display: flex;
-        gap: 44px;
-        margin-top: 40px;
-        padding-top: 32px;
-        border-top: 1px solid var(--line);
+        align-items: center;
+        gap: 26px;
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 40px;
       }
-      .stat .n {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 38px;
-        color: var(--gold);
-        line-height: 1;
+      .xdiv span {
+        flex: 1;
+        height: 1px;
+        background: #cfc5bb;
       }
-      .stat .l {
-        font-size: 12px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-top: 8px;
+      .xmark {
+        width: 26px;
+        height: 36px;
+        position: relative;
+        flex: 0 0 26px;
+      }
+      .xmark:before,
+      .xmark:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #c9bb9c;
+      }
+      .xmark:before {
+        left: 5px;
+        transform: skewX(14deg);
+      }
+      .xmark:after {
+        right: 5px;
+        transform: skewX(-14deg);
       }
 
-      /* location cards */
-      .loc-grid {
+      /* ===== PHILOSOPHY (live MORE layout) ===== */
+      .phil {
+        padding: 70px 0 60px;
+      }
+      .phil .lbl {
+        text-align: center;
+        font-size: 19px;
+        letter-spacing: 0.06em;
+        color: #4a4640;
+        margin-bottom: 46px;
+        font-weight: 300;
+      }
+      .more {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 26px;
-        margin-top: 56px;
+        grid-template-columns: 1fr 96px 96px 1px 96px 96px 1fr;
+        align-items: start;
+        gap: 0;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 40px;
       }
-      .loc {
-        background: var(--ivory);
-        border: 1px solid var(--line);
-        transition: 0.3s;
+      .mdot {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
         display: flex;
-        flex-direction: column;
-        position: relative;
+        align-items: center;
+        justify-content: center;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 40px;
+        color: #fff;
+        box-shadow:
+          inset 0 -6px 14px rgba(0, 0, 0, 0.09),
+          0 8px 16px -8px rgba(60, 48, 38, 0.4);
       }
-      .loc-hit {
+      .d-m {
+        background: #d7cdb0;
+      }
+      .d-o {
+        background: #dcbfc0;
+      }
+      .d-r {
+        background: #b6c7c6;
+      }
+      .d-e {
+        background: #c6ac9b;
+      }
+      .vline {
+        background: #cfc5bb;
+        align-self: stretch;
+        min-height: 330px;
+      }
+      .mtxt h4 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #2e2a27;
+        line-height: 1.25;
+      }
+      .mtxt p {
+        font-size: 15.5px;
+        color: #4f4a44;
+        margin-top: 14px;
+        line-height: 1.75;
+      }
+      .m1 {
+        text-align: right;
+        padding-right: 34px;
+        padding-top: 52px;
+      }
+      .m2 {
+        text-align: right;
+        padding-right: 34px;
+        padding-top: 186px;
+        grid-column: 1/3;
+        justify-self: end;
+        max-width: 330px;
+      }
+      .m3 {
+        padding-left: 34px;
+        padding-top: 186px;
+        grid-column: 5/8;
+        max-width: 340px;
+      }
+      .m4 {
+        padding-left: 34px;
+        padding-top: 52px;
+      }
+      .hashtag {
+        text-align: center;
+        font-family: "Jost", sans-serif;
+        font-size: 44px;
+        font-weight: 400;
+        letter-spacing: 0.14em;
+        color: #dbcfbc;
+        margin-top: 48px;
+      }
+
+      /* ===== STORY (live: collage left, text right) ===== */
+      .story .g {
+        display: grid;
+        grid-template-columns: 1.02fr 1fr;
+        gap: 0;
+        align-items: stretch;
+      }
+      .coll {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 4px;
+      }
+      .coll div {
+        background: repeating-linear-gradient(
+          122deg,
+          #e5dcd2 0 3px,
+          #dfd5ca 3px 6px
+        );
+        position: relative;
+        min-height: 230px;
+      }
+      .coll div:nth-child(2) {
+        grid-row: span 2;
+      }
+      .coll div:after {
+        content: attr(data-c);
         position: absolute;
         inset: 0;
-        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #a79a8c;
+        font-size: 10px;
+        letter-spacing: 0.18em;
+        text-align: center;
+        padding: 12px;
       }
-      .loc-hit:hover ~ .body h3 {
+      .stxt {
+        padding: 0 0 0 54px;
+      }
+      .stxt h2 {
+        font-size: clamp(34px, 3.4vw, 46px);
+      }
+      .stxt h2 b {
+        display: block;
+        color: var(--gold);
+        font-weight: 400;
+        letter-spacing: 0.02em;
+      }
+      .stxt p {
+        color: #4f4a44;
+        margin-top: 22px;
+      }
+      .explore {
+        margin-top: 24px;
+        font-size: 14.5px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        line-height: 2.1;
+      }
+      .explore a {
         color: var(--gold);
       }
-      .loc:hover {
-        border-color: var(--gold-lt);
-        transform: translateY(-4px);
-        box-shadow: 0 22px 40px -30px rgba(60, 48, 38, 0.4);
+      .explore i {
+        font-style: normal;
+        color: #c4b8a9;
+        margin: 0 8px;
       }
-      .loc .img {
-        aspect-ratio: 4/3;
+      .sbot {
+        display: grid;
+        grid-template-columns: 0.72fr 1.28fr;
+        gap: 4px;
+        margin-top: 4px;
+      }
+      .sbot div {
         background: repeating-linear-gradient(
-          125deg,
-          #e7ded4 0 3px,
-          #e1d7cc 3px 6px
+          122deg,
+          #e5dcd2 0 3px,
+          #dfd5ca 3px 6px
+        );
+        min-height: 200px;
+        position: relative;
+      }
+      .sbot div:after {
+        content: attr(data-c);
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #a79a8c;
+        font-size: 10px;
+        letter-spacing: 0.18em;
+      }
+
+      /* ===== BANNER (live) ===== */
+      .banner {
+        position: relative;
+        min-height: 290px;
+        background: repeating-linear-gradient(
+          96deg,
+          #d9cfc3 0 6px,
+          #d2c7ba 6px 12px
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .banner.tall {
+        min-height: 340px;
+      }
+
+      /* ===== PLANS (live: 2 cards, vertical rule) ===== */
+      .plans .head {
+        text-align: center;
+        max-width: 820px;
+        margin: 0 auto 52px;
+      }
+      .plans h2 {
+        font-size: clamp(34px, 3.8vw, 50px);
+        letter-spacing: 0.04em;
+      }
+      .plans h2 .x {
+        color: #9a928a;
+        margin: 0 12px;
+      }
+      .plans .head p {
+        color: #4f4a44;
+        margin-top: 18px;
+      }
+      .two {
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr;
+        gap: 0;
+        align-items: start;
+      }
+      .two .rule {
+        background: #3e3a36;
+        align-self: stretch;
+        min-height: 440px;
+      }
+      .pcard {
+        padding: 0 56px;
+        text-align: center;
+      }
+      .pcard .im {
+        aspect-ratio: 16/11;
+        background: repeating-linear-gradient(
+          122deg,
+          #e5dcd2 0 3px,
+          #dfd5ca 3px 6px
         );
         position: relative;
       }
-      .loc .img:after {
+      .pcard .im:after {
+        content: attr(data-c);
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #a79a8c;
+        font-size: 10px;
+        letter-spacing: 0.18em;
+      }
+      .pcard .btn {
+        margin-top: 34px;
+      }
+
+      /* ===== MEETINGS (live: coffee left, text right) ===== */
+      .meet .g {
+        display: grid;
+        grid-template-columns: 0.42fr 1.58fr;
+        gap: 26px;
+        align-items: start;
+      }
+      .coffee {
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 42% 38%,
+          #c08a4e 0 34%,
+          #8b5a2b 34% 46%,
+          #1e3a44 46% 100%
+        );
+        box-shadow: 0 22px 40px -22px rgba(30, 58, 68, 0.6);
+      }
+      .meet h2 {
+        font-size: clamp(32px, 3.6vw, 48px);
+        letter-spacing: 0.04em;
+        text-align: right;
+      }
+      .meet h2 .x {
+        color: #9a928a;
+        margin: 0 12px;
+      }
+      .meet .g p {
+        text-align: right;
+        color: #4f4a44;
+        margin-top: 20px;
+      }
+      .meet .im {
+        margin-top: 34px;
+        aspect-ratio: 21/8.4;
+        background: repeating-linear-gradient(
+          122deg,
+          #e5dcd2 0 3px,
+          #dfd5ca 3px 6px
+        );
+        border: 1px solid var(--line);
+        position: relative;
+      }
+      .meet .im:after {
+        content: "MEETING ROOM IMAGE";
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #a79a8c;
+        font-size: 11px;
+        letter-spacing: 0.22em;
+      }
+
+      /* ===== MEMBERSHIP (live: 4 colour blocks) ===== */
+      .mem .head {
+        text-align: center;
+        max-width: 880px;
+        margin: 0 auto 46px;
+      }
+      .mem h2 {
+        font-size: clamp(30px, 3.2vw, 42px);
+      }
+      .mem h2 .t {
+        display: block;
+        font-size: 0.62em;
+        color: var(--ink);
+        letter-spacing: 0.01em;
+      }
+      .mem h2 .b {
+        color: var(--gold);
+        letter-spacing: 0.04em;
+      }
+      .mem .head p {
+        color: #4f4a44;
+        margin-top: 18px;
+      }
+      .memgrid {
+        border: 1px solid var(--line);
+        padding: 22px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+      }
+      .mcard {
+        padding: 48px 26px 54px;
+        text-align: center;
+        transition: 0.35s cubic-bezier(0.16, 0.84, 0.44, 1);
+      }
+      .mcard:hover {
+        transform: translateY(-5px);
+      }
+      .m-a {
+        background: #cfc5a8;
+      }
+      .m-b {
+        background: #d9b6b6;
+      }
+      .m-c {
+        background: #b5c7c7;
+      }
+      .m-d {
+        background: #c9a282;
+      }
+      .mcard h3 {
+        font-size: 25px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #2e2a27;
+      }
+      .mcard h3 small {
+        display: block;
+        font-family: "Jost", sans-serif;
+        font-size: 14px;
+        text-transform: none;
+        letter-spacing: 0;
+        color: #fff;
+        margin-top: 6px;
+        font-weight: 300;
+      }
+      .mcard .w {
+        color: #fff;
+        font-size: 15px;
+        margin-top: 26px;
+      }
+      .mcard .w b {
+        display: block;
+        font-size: 23px;
+        font-weight: 400;
+        margin-top: 2px;
+      }
+      .mcard .at {
+        color: #fff;
+        font-size: 15px;
+        margin-top: 14px;
+      }
+      .mcard .pz {
+        font-family: "Jost", sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        color: #6e5a3a;
+        margin-top: 4px;
+      }
+      .m-b .pz {
+        color: #7e4e4e;
+      }
+      .m-c .pz {
+        color: #3f5b5b;
+      }
+      .m-d .pz {
+        color: #6b4520;
+      }
+
+      /* ===== TESTIMONIAL (live: card left, title right) ===== */
+      .test .g {
+        display: grid;
+        grid-template-columns: 1.35fr 0.65fr;
+        gap: 0;
+        align-items: center;
+      }
+      .tcard {
+        background: #fff;
+        padding: 56px 64px 46px;
+        text-align: center;
+        position: relative;
+      }
+      .tcard p {
+        font-size: 18px;
+        font-style: italic;
+        color: #3e3a36;
+        line-height: 1.75;
+        max-width: none;
+      }
+      .tcard .who {
+        color: var(--gold);
+        font-family: "Cormorant Garamond", serif;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-top: 26px;
+      }
+      .tav {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 26px;
+      }
+      .tav i {
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        background: repeating-linear-gradient(
+          122deg,
+          #e5dcd2 0 3px,
+          #dfd5ca 3px 6px
+        );
+        display: block;
+      }
+      .arw {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: var(--gold);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        border: 2px solid #c9a24a;
+        cursor: pointer;
+        transition: 0.25s;
+      }
+      .arw:hover {
+        background: #8e6830;
+      }
+      .arw.l {
+        left: -26px;
+      }
+      .arw.r {
+        right: -26px;
+      }
+      .ttl2 {
+        padding-left: 56px;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 46px;
+        line-height: 1.18;
+        color: var(--ink);
+        font-weight: 300;
+      }
+      .ttl2 b {
+        display: block;
+        color: var(--gold);
+        font-weight: 400;
+        letter-spacing: 0.03em;
+      }
+
+      /* ===== BLOG (live: 4 cards) ===== */
+      .blog h2 {
+        text-align: center;
+        font-size: clamp(30px, 3.4vw, 44px);
+        letter-spacing: 0.05em;
+        color: var(--gold);
+        margin-bottom: 44px;
+      }
+      .bgrid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 26px;
+      }
+      .bcard .im {
+        aspect-ratio: 16/10;
+        background: repeating-linear-gradient(
+          122deg,
+          #e5dcd2 0 3px,
+          #dfd5ca 3px 6px
+        );
+        position: relative;
+      }
+      .bcard .im:after {
+        content: "POST IMAGE";
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #a79a8c;
+        font-size: 10px;
+        letter-spacing: 0.18em;
+      }
+      .bcard h3 {
+        font-size: 21px;
+        color: var(--gold);
+        margin-top: 16px;
+        line-height: 1.35;
+      }
+      .blog .btn {
+        margin-top: 36px;
+      }
+
+      /* ===== CONTACT (live) ===== */
+      .contact {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 56px 60px;
+      }
+      .contact .g {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 56px;
+        align-items: start;
+      }
+      .contact h2 {
+        font-size: 40px;
+      }
+      .pencil {
+        width: 74%;
+        height: 16px;
+        border-radius: 8px;
+        background: linear-gradient(
+          90deg,
+          #3e3a36 0 12%,
+          #4a4641 12% 88%,
+          #2e2a27 88% 100%
+        );
+        margin-top: 56px;
+        transform: rotate(-27deg);
+        transform-origin: left center;
+        box-shadow: 0 14px 22px -14px rgba(0, 0, 0, 0.5);
+      }
+      .req {
+        font-size: 13.5px;
+        color: #6e655c;
+        margin-bottom: 26px;
+      }
+      .req b {
+        color: #b94c4c;
+        font-weight: 400;
+      }
+      .frow {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 22px;
+      }
+      .frow label {
+        font-size: 15.5px;
+        color: #6e655c;
+      }
+      .frow label b {
+        color: #b94c4c;
+        font-weight: 400;
+      }
+      .frow input,
+      .frow select,
+      .frow textarea {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #c9bfb5;
+        background: transparent;
+        padding: 9px 2px;
+        font-family: "Jost", sans-serif;
+        font-size: 15.5px;
+        color: var(--ink);
+        font-weight: 300;
+        transition: border-color 0.3s;
+      }
+      .frow input:focus,
+      .frow select:focus,
+      .frow textarea:focus {
+        outline: none;
+        border-bottom-color: var(--gold);
+      }
+      .frow textarea {
+        resize: vertical;
+        min-height: 96px;
+      }
+      .frow.top {
+        align-items: start;
+      }
+      .frow.top label {
+        padding-top: 10px;
+      }
+      .capt {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        border: 1px solid #d8d2cc;
+        background: #f7f5f3;
+        padding: 16px 20px;
+        margin: 6px 0 26px;
+        max-width: 330px;
+      }
+      .capt .bx {
+        width: 24px;
+        height: 24px;
+        border: 2px solid #c3bbb2;
+        background: #fff;
+        flex: 0 0 24px;
+      }
+      .capt span {
+        font-size: 14.5px;
+        color: #5f574f;
+      }
+      .capt em {
+        margin-left: auto;
+        font-style: normal;
+        font-size: 10px;
+        color: var(--muted);
+        letter-spacing: 0.06em;
+        text-align: right;
+        line-height: 1.3;
+      }
+
+      /* ===== NEW SECTIONS (appended, styled to match) ===== */
+      .newmark {
+        text-align: center;
+        margin-bottom: 14px;
+      }
+      .newmark span {
+        display: inline-block;
+        font-size: 10.5px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #9a8f84;
+        border: 1px solid var(--line);
+        padding: 6px 16px;
+        border-radius: 20px;
+        background: var(--ivory);
+      }
+      .sechead {
+        text-align: center;
+        max-width: 860px;
+        margin: 0 auto 46px;
+      }
+      .sechead h2 {
+        font-size: clamp(30px, 3.4vw, 44px);
+        letter-spacing: 0.04em;
+      }
+      .sechead h2 .x {
+        color: #9a928a;
+        margin: 0 12px;
+      }
+      .sechead p {
+        color: #4f4a44;
+        margin-top: 18px;
+      }
+
+      .locgrid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+      .loc {
+        background: #fff;
+        border: 1px solid var(--line);
+        display: flex;
+        flex-direction: column;
+        transition: 0.35s cubic-bezier(0.16, 0.84, 0.44, 1);
+        position: relative;
+        color: inherit;
+      }
+      .loc:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 24px 42px -30px rgba(60, 48, 38, 0.45);
+      }
+      .loc .im {
+        aspect-ratio: 4/3;
+        background: repeating-linear-gradient(
+          122deg,
+          #e5dcd2 0 3px,
+          #dfd5ca 3px 6px
+        );
+        position: relative;
+      }
+      .loc .im:after {
         content: attr(data-l);
         position: absolute;
-        left: 18px;
-        bottom: 16px;
-        background: rgba(255, 255, 255, 0.94);
+        left: 16px;
+        bottom: 14px;
+        background: rgba(255, 255, 255, 0.95);
         color: var(--ink);
-        font-size: 10.5px;
+        font-size: 10px;
         letter-spacing: 0.16em;
         text-transform: uppercase;
-        padding: 6px 14px;
+        padding: 6px 13px;
       }
-      .loc .body {
-        padding: 26px 24px 28px;
+      .loc .bd {
+        padding: 24px 24px 26px;
         flex: 1;
         display: flex;
         flex-direction: column;
       }
       .loc h3 {
-        font-size: 21px;
+        font-size: 20px;
         margin-bottom: 6px;
       }
-      .loc .addr {
+      .loc .ad {
         font-size: 14px;
         color: #6e655c;
         line-height: 1.6;
-        margin-bottom: 18px;
+        margin-bottom: 16px;
       }
-      .loc .rows {
-        border-top: 1px solid var(--line);
-        padding-top: 16px;
-        margin-top: auto;
-      }
-      .loc .row {
+      .loc .rw {
         display: flex;
         justify-content: space-between;
-        gap: 12px;
+        gap: 10px;
         font-size: 13px;
-        padding: 5px 0;
         color: var(--muted);
+        padding: 4px 0;
+        border-top: 1px solid var(--line);
       }
-      .loc .row b {
+      .loc .rw b {
         font-weight: 400;
         color: #6e655c;
         text-align: right;
       }
-      .loc .cta {
-        margin-top: 20px;
+      .loc .go {
+        margin-top: 16px;
+        font-size: 12px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--gold);
+        border-bottom: 1px solid var(--gold-lt);
+        padding-bottom: 3px;
+        align-self: flex-start;
       }
 
-      /* solutions */
-      .sol-grid {
+      .solgrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2px;
-        margin-top: 56px;
         background: var(--line);
         border: 1px solid var(--line);
       }
       .sol {
-        background: var(--cream);
-        padding: 44px 38px;
+        background: #fff;
+        padding: 38px 34px;
         transition: 0.3s;
+        display: block;
+        color: inherit;
         position: relative;
-      }
-      .alt .sol {
-        background: var(--ivory);
+        overflow: hidden;
       }
       .sol:hover {
-        background: #fff;
+        background: #fffdfb;
       }
-      .sol .idx {
+      .sol:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background: var(--gold-lt);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s cubic-bezier(0.16, 0.84, 0.44, 1);
+      }
+      .sol:hover:after {
+        transform: scaleX(1);
+      }
+      .sol .ix {
         font-family: "Cormorant Garamond", serif;
         font-size: 15px;
         color: var(--gold-lt);
         letter-spacing: 0.1em;
       }
       .sol h3 {
-        margin: 14px 0 10px;
+        font-size: 21px;
+        margin: 12px 0 9px;
+        transition: color 0.3s;
+      }
+      .sol:hover h3 {
+        color: var(--gold);
       }
       .sol p {
-        font-size: 15px;
+        font-size: 14.5px;
         color: #6e655c;
-        margin-bottom: 0;
-      }
-      .sol .tagx {
-        display: inline-block;
-        margin-top: 18px;
-        font-size: 11px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--muted);
-        border-top: 1px solid var(--line);
-        padding-top: 12px;
-        width: 100%;
+        margin: 0;
       }
 
-      /* audience */
-      .aud-grid {
+      .audgrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 26px;
-        margin-top: 56px;
+        gap: 24px;
       }
       .aud {
-        padding: 36px 32px;
-        background: var(--ivory);
+        background: #fff;
+        border: 1px solid var(--line);
         border-left: 2px solid var(--sage);
-        transition: 0.3s;
-      }
-      .alt .aud {
-        background: var(--cream);
+        padding: 30px 30px;
+        transition: 0.35s;
       }
       .aud:nth-child(2) {
         border-left-color: var(--gold-lt);
       }
       .aud:nth-child(3) {
-        border-left-color: var(--blush);
+        border-left-color: #d8bfc0;
       }
       .aud:nth-child(4) {
         border-left-color: var(--slate);
@@ -483,142 +1214,77 @@
         transform: translateX(4px);
       }
       .aud h4 {
-        margin-bottom: 10px;
-        font-size: 17.5px;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--ink);
+        margin-bottom: 8px;
       }
       .aud p {
         font-size: 14.5px;
         color: #6e655c;
-        margin-bottom: 0;
+        margin: 0;
       }
 
-      /* why - editorial split */
-      .why-grid {
+      .amgrid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0;
-        margin-top: 56px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      .why {
-        padding: 40px 38px;
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      }
-      .why:nth-child(even) {
-        border-right: none;
-      }
-      .why:nth-child(5),
-      .why:nth-child(6) {
-        border-bottom: none;
-      }
-      .why .n {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 15px;
-        color: #b9c4c9;
-        letter-spacing: 0.12em;
-      }
-      .why h4 {
-        margin: 12px 0 10px;
-        font-size: 20px;
-        font-family: "Cormorant Garamond", serif;
-        font-weight: 400;
-      }
-      .why p {
-        font-size: 15px;
-        margin-bottom: 0;
-      }
-
-      /* amenities */
-      .am-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2px;
-        margin-top: 56px;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1px;
         background: var(--line);
         border: 1px solid var(--line);
-      }
-      .am {
-        background: var(--ivory);
-        padding: 30px 28px;
-      }
-      .alt .am {
-        background: var(--cream);
-      }
-      .am h4 {
-        font-size: 15.5px;
-        margin-bottom: 8px;
-        display: flex;
-        align-items: baseline;
-        gap: 10px;
-      }
-      .am h4 i {
-        font-style: normal;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 13px;
-        color: var(--gold-lt);
-      }
-      .am p {
-        font-size: 13.5px;
-        color: var(--muted);
-        margin-bottom: 0;
-        line-height: 1.6;
-      }
-
-      /* pricing */
-      .plan-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
-        margin-top: 56px;
-      }
-      .plan {
-        background: var(--ivory);
-        border: 1px solid var(--line);
-        padding: 38px 30px;
-        text-align: center;
-        transition: 0.3s;
-        display: block;
-        color: inherit;
-        text-decoration: none;
-      }
-      .plan:hover {
-        border-color: var(--gold-lt);
-        box-shadow: 0 22px 40px -30px rgba(60, 48, 38, 0.4);
-      }
-      .plan .top {
-        width: 36px;
-        height: 2px;
-        background: var(--gold-lt);
-        margin: 0 auto 22px;
-      }
-      .plan:nth-child(2) .top {
-        background: var(--sage);
-      }
-      .plan:nth-child(3) .top {
-        background: var(--blush);
-      }
-      .plan:nth-child(4) .top {
-        background: var(--slate);
-      }
-      .plan h3 {
-        font-size: 22px;
-        margin-bottom: 10px;
-      }
-      .plan p {
-        font-size: 14.5px;
-        color: #6e655c;
+        max-width: 1020px;
         margin: 0 auto;
       }
-      .factors {
+      .am {
+        background: #fff;
+        aspect-ratio: 1;
+        padding: 16px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: 0.3s;
+        cursor: default;
+      }
+      .am:hover {
+        background: #fbf7f2;
+      }
+      .am .ic {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #dde4dc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 11px;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 14px;
+        color: #4e5f4c;
+        transition: 0.35s cubic-bezier(0.16, 0.84, 0.44, 1);
+      }
+      .am:hover .ic {
+        background: #c6d2c4;
+        transform: translateY(-3px);
+      }
+      .am h4 {
+        font-size: 12.5px;
+        font-weight: 400;
+        color: var(--ink);
+        letter-spacing: 0.02em;
+        line-height: 1.35;
+        margin: 0;
+      }
+
+      .facg {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 0;
-        margin-top: 52px;
         border-top: 1px solid var(--line);
+        margin-top: 44px;
       }
       .fac {
-        padding: 32px 26px 0;
+        padding: 30px 24px 0;
         border-right: 1px solid var(--line);
       }
       .fac:last-child {
@@ -626,247 +1292,25 @@
       }
       .fac .n {
         font-family: "Cormorant Garamond", serif;
-        font-size: 30px;
+        font-size: 28px;
         color: var(--gold-lt);
         line-height: 1;
       }
       .fac h4 {
-        margin: 14px 0 8px;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--ink);
+        margin: 12px 0 7px;
       }
       .fac p {
         font-size: 14px;
         color: #6e655c;
-        margin-bottom: 0;
+        margin: 0;
       }
 
-      /* philosophy */
-      .phil-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 34px;
-        margin-top: 60px;
-      }
-      .phil {
-        text-align: center;
-        padding: 0 14px;
-      }
-      .phil .dot {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin: 0 auto 22px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 22px;
-        color: #fff;
-      }
-      .phil:nth-child(1) .dot {
-        background: #cfc6a8;
-        color: #5e5638;
-      }
-      .phil:nth-child(2) .dot {
-        background: #d8bfc0;
-        color: #6e4b4c;
-      }
-      .phil:nth-child(3) .dot {
-        background: #b4c6c6;
-        color: #3f5656;
-      }
-      .phil:nth-child(4) .dot {
-        background: #c9a882;
-        color: #5c3c18;
-      }
-      .phil:nth-child(5) .dot {
-        background: #b7c0b0;
-        color: #454e3e;
-      }
-      .phil:nth-child(6) .dot {
-        background: #c3b7c6;
-        color: #4e4152;
-      }
-      .phil h4 {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 21px;
-        font-weight: 400;
-        margin-bottom: 10px;
-      }
-      .phil p {
-        font-size: 14.5px;
-        color: #6e655c;
-        margin: 0 auto;
-      }
-      .hashtag {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 44px;
-        letter-spacing: 0.14em;
-        color: #dccfbd;
-        text-align: center;
-        margin-top: 64px;
-      }
-
-      /* story */
-      .story-grid {
-        display: grid;
-        grid-template-columns: 1.05fr 1fr;
-        gap: 66px;
-        align-items: center;
-        margin-top: 16px;
-      }
-      .collage {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 170px 130px;
-        gap: 12px;
-      }
-      .collage div {
-        background: repeating-linear-gradient(
-          120deg,
-          #e7ded4 0 3px,
-          #e1d7cc 3px 6px
-        );
-        position: relative;
-      }
-      .collage div:first-child {
-        grid-row: span 2;
-        background: repeating-linear-gradient(
-          120deg,
-          #e3dad0 0 3px,
-          #ddd3c8 3px 6px
-        );
-      }
-      .collage div:after {
-        content: attr(data-c);
-        position: absolute;
-        inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #a79a8c;
-        font-size: 10px;
-        letter-spacing: 0.18em;
-        text-align: center;
-        padding: 10px;
-      }
-      .pullq {
-        font-family: "Cormorant Garamond", serif;
-        font-style: italic;
-        font-size: 26px;
-        line-height: 1.5;
-        color: var(--gold);
-        margin: 28px 0;
-        padding-left: 24px;
-        border-left: 2px solid var(--gold-lt);
-      }
-
-      /* trust */
-      .quote-card {
-        background: var(--ivory);
-        border: 1px solid var(--line);
-        padding: 58px 62px;
-        margin-top: 52px;
-        position: relative;
-        text-align: center;
-      }
-      .quote-card:before {
-        content: "\201C";
-        position: absolute;
-        top: 6px;
-        left: 36px;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 110px;
-        color: #e8decf;
-        line-height: 1;
-      }
-      .quote-card p {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 25px;
-        font-style: italic;
-        line-height: 1.55;
-        color: var(--ink);
-        position: relative;
-        max-width: none;
-      }
-      .quote-card .who {
-        font-family: "Jost", sans-serif;
-        font-style: normal;
-        font-size: 12px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--gold);
-        margin-top: 26px;
-      }
-      .avatars {
-        display: flex;
-        justify-content: center;
-        gap: 14px;
-        margin-top: 32px;
-      }
-      .avatars i {
-        width: 52px;
-        height: 52px;
-        border-radius: 50%;
-        background: repeating-linear-gradient(
-          120deg,
-          #e4dbd1 0 3px,
-          #ded4c9 3px 6px
-        );
-        display: block;
-        border: 2px solid var(--ivory);
-      }
-      .proof {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2px;
-        margin-top: 34px;
-        background: var(--line);
-        border: 1px solid var(--line);
-      }
-      .pf {
-        background: var(--ivory);
-        padding: 30px 24px;
-        text-align: center;
-      }
-      .alt .pf {
-        background: var(--cream);
-      }
-      .pf h4 {
-        font-size: 15px;
-        margin-bottom: 6px;
-      }
-      .pf p {
-        font-size: 13px;
-        color: var(--muted);
-        margin: 0 auto;
-      }
-      .logos {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 2px;
-        margin-top: 2px;
-        background: var(--line);
-        border: 1px solid var(--line);
-        border-top: none;
-      }
-      .logos div {
-        background: var(--ivory);
-        height: 88px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #b9ac9e;
-        font-size: 10px;
-        letter-spacing: 0.16em;
-      }
-      .alt .logos div {
-        background: var(--cream);
-      }
-
-      /* faq */
       .faq {
-        max-width: 900px;
-        margin: 52px auto 0;
+        max-width: 920px;
+        margin: 0 auto;
       }
       details {
         border-bottom: 1px solid var(--line);
@@ -876,373 +1320,96 @@
         border-top: 1px solid var(--line);
       }
       summary {
-        padding: 26px 46px 26px 0;
+        padding: 24px 46px 24px 0;
         cursor: pointer;
-        font-size: 18px;
+        font-size: 19px;
         color: var(--ink);
         list-style: none;
         position: relative;
-        font-weight: 400;
         font-family: "Cormorant Garamond", serif;
-        transition: 0.2s;
+        font-weight: 400;
+        transition: color 0.2s;
       }
       summary::-webkit-details-marker {
         display: none;
       }
-      summary:hover {
+      summary:hover,
+      details[open] summary {
         color: var(--gold);
       }
       summary:after {
         content: "+";
         position: absolute;
-        right: 6px;
-        top: 24px;
+        right: 4px;
+        top: 22px;
         color: var(--gold);
         font-size: 22px;
         font-family: "Jost", sans-serif;
         font-weight: 200;
-        transition: 0.2s;
-      }
-      details[open] summary {
-        color: var(--gold);
       }
       details[open] summary:after {
         content: "\2212";
       }
       details p {
-        padding: 0 60px 28px 0;
+        padding: 0 56px 26px 0;
         font-size: 15.5px;
-        margin: 0;
         color: #6e655c;
+        margin: 0;
       }
 
-      /* cta */
-      .cta-sec {
-        background: #5f6e77;
-        position: relative;
-      }
-      .cta-sec:before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: repeating-linear-gradient(
-          125deg,
-          rgba(255, 255, 255, 0.028) 0 2px,
-          transparent 2px 5px
-        );
-      }
-      .cta-sec .wrap {
-        position: relative;
-      }
-      .cta-grid {
+      .ctagrid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2px;
-        margin-top: 52px;
-        background: rgba(255, 255, 255, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: var(--line);
+        border: 1px solid var(--line);
       }
-      .cta-b {
-        background: #5f6e77;
-        padding: 40px 28px;
+      .ctab {
+        background: #fff;
+        padding: 34px 26px;
         text-align: center;
         transition: 0.3s;
-        cursor: pointer;
       }
-      .cta-b:hover {
-        background: #6b7a83;
+      .ctab:hover {
+        background: #fffdfb;
+        transform: translateY(-3px);
       }
-      .cta-b .n {
+      .ctab .n {
         font-family: "Cormorant Garamond", serif;
         font-size: 15px;
-        color: #b4c0c6;
+        color: var(--gold-lt);
         letter-spacing: 0.1em;
       }
-      .cta-b h4 {
-        margin: 14px 0 8px;
-        font-size: 19px;
+      .ctab h4 {
         font-family: "Cormorant Garamond", serif;
+        font-size: 19px;
         font-weight: 400;
+        color: var(--ink);
+        margin: 12px 0 7px;
       }
-      .cta-b p {
+      .ctab p {
         font-size: 13.5px;
-        color: #cdd5d9;
-        margin: 0 auto;
+        color: #6e655c;
+        margin: 0;
       }
 
-      /* ---- motion ---- */
-      @media (prefers-reduced-motion: no-preference) {
-        .rv {
-          opacity: 0;
-          transform: translateY(26px);
-          transition:
-            opacity 1s cubic-bezier(0.16, 0.84, 0.44, 1),
-            transform 1s cubic-bezier(0.16, 0.84, 0.44, 1);
-        }
-        .rv.in {
-          opacity: 1;
-          transform: none;
-        }
-        .rv.d1 {
-          transition-delay: 0.08s;
-        }
-        .rv.d2 {
-          transition-delay: 0.16s;
-        }
-        .rv.d3 {
-          transition-delay: 0.24s;
-        }
-        .rv.d4 {
-          transition-delay: 0.32s;
-        }
-        .rv.d5 {
-          transition-delay: 0.4s;
-        }
-        .rv.d6 {
-          transition-delay: 0.48s;
-        }
-        .hero h1 .ln {
-          display: block;
-          overflow: hidden;
-        }
-        .hero h1 .ln > span {
-          display: block;
-          transform: translateY(102%);
-          transition: transform 1.15s cubic-bezier(0.16, 0.84, 0.44, 1);
-        }
-        .hero.go h1 .ln > span {
-          transform: none;
-        }
-        .hero.go h1 .ln:nth-child(2) > span {
-          transition-delay: 0.11s;
-        }
-        .hero.go h1 em > span {
-          transition-delay: 0.22s;
-        }
-        .hero .eyebrow,
-        .hero .hr,
-        .hero .lede,
-        .hero .sub,
-        .hero .act {
-          opacity: 0;
-          transform: translateY(18px);
-          transition:
-            opacity 0.95s ease,
-            transform 0.95s cubic-bezier(0.16, 0.84, 0.44, 1);
-        }
-        .hero.go .eyebrow {
-          opacity: 1;
-          transform: none;
-          transition-delay: 0.05s;
-        }
-        .hero.go .hr {
-          opacity: 1;
-          transform: none;
-          transition-delay: 0.42s;
-        }
-        .hero.go .lede {
-          opacity: 1;
-          transform: none;
-          transition-delay: 0.5s;
-        }
-        .hero.go .sub {
-          opacity: 1;
-          transform: none;
-          transition-delay: 0.58s;
-        }
-        .hero.go .act {
-          opacity: 1;
-          transform: none;
-          transition-delay: 0.66s;
-        }
-        .hero-img {
-          clip-path: inset(0 0 100% 0);
-          transition: clip-path 1.5s cubic-bezier(0.16, 0.84, 0.44, 1) 0.2s;
-        }
-        .hero.go .hero-img {
-          clip-path: inset(0 0 0 0);
-        }
-        .hr {
-          transform-origin: left;
-          transform: scaleX(0);
-          transition: transform 0.9s cubic-bezier(0.16, 0.84, 0.44, 1) 0.25s;
-        }
-        .center .hr {
-          transform-origin: center;
-        }
-        .rv.in .hr,
-        .hero.go .hr {
-          transform: scaleX(1);
-        }
-      }
-      /* ---- polish ---- */
-      .hero h1 {
-        letter-spacing: -0.018em;
-      }
-      h2 {
-        letter-spacing: -0.008em;
-      }
-      .eyebrow:before {
-        transition: width 0.8s cubic-bezier(0.16, 0.84, 0.44, 1) 0.1s;
-      }
-      .rv .eyebrow:before {
-        width: 0;
-      }
-      .rv.in .eyebrow:before,
-      .hero.go .eyebrow:before {
-        width: 34px;
-      }
-      .lede {
-        font-weight: 300;
-      }
-      .sol {
-        overflow: hidden;
-      }
-      .sol:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 2px;
-        background: var(--gold-lt);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.55s cubic-bezier(0.16, 0.84, 0.44, 1);
-      }
-      .sol:hover:after {
-        transform: scaleX(1);
-      }
-      .sol h3 {
-        transition: color 0.3s;
-      }
-      .sol:hover h3 {
-        color: var(--gold);
-      }
-      .loc .img {
-        overflow: hidden;
-      }
-      .loc .img:before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(166, 124, 61, 0.07);
-        opacity: 0;
-        transition: opacity 0.45s;
-      }
-      .loc:hover .img:before {
-        opacity: 1;
-      }
-      .aud {
-        transition:
-          transform 0.4s cubic-bezier(0.16, 0.84, 0.44, 1),
-          border-color 0.4s,
-          background 0.4s;
-      }
-      .plan {
-        transition:
-          transform 0.4s cubic-bezier(0.16, 0.84, 0.44, 1),
-          border-color 0.4s,
-          box-shadow 0.4s;
-      }
-      .plan:hover {
-        transform: translateY(-5px);
-      }
-      .plan .top {
-        transition: width 0.5s cubic-bezier(0.16, 0.84, 0.44, 1);
-      }
-      .plan:hover .top {
-        width: 60px;
-      }
-      .phil .dot {
-        transition: transform 0.5s cubic-bezier(0.16, 0.84, 0.44, 1);
-      }
-      .phil:hover .dot {
-        transform: translateY(-5px) scale(1.06);
-      }
-      .why {
-        transition: background 0.45s;
-      }
-      .why:hover {
-        background: rgba(255, 255, 255, 0.05);
-      }
-      .cta-b {
-        transition:
-          background 0.45s,
-          transform 0.45s cubic-bezier(0.16, 0.84, 0.44, 1);
-      }
-      .cta-b:hover {
-        transform: translateY(-4px);
-      }
-      .logos div {
-        transition:
-          color 0.35s,
-          background 0.35s;
-      }
-      .logos div:hover {
-        color: var(--gold);
-        background: #fff;
-      }
-      .btn {
-        transition:
-          background 0.3s,
-          border-color 0.3s,
-          color 0.3s,
-          transform 0.3s cubic-bezier(0.16, 0.84, 0.44, 1);
-      }
-      .btn:hover {
-        transform: translateY(-2px);
-      }
-      details {
-        transition: background 0.3s;
-      }
-      details[open] {
-        background: rgba(255, 255, 255, 0.4);
-      }
-      .quote-card:after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        width: 0;
-        height: 1px;
-        background: var(--gold-lt);
-        transform: translateX(-50%);
-        transition: width 1.1s cubic-bezier(0.16, 0.84, 0.44, 1) 0.3s;
-      }
-      .rv.in .quote-card:after,
-      .quote-card.in:after {
-        width: 120px;
-      }
-      .hashtag {
-        transition:
-          letter-spacing 1.2s cubic-bezier(0.16, 0.84, 0.44, 1),
-          opacity 1s;
-      }
-      .rv .hashtag {
-        letter-spacing: 0.3em;
-      }
-      .rv.in .hashtag {
-        letter-spacing: 0.14em;
-      }
-      /* ---- footer ---- */
+      /* ===== FOOTER (live) ===== */
       footer {
         background: #8496a0;
         color: #eef1f2;
-        padding: 78px 0 40px;
-        position: relative;
+        padding: 74px 0 40px;
+        margin-top: 70px;
       }
-      footer .fcols {
+      footer .fc {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        gap: 30px;
+        gap: 28px;
       }
       footer h5 {
         font-size: 19px;
         font-weight: 300;
-        letter-spacing: 0.02em;
         color: #fff;
-        margin-bottom: 26px;
+        margin-bottom: 24px;
         line-height: 1.25;
       }
       footer ul {
@@ -1250,22 +1417,18 @@
       }
       footer li {
         margin-bottom: 13px;
-        padding-left: 0;
       }
       footer li a {
         font-size: 15px;
-        font-weight: 300;
         color: #e6eaec;
-        transition:
-          color 0.25s,
-          padding-left 0.25s;
+        transition: 0.25s;
       }
       footer li a:hover {
         color: #fff;
         padding-left: 5px;
       }
-      footer .fbtm {
-        margin-top: 64px;
+      footer .fb {
+        margin-top: 60px;
         display: grid;
         grid-template-columns: 1fr auto 1fr;
         gap: 36px;
@@ -1289,13 +1452,12 @@
         letter-spacing: 0.2em;
         color: #dde3e6;
         margin-top: 9px;
-        font-weight: 300;
       }
       .faddr {
         font-size: 15px;
         color: #e2e7ea;
         line-height: 1.65;
-        margin-top: 26px;
+        margin-top: 24px;
         max-width: 44ch;
       }
       .fcopy {
@@ -1309,9 +1471,8 @@
       }
       .fsoc .h {
         font-size: 14.5px;
-        letter-spacing: 0.06em;
         color: #fff;
-        margin-bottom: 16px;
+        margin-bottom: 15px;
       }
       .fsoc .ic {
         display: flex;
@@ -1328,23 +1489,110 @@
         align-items: center;
         justify-content: center;
         font-size: 16px;
-        font-weight: 400;
-        transition:
-          transform 0.3s cubic-bezier(0.16, 0.84, 0.44, 1),
-          background 0.3s;
+        transition: 0.3s;
       }
       .fsoc .ic a:hover {
         transform: translateY(-3px);
         background: #e8c99a;
       }
-      @media (max-width: 1024px) {
-        footer .fcols {
-          grid-template-columns: repeat(3, 1fr);
-          gap: 34px;
+
+      /* motion */
+      @media (prefers-reduced-motion: no-preference) {
+        .rv {
+          opacity: 0;
+          transform: translateY(22px);
+          transition:
+            opacity 0.9s cubic-bezier(0.16, 0.84, 0.44, 1),
+            transform 0.9s cubic-bezier(0.16, 0.84, 0.44, 1);
         }
-        footer .fbtm {
+        .rv.in {
+          opacity: 1;
+          transform: none;
+        }
+        .rv.d1 {
+          transition-delay: 0.07s;
+        }
+        .rv.d2 {
+          transition-delay: 0.14s;
+        }
+        .rv.d3 {
+          transition-delay: 0.21s;
+        }
+        .rv.d4 {
+          transition-delay: 0.28s;
+        }
+        .rv.d5 {
+          transition-delay: 0.35s;
+        }
+      }
+
+      @media (max-width: 1100px) {
+        .nav ul {
+          display: none;
+        }
+        .hero .g,
+        .story .g,
+        .contact .g,
+        .meet .g,
+        .test .g {
           grid-template-columns: 1fr;
-          gap: 30px;
+        }
+        .stxt {
+          padding: 34px 0 0;
+        }
+        .ttl2 {
+          padding: 34px 0 0;
+        }
+        .more {
+          grid-template-columns: 1fr 1fr;
+          gap: 26px;
+        }
+        .vline {
+          display: none;
+        }
+        .m1,
+        .m2,
+        .m3,
+        .m4 {
+          grid-column: auto !important;
+          padding: 0 !important;
+          text-align: left !important;
+          max-width: none;
+        }
+        .mdot {
+          margin-bottom: 14px;
+        }
+        .locgrid,
+        .memgrid,
+        .bgrid,
+        .ctagrid,
+        .facg {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .solgrid,
+        .audgrid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .amgrid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        .two {
+          grid-template-columns: 1fr;
+        }
+        .two .rule {
+          display: none;
+        }
+        .pcard {
+          padding: 0 0 40px;
+        }
+        .arw {
+          display: none;
+        }
+        footer .fc {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        footer .fb {
+          grid-template-columns: 1fr;
         }
         .fsoc {
           text-align: left;
@@ -1356,106 +1604,154 @@
           text-align: left;
         }
       }
-      @media (max-width: 760px) {
-        footer {
-          padding: 56px 0 34px;
-        }
-        footer .fcols {
-          grid-template-columns: 1fr 1fr;
-          gap: 26px;
-        }
-        footer h5 {
-          font-size: 17px;
-          margin-bottom: 18px;
-        }
-        .flogo {
-          font-size: 34px;
-        }
-      }
-      @media (max-width: 1024px) {
-        .loc-grid,
-        .plan-grid,
-        .factors,
-        .proof,
-        .cta-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        .sol-grid,
-        .aud-grid,
-        .am-grid,
-        .phil-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        .logos {
-          grid-template-columns: repeat(3, 1fr);
-        }
-        .fac {
-          border-bottom: 1px solid var(--line);
-          padding-bottom: 26px;
-        }
-      }
-      @media (max-width: 760px) {
-        section {
-          padding: 70px 0;
-        }
+      @media (max-width: 700px) {
         .wrap {
-          padding: 0 24px;
+          padding: 0 22px;
         }
-        .hero-grid,
-        .story-grid,
-        .why-grid,
-        .sol-grid,
-        .aud-grid,
-        .am-grid,
-        .phil-grid,
-        .loc-grid,
-        .plan-grid,
-        .factors,
-        .proof,
-        .cta-grid {
+        section {
+          padding: 56px 0;
+        }
+        .locgrid,
+        .memgrid,
+        .bgrid,
+        .ctagrid,
+        .facg,
+        .solgrid,
+        .audgrid {
           grid-template-columns: 1fr;
         }
-        .why {
-          border-right: none;
+        .amgrid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .am h4 {
+          font-size: 11.5px;
         }
         .fac {
           border-right: none;
+          border-bottom: 1px solid var(--line);
+          padding-bottom: 24px;
         }
-        .quote-card {
-          padding: 44px 28px;
+        .coll div,
+        .sbot div {
+          min-height: 170px;
         }
-        .quote-card p {
-          font-size: 20px;
+        .frow {
+          grid-template-columns: 1fr;
+          gap: 7px;
         }
-        .stats {
-          flex-wrap: wrap;
-          gap: 26px;
+        .contact {
+          padding: 32px 24px;
+        }
+        .pencil {
+          display: none;
+        }
+        .meet h2,
+        .meet .g p {
+          text-align: left;
+        }
+        .tcard {
+          padding: 36px 26px;
         }
         .hashtag {
-          font-size: 28px;
+          font-size: 26px;
         }
       }
 
-      /* ---- location page ---- */
+      /* trust / social proof */
+      .logos {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2px;
+        background: var(--line);
+        border: 1px solid var(--line);
+        margin-top: 24px;
+      }
+      .logos div {
+        background: #fff;
+        height: 92px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #b9ac9e;
+        font-size: 10px;
+        letter-spacing: 0.16em;
+        transition: 0.3s;
+      }
+      .logos div:hover {
+        color: var(--gold);
+        background: #fffdfb;
+      }
+      .proof {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+        background: var(--line);
+        border: 1px solid var(--line);
+        border-bottom: none;
+        margin-top: 34px;
+      }
+      .pf {
+        background: #fff;
+        padding: 26px 24px;
+        text-align: center;
+      }
+      .pf h4 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--ink);
+        margin-bottom: 5px;
+      }
+      .pf p {
+        font-size: 13px;
+        color: var(--muted);
+        margin: 0;
+      }
+      /* why-choose (uses aud styling but 3-up) */
+      .whygrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      @media (max-width: 1100px) {
+        .logos {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .proof,
+        .whygrid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 700px) {
+        .logos {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .proof,
+        .whygrid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* topbar */
       .topbar {
+        border-bottom: 1px solid #cfc5bb;
+        background: var(--cream);
         position: sticky;
         top: 0;
-        z-index: 80;
-        background: rgba(243, 238, 233, 0.93);
-        backdrop-filter: blur(12px);
-        border-bottom: 1px solid var(--line);
+        z-index: 90;
       }
       .topbar .wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 74px;
+        height: 78px;
+        gap: 24px;
       }
       .tb-logo {
         font-family: "Cormorant Garamond", serif;
-        font-size: 26px;
-        letter-spacing: 0.14em;
-        color: var(--ink);
+        font-size: 30px;
+        letter-spacing: 0.1em;
+        color: #6e6a65;
         white-space: nowrap;
         font-weight: 300;
       }
@@ -1465,7 +1761,7 @@
       }
       .crumb {
         font-size: 12px;
-        letter-spacing: 0.14em;
+        letter-spacing: 0.13em;
         text-transform: uppercase;
         color: var(--muted);
       }
@@ -1481,111 +1777,114 @@
         margin: 0 10px;
         color: var(--gold-lt);
       }
-
+      /* hero: live BKC layout, text left image right */
       .lhero {
-        background: linear-gradient(180deg, #f3eee9, #efe8e1);
-        padding: 92px 0 104px;
+        padding: 56px 0 70px;
       }
-      .lhero .hero-grid {
+      .lhero .g {
         display: grid;
-        grid-template-columns: 1fr 1.22fr;
-        gap: 66px;
+        grid-template-columns: 0.72fr 1.6fr;
+        gap: 48px;
         align-items: center;
       }
       .lhero h1 {
-        font-size: clamp(40px, 4.6vw, 62px);
+        font-size: clamp(38px, 4.2vw, 54px);
       }
-      .lhero .hero-img {
-        aspect-ratio: 16/11;
-      }
-      .pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 9px;
-        background: rgba(166, 124, 61, 0.1);
+      .lhero h1 em {
+        font-style: normal;
         color: var(--gold);
+        display: block;
+      }
+      .lhero p {
+        font-size: 16.5px;
+        color: #4f4a44;
+        max-width: 44ch;
+      }
+      .lhero .im {
+        aspect-ratio: 16/10.4;
+        background: repeating-linear-gradient(
+          118deg,
+          #e5dcd2 0 3px,
+          #dfd5ca 3px 6px
+        );
+        position: relative;
+      }
+      .lhero .im:after {
+        content: "CENTRE PHOTOGRAPHY";
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #a79a8c;
         font-size: 11px;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        padding: 8px 16px;
-        border-radius: 20px;
-        margin-bottom: 22px;
+        letter-spacing: 0.24em;
       }
-      .pill:before {
-        content: "";
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        background: var(--gold);
-      }
-
-      .facts {
-        margin-top: 52px;
-        border: 1px solid var(--line);
-        background: var(--ivory);
-      }
-      .facts .fr {
+      /* key facts: compact 4-up */
+      .kf {
         display: grid;
-        grid-template-columns: 270px 1fr;
-        border-bottom: 1px solid var(--line);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--line);
+        border: 1px solid var(--line);
+        max-width: 1020px;
+        margin: 0 auto;
+      }
+      .kfc {
+        background: #fff;
+        padding: 30px 24px;
+        text-align: center;
         transition: background 0.3s;
       }
-      .facts .fr:last-child {
-        border-bottom: none;
+      .kfc:hover {
+        background: #fbf7f2;
       }
-      .facts .fr:hover {
-        background: #fff;
-      }
-      .facts .fk {
-        padding: 20px 30px;
-        font-size: 13px;
-        letter-spacing: 0.13em;
+      .kfc .k {
+        font-size: 10.5px;
+        letter-spacing: 0.18em;
         text-transform: uppercase;
         color: var(--muted);
-        border-right: 1px solid var(--line);
-        display: flex;
-        align-items: center;
+        margin-bottom: 10px;
       }
-      .facts .fv {
-        padding: 20px 30px;
-        font-size: 16px;
+      .kfc .v {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 21px;
         color: var(--ink);
+        line-height: 1.35;
+      }
+      .kfc .v small {
+        display: block;
+        font-family: "Jost", sans-serif;
+        font-size: 13px;
+        color: #6e655c;
+        margin-top: 5px;
         font-weight: 300;
-        display: flex;
-        align-items: center;
       }
-      .facts .fv.tbc {
-        color: var(--muted);
-        font-style: italic;
-      }
-
+      /* workspace options at this location */
       .wo-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 26px;
-        margin-top: 56px;
+        gap: 24px;
       }
       .wo {
-        background: var(--ivory);
+        background: #fff;
         border: 1px solid var(--line);
         overflow: hidden;
-        transition: 0.4s cubic-bezier(0.16, 0.84, 0.44, 1);
+        transition: 0.35s cubic-bezier(0.16, 0.84, 0.44, 1);
         display: flex;
         flex-direction: column;
         color: inherit;
-        text-decoration: none;
       }
       .wo:hover {
         transform: translateY(-5px);
-        border-color: var(--gold-lt);
-        box-shadow: 0 26px 48px -34px rgba(60, 48, 38, 0.45);
+        box-shadow: 0 24px 42px -30px rgba(60, 48, 38, 0.45);
       }
       .wo .im {
         aspect-ratio: 16/10;
         background: repeating-linear-gradient(
           122deg,
-          #e7ded4 0 3px,
-          #e1d7cc 3px 6px
+          #e5dcd2 0 3px,
+          #dfd5ca 3px 6px
         );
         position: relative;
       }
@@ -1601,88 +1900,43 @@
         letter-spacing: 0.2em;
       }
       .wo .bd {
-        padding: 26px 26px 28px;
+        padding: 24px 24px 26px;
         flex: 1;
         display: flex;
         flex-direction: column;
       }
       .wo h3 {
-        font-size: 21px;
-        margin-bottom: 9px;
+        font-size: 20px;
+        margin-bottom: 8px;
       }
       .wo p {
         font-size: 14.5px;
         color: #6e655c;
-        margin-bottom: 16px;
+        margin-bottom: 14px;
       }
       .wo .pr {
         margin-top: auto;
-        padding-top: 16px;
+        padding-top: 14px;
         border-top: 1px solid var(--line);
         font-family: "Cormorant Garamond", serif;
-        font-size: 26px;
+        font-size: 24px;
         color: var(--gold);
       }
       .wo .pr small {
         font-family: "Jost", sans-serif;
         font-size: 13px;
         color: var(--muted);
-        letter-spacing: 0.04em;
       }
       .wo .pr.q {
-        font-size: 16px;
+        font-size: 15px;
         font-family: "Jost", sans-serif;
         color: #6e655c;
-        font-weight: 300;
       }
-
-      .suit {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0;
-        margin-top: 56px;
-        border: 1px solid var(--line);
-      }
-      .su {
-        padding: 34px 36px;
-        border-right: 1px solid var(--line);
-        border-bottom: 1px solid var(--line);
-        background: var(--ivory);
-        transition: background 0.35s;
-      }
-      .su:hover {
-        background: #fff;
-      }
-      .su:nth-child(even) {
-        border-right: none;
-      }
-      .su:nth-child(5),
-      .su:nth-child(6) {
-        border-bottom: none;
-      }
-      .su h4 {
-        font-size: 18px;
-        font-family: "Cormorant Garamond", serif;
-        font-weight: 400;
-        margin-bottom: 8px;
-      }
-      .su p {
-        font-size: 14.5px;
-        color: #6e655c;
-        margin-bottom: 14px;
-      }
-      .su .rec {
-        font-size: 11.5px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--gold);
-      }
-
+      /* connectivity */
       .conn {
         display: grid;
-        grid-template-columns: 1fr 1.15fr;
-        gap: 56px;
-        margin-top: 52px;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 52px;
         align-items: start;
       }
       .route {
@@ -1691,27 +1945,26 @@
       .rt {
         display: grid;
         grid-template-columns: 1fr auto;
-        gap: 20px;
-        padding: 19px 0;
+        gap: 18px;
+        padding: 17px 0;
         border-bottom: 1px solid var(--line);
         align-items: center;
       }
       .rt .nm {
-        font-size: 16px;
+        font-size: 15.5px;
         color: var(--ink);
-        font-weight: 300;
       }
       .rt .nm small {
         display: block;
-        font-size: 12.5px;
+        font-size: 12px;
         color: var(--muted);
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        margin-top: 4px;
+        margin-top: 3px;
       }
       .rt .ds {
         font-family: "Cormorant Garamond", serif;
-        font-size: 19px;
+        font-size: 18px;
         color: var(--gold);
         white-space: nowrap;
       }
@@ -1729,7 +1982,6 @@
           #e2d9cf 2px 5px
         );
         border: 1px solid var(--line);
-        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1737,8 +1989,8 @@
         gap: 12px;
       }
       .mapbox .mk {
-        width: 34px;
-        height: 34px;
+        width: 32px;
+        height: 32px;
         border-radius: 50% 50% 50% 0;
         background: var(--gold);
         transform: rotate(-45deg);
@@ -1749,42 +2001,32 @@
         color: #9a8d80;
         text-transform: uppercase;
       }
-
       .gmb {
-        margin-top: 22px;
+        margin-top: 20px;
         display: flex;
         gap: 14px;
         flex-wrap: wrap;
+        align-items: center;
       }
-
-      @media (max-width: 1024px) {
+      @media (max-width: 1100px) {
+        .kf {
+          grid-template-columns: repeat(2, 1fr);
+        }
         .wo-grid {
           grid-template-columns: repeat(2, 1fr);
         }
         .conn {
           grid-template-columns: 1fr;
-          gap: 40px;
+          gap: 36px;
+        }
+        .lhero .g {
+          grid-template-columns: 1fr;
         }
       }
-      @media (max-width: 760px) {
-        .lhero .hero-grid,
-        .wo-grid,
-        .suit {
+      @media (max-width: 700px) {
+        .kf,
+        .wo-grid {
           grid-template-columns: 1fr;
-        }
-        .su {
-          border-right: none;
-        }
-        .facts .fr {
-          grid-template-columns: 1fr;
-        }
-        .facts .fk {
-          border-right: none;
-          border-bottom: 1px solid var(--line);
-          padding: 14px 22px;
-        }
-        .facts .fv {
-          padding: 14px 22px;
         }
         .topbar .wrap {
           height: 64px;
@@ -1794,122 +2036,153 @@
         }
       }
     </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Dextrus BKC, Crescenzo",
+        "url": "https://dextrus.in/locations/bkc-crescenzo/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Crescenzo Business District, A-802, G Block BKC, Bandra Kurla Complex, Bandra East",
+          "addressLocality": "Mumbai",
+          "addressRegion": "Maharashtra",
+          "postalCode": "400051",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-1800-412-0866",
+        "email": "sales@dextrus.in",
+        "parentOrganization": { "@type": "Organization", "name": "Dextrus" }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where exactly is Dextrus BKC Crescenzo located?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dextrus BKC Crescenzo is at Crescenzo Business District, A-802, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does a fixed desk cost at this location?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A fixed desk at BKC Crescenzo is Rs 29,750 per desk per month."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are private offices available at BKC Crescenzo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Private offices are available at this location from Rs 47,750 per desk per month."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="topbar">
       <div class="wrap">
-        <a class="tb-logo" href="dextrus-homepage.html">DE<b>X</b>TRUS</a>
+        <a class="tb-logo" href="index.html">DE<b>X</b>TRUS</a>
         <div class="crumb">
-          <a href="dextrus-homepage.html">Home</a><i>/</i
-          ><a href="dextrus-homepage.html#locations">Locations</a><i>/</i>BKC,
+          <a href="index.html">Home</a><i>/</i
+          ><a href="index.html#locations">Locations</a><i>/</i>BKC,
           Crescenzo
         </div>
       </div>
     </div>
 
-    <!-- 01 INTRODUCTION -->
-    <section class="lhero hero">
+    <!-- ===== 01 INTRODUCTION (live BKC layout) ===== -->
+    <section class="lhero">
       <div class="wrap">
-        <div class="hero-grid">
-          <div>
-            <div class="pill">Bandra Kurla Complex</div>
-            <h1>
-              <span class="ln"><span>Welcome to</span></span
-              ><em class="ln"><span>BKC, Crescenzo</span></em>
-            </h1>
-            <div class="hr"></div>
-            <p class="lede">
-              Dextrus BKC Crescenzo is a premium coworking space located at
-              Crescenzo Business District, G Block, Bandra Kurla Complex, Bandra
-              East. The centre offers flexible desks, fixed desks, private
-              offices, enterprise offices, meeting rooms and virtual office
-              plans.
+        <div class="g">
+          <div class="rv">
+            <h1>Welcome to<em>BKC, Crescenzo</em></h1>
+            <p style="margin-top: 24px">
+              The bustling modern business epicentre of Mumbai is the first of
+              our prime locations. A professional oasis, located at
+              <b style="font-weight: 500; color: var(--ink)">Crescenzo BKC</b>,
+              that is designed with sensibility, intuition and passion. Offering
+              flexibility and quality in every measure, be it the view from your
+              desk, warm interiors, tech-savviness, ergonomics as well as
+              comfort-first amenities. So that every moment you spend here, is
+              one in which you can achieve more.
             </p>
-            <p class="sub">
-              It serves startups, growing businesses, enterprises, freelancers,
-              consultants and hybrid teams working out of Mumbai's central
-              business district, with direct access to BKC's road network and
-              nearby suburban rail connectivity.
+            <p>
+              This coworking space in BKC offers flexible desks, fixed desks,
+              private offices, enterprise offices, meeting rooms and virtual
+              office plans for startups, growing teams and enterprises.
             </p>
-            <div class="act" style="margin-top: 34px">
-              <a class="btn" href="#cta">Book a tour</a>
-            </div>
+            <a class="btn" href="#cta" style="margin-top: 12px">Book a tour</a>
           </div>
-          <div class="hero-img"></div>
+          <div class="im rv d1"></div>
         </div>
       </div>
     </section>
 
-    <!-- 02 LOCATION OVERVIEW AND KEY FACTS -->
-    <section class="alt">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Location overview</div>
-          <h2>Key Facts</h2>
-          <div class="hr"></div>
-        </div>
-        <div class="facts">
-          <div class="fr">
-            <div class="fk">Address</div>
-            <div class="fv">
-              Crescenzo Business District, A-802, G Block BKC, Bandra Kurla
-              Complex, Bandra East, Mumbai, Maharashtra 400051
-            </div>
-          </div>
-          <div class="fr">
-            <div class="fk">Building</div>
-            <div class="fv">Crescenzo Business District</div>
-          </div>
-          <div class="fr">
-            <div class="fk">Floor</div>
-            <div class="fv">A-802</div>
-          </div>
-          <div class="fr">
-            <div class="fk">Business area</div>
-            <div class="fv">Bandra Kurla Complex (BKC)</div>
-          </div>
-          <div class="fr">
-            <div class="fk">Nearest station</div>
-            <div class="fv tbc">To be confirmed</div>
-          </div>
-          <div class="fr">
-            <div class="fk">Approximate distance</div>
-            <div class="fv tbc">To be confirmed</div>
-          </div>
-          <div class="fr">
-            <div class="fk">Operating hours</div>
-            <div class="fv tbc">To be confirmed</div>
-          </div>
-          <div class="fr">
-            <div class="fk">Parking</div>
-            <div class="fv tbc">To be confirmed</div>
-          </div>
-          <div class="fr">
-            <div class="fk">Workspace types</div>
-            <div class="fv">
-              Flexible desks, fixed desks, private offices, enterprise offices,
-              meeting rooms, virtual office
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="xdiv">
+      <span></span>
+      <div class="xmark"></div>
+      <span></span>
+    </div>
 
-    <!-- 03 WORKSPACE OPTIONS -->
+    <!-- ===== 02 KEY FACTS (compact) ===== -->
     <section>
       <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Workspace options</div>
-          <h2>Available at This Location</h2>
-          <div class="hr"></div>
+        <div class="sechead rv">
+          <h2>LOCATION <span class="x">&#10005;</span> KEY FACTS</h2>
+        </div>
+        <div class="kf">
+          <div class="kfc rv">
+            <div class="k">Address</div>
+            <div class="v">
+              Crescenzo<small
+                >A-802, G Block BKC, Bandra East, Mumbai 400051</small
+              >
+            </div>
+          </div>
+          <div class="kfc rv d1">
+            <div class="k">Business area</div>
+            <div class="v">BKC<small>Bandra Kurla Complex</small></div>
+          </div>
+          <div class="kfc rv d2">
+            <div class="k">Nearest station</div>
+            <div class="v">
+              To confirm<small>Suburban rail and metro</small>
+            </div>
+          </div>
+          <div class="kfc rv d3">
+            <div class="k">Access timings</div>
+            <div class="v">
+              To confirm<small>Standard and 24x7 access</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 03 WORKSPACE OPTIONS ===== -->
+    <section style="background: var(--ivory)">
+      <div class="wrap">
+        <div class="sechead rv">
+          <h2>WORKSPACE OPTIONS AVAILABLE</h2>
           <p>
             Six workspace formats at Crescenzo BKC, from a single desk to a
             fully customised floor.
           </p>
         </div>
         <div class="wo-grid">
-          <div class="wo">
-            <div class="im" data-c="FLEXIBLE DESKS"></div>
+          <a class="wo rv" href="fixed-desks.html"
+            ><div class="im" data-c="FLEXIBLE DESKS"></div>
             <div class="bd">
               <h3>Flexible Desks</h3>
               <p>
@@ -1917,31 +2190,31 @@
                 days you use.
               </p>
               <div class="pr q">Enquire for pricing</div>
-            </div>
-          </div>
-          <a class="wo" href="fixed-desks.html"
+            </div></a
+          >
+          <a class="wo rv d1" href="fixed-desks.html"
             ><div class="im" data-c="FIXED DESKS"></div>
             <div class="bd">
               <h3>Fixed Desks</h3>
               <p>
-                A dedicated desk reserved in your name with storage, within a
-                shared workspace.
+                Find your spot and it will be just as you left it, with storage
+                in a shared workspace.
               </p>
               <div class="pr">&#8377;29,750 <small>/ desk / month</small></div>
             </div></a
           >
-          <div class="wo">
-            <div class="im" data-c="PRIVATE OFFICE"></div>
+          <a class="wo rv d2" href="#cta"
+            ><div class="im" data-c="PRIVATE OFFICE"></div>
             <div class="bd">
               <h3>Private Office</h3>
               <p>
                 Lockable cabins for teams that need their own enclosed space.
               </p>
               <div class="pr">&#8377;47,750 <small>/ desk / month</small></div>
-            </div>
-          </div>
-          <div class="wo">
-            <div class="im" data-c="ENTERPRISE OFFICE"></div>
+            </div></a
+          >
+          <a class="wo rv d3" href="#cta"
+            ><div class="im" data-c="ENTERPRISE OFFICE"></div>
             <div class="bd">
               <h3>Enterprise Office</h3>
               <p>
@@ -1949,10 +2222,10 @@
                 layout.
               </p>
               <div class="pr q">Connect with us for custom solutions</div>
-            </div>
-          </div>
-          <div class="wo">
-            <div class="im" data-c="MEETING ROOMS"></div>
+            </div></a
+          >
+          <a class="wo rv d4" href="#cta"
+            ><div class="im" data-c="MEETING ROOMS"></div>
             <div class="bd">
               <h3>Meeting Rooms</h3>
               <p>
@@ -1960,10 +2233,10 @@
                 hour.
               </p>
               <div class="pr q">Enquire for hourly rates</div>
-            </div>
-          </div>
-          <div class="wo">
-            <div class="im" data-c="VIRTUAL OFFICE"></div>
+            </div></a
+          >
+          <a class="wo rv d5" href="#cta"
+            ><div class="im" data-c="VIRTUAL OFFICE"></div>
             <div class="bd">
               <h3>Virtual Office</h3>
               <p>
@@ -1971,303 +2244,113 @@
                 desk.
               </p>
               <div class="pr q">Enquire for pricing</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 04 AMENITIES -->
-    <section class="alt">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Amenities and services</div>
-          <h2>What Is Included Here</h2>
-          <div class="hr"></div>
-          <p>
-            Facilities at the Crescenzo BKC centre. Specifics to be confirmed by
-            the Dextrus team.
-          </p>
-        </div>
-        <div class="am-grid">
-          <div class="am">
-            <h4><i>01</i> High-speed internet</h4>
-            <p>Speed tier and dedicated line availability to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>02</i> Power backup</h4>
-            <p>Full or partial coverage to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>03</i> Air conditioning</h4>
-            <p>Central air conditioning across the floor</p>
-          </div>
-          <div class="am">
-            <h4><i>04</i> Reception</h4>
-            <p>
-              Staffed front desk and visitor management, hours to be confirmed
-            </p>
-          </div>
-          <div class="am">
-            <h4><i>05</i> Housekeeping</h4>
-            <p>Frequency and service hours to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>06</i> Security and CCTV</h4>
-            <p>Access control and camera coverage, details to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>07</i> Printing and scanning</h4>
-            <p>Included allowance or pay per use to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>08</i> Mail handling</h4>
-            <p>Courier and mail receipt, included plans to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>09</i> Parking</h4>
-            <p>
-              Availability at Crescenzo, included or chargeable, to be confirmed
-            </p>
-          </div>
-          <div class="am">
-            <h4><i>10</i> Access timings</h4>
-            <p>Standard hours and 24x7 access to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>11</i> Pantry</h4>
-            <p>On-floor pantry and refreshments, inclusions to be confirmed</p>
-          </div>
-          <div class="am">
-            <h4><i>12</i> Meeting room access</h4>
-            <p>Credits by plan type, allowance to be confirmed</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 05 WHO THIS LOCATION SUITS -->
-    <section>
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Suitability</div>
-          <h2>Who This Location Is For</h2>
-          <div class="hr"></div>
-          <p>
-            A BKC address suits teams that need proximity to Mumbai's financial
-            and corporate core.
-          </p>
-        </div>
-        <div class="suit">
-          <div class="su">
-            <h4>Startups</h4>
-            <p>
-              A BKC address without a long lease, with room to add desks as the
-              team grows.
-            </p>
-            <div class="rec">Recommended &middot; Flexible or fixed desks</div>
-          </div>
-          <div class="su">
-            <h4>Enterprises</h4>
-            <p>
-              Customised managed floors with your own branding and access
-              control, in Mumbai's corporate district.
-            </p>
-            <div class="rec">Recommended &middot; Enterprise office</div>
-          </div>
-          <div class="su">
-            <h4>Freelancers</h4>
-            <p>
-              Professional space for client-facing work days, close to BKC's
-              corporate offices.
-            </p>
-            <div class="rec">Recommended &middot; Flexible desks</div>
-          </div>
-          <div class="su">
-            <h4>Consultants</h4>
-            <p>
-              A dedicated desk plus meeting rooms for client sessions in a
-              central location.
-            </p>
-            <div class="rec">Recommended &middot; Fixed desks</div>
-          </div>
-          <div class="su">
-            <h4>Remote teams</h4>
-            <p>
-              A registered BKC business presence with space to meet when the
-              team gathers.
-            </p>
-            <div class="rec">Recommended &middot; Virtual office</div>
-          </div>
-          <div class="su">
-            <h4>Hybrid teams</h4>
-            <p>
-              Shared desk allocations for teams in the office two or three days
-              a week.
-            </p>
-            <div class="rec">Recommended &middot; Private office</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 06 WHY THIS LOCATION -->
-    <section class="dark">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Why Crescenzo</div>
-          <h2>Why Choose This Location</h2>
-          <div class="hr" style="background: #a9b6bc"></div>
-          <p style="color: #d5dadd">
-            What makes Crescenzo BKC different from our other three Mumbai
-            centres.
-          </p>
-        </div>
-        <div class="why-grid">
-          <div class="why">
-            <div class="n">01</div>
-            <h4>Mumbai's business epicentre</h4>
-            <p>
-              Bandra Kurla Complex is the city's planned commercial district,
-              home to banks, consulates, corporate headquarters and financial
-              institutions.
-            </p>
-          </div>
-          <div class="why">
-            <div class="n">02</div>
-            <h4>Crescenzo Business District</h4>
-            <p>
-              A Grade A commercial building address that carries weight on a
-              letterhead and with visiting clients.
-            </p>
-          </div>
-          <div class="why">
-            <div class="n">03</div>
-            <h4>Views and natural light</h4>
-            <p>
-              Warm interiors with the view from your desk treated as part of the
-              workspace, not an afterthought.
-            </p>
-          </div>
-          <div class="why">
-            <div class="n">04</div>
-            <h4>Designed with intent</h4>
-            <p>
-              Designed with sensibility, intuition and passion, offering
-              flexibility and quality in every measure.
-            </p>
-          </div>
-          <div class="why">
-            <div class="n">05</div>
-            <h4>Tech-savviness and ergonomics</h4>
-            <p>
-              Comfort-first amenities and ergonomic fit-out, so every moment
-              spent here is one in which you can achieve more.
-            </p>
-          </div>
-          <div class="why">
-            <div class="n">06</div>
-            <h4>Enterprise-ready</h4>
-            <p>
-              Managed floors that can be customised to a company's brand, layout
-              and headcount within the same centre.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 07 TRUST -->
-    <section>
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Client experiences</div>
-          <h2>What Clients Say</h2>
-          <div class="hr"></div>
-        </div>
-        <div class="quote-card">
-          <p>
-            It is such a pleasure working with Dextrus. We are living the best
-            experience. It is a very delightful, fascinating and balanced
-            combination of classic and modern art. In all the aspects, we are
-            still growing and Dextrus is like a major support system in our
-            business. The community helped us a lot to understand Indian culture
-            better and make us truly feel at home.
-          </p>
-          <div class="who">
-            Mr. Matthew Kang, Director General, Korea Land and Housing
-            Corporation
-          </div>
-          <div class="avatars"><i></i><i></i><i></i></div>
-        </div>
-        <div class="proof">
-          <div class="pf">
-            <h4>Client Logos</h4>
-            <p>Brands based at Crescenzo BKC</p>
-          </div>
-          <div class="pf">
-            <h4>Awards</h4>
-            <p>Recognition and industry features</p>
-          </div>
-          <div class="pf">
-            <h4>Case Studies</h4>
-            <p>How teams use this centre</p>
-          </div>
-          <div class="pf">
-            <h4>Workspace Images</h4>
-            <p>Original photography of Crescenzo</p>
-          </div>
-        </div>
-        <div class="logos">
-          <div>CLIENT LOGO</div>
-          <div>CLIENT LOGO</div>
-          <div>CLIENT LOGO</div>
-          <div>CLIENT LOGO</div>
-          <div>CLIENT LOGO</div>
-          <div>CLIENT LOGO</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 08 PLANS AND PRICING -->
-    <section class="alt">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Plans and pricing</div>
-          <h2>Plans and Pricing</h2>
-          <div class="hr"></div>
-          <p>
-            Plans available at Crescenzo BKC. Rates shown are current published
-            prices for this location.
-          </p>
-        </div>
-        <div class="plan-grid">
-          <div class="plan">
-            <div class="top"></div>
-            <h3>Flexible Desks</h3>
-            <p>Hot desking in shared areas</p>
-          </div>
-          <a class="plan" href="fixed-desks.html"
-            ><div class="top"></div>
-            <h3>Fixed Desks</h3>
-            <p>&#8377;29,750 per desk per month</p></a
+            </div></a
           >
-          <div class="plan">
-            <div class="top"></div>
-            <h3>Private Office</h3>
-            <p>&#8377;47,750 per desk per month</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 04 AMENITIES (compact tiles) ===== -->
+    <section>
+      <div class="wrap">
+        <div class="sechead rv">
+          <h2>AMENITIES <span class="x">&#10005;</span> SERVICES</h2>
+          <p>Facilities at the Crescenzo BKC centre.</p>
+        </div>
+        <div class="amgrid">
+          <div class="am rv">
+            <div class="ic">01</div>
+            <h4>High-speed internet</h4>
           </div>
-          <div class="plan">
-            <div class="top"></div>
-            <h3>Enterprise Office</h3>
-            <p>Connect with us for custom solutions</p>
+          <div class="am rv d1">
+            <div class="ic">02</div>
+            <h4>UPS power backup</h4>
+          </div>
+          <div class="am rv d2">
+            <div class="ic">03</div>
+            <h4>Air conditioning</h4>
+          </div>
+          <div class="am rv d3">
+            <div class="ic">04</div>
+            <h4>Reception</h4>
+          </div>
+          <div class="am rv d4">
+            <div class="ic">05</div>
+            <h4>Housekeeping</h4>
+          </div>
+          <div class="am rv d5">
+            <div class="ic">06</div>
+            <h4>Security &amp; CCTV</h4>
+          </div>
+          <div class="am rv">
+            <div class="ic">07</div>
+            <h4>Printing credits</h4>
+          </div>
+          <div class="am rv d1">
+            <div class="ic">08</div>
+            <h4>Mail handling</h4>
+          </div>
+          <div class="am rv d2">
+            <div class="ic">09</div>
+            <h4>Access to parking</h4>
+          </div>
+          <div class="am rv d3">
+            <div class="ic">10</div>
+            <h4>IT support</h4>
+          </div>
+          <div class="am rv d4">
+            <div class="ic">11</div>
+            <h4>Pantry &amp; coffee</h4>
+          </div>
+          <div class="am rv d5">
+            <div class="ic">12</div>
+            <h4>Meeting room access</h4>
           </div>
         </div>
-        <h3 style="text-align: center; margin-top: 74px; font-size: 26px">
+      </div>
+    </section>
+
+    <!-- ===== 05 PLANS AND PRICING ===== -->
+    <section style="background: var(--ivory)">
+      <div class="wrap">
+        <div class="sechead rv">
+          <h2>PLANS <span class="x">&#10005;</span> PRICING</h2>
+          <p>
+            Plans available at Crescenzo BKC. Rates vary by workspace type, team
+            size, duration and customisation.
+          </p>
+        </div>
+        <div class="memgrid">
+          <div class="mcard m-a rv">
+            <h3>Flexible Desks<small>shared work areas</small></h3>
+            <div class="w">Pay for the days you use</div>
+            <div class="at">from</div>
+            <div class="pz">Enquire</div>
+          </div>
+          <div class="mcard m-b rv d1">
+            <h3>Fixed Desks<small>dedicated seat</small></h3>
+            <div class="w">Per desk, per month</div>
+            <div class="at">at just</div>
+            <div class="pz">&#8377; 29,750</div>
+          </div>
+          <div class="mcard m-c rv d2">
+            <h3>Private Office<small>enclosed cabin</small></h3>
+            <div class="w">Per desk, per month</div>
+            <div class="at">at just</div>
+            <div class="pz">&#8377; 47,750</div>
+          </div>
+          <div class="mcard m-d rv d3">
+            <h3>Enterprise<small>managed floor</small></h3>
+            <div class="w">Built to your requirement</div>
+            <div class="at">pricing</div>
+            <div class="pz">Custom</div>
+          </div>
+        </div>
+        <h3 class="center rv" style="font-size: 26px; margin-top: 64px">
           What determines your price
         </h3>
-        <div class="factors">
-          <div class="fac">
+        <div class="facg">
+          <div class="fac rv">
             <div class="n">01</div>
             <h4>Workspace type</h4>
             <p>
@@ -2275,89 +2358,92 @@
               differently.
             </p>
           </div>
-          <div class="fac">
+          <div class="fac rv d1">
             <div class="n">02</div>
             <h4>Team size</h4>
-            <p>Seat count affects the per-desk rate.</p>
+            <p>Desk count affects the per-desk rate.</p>
           </div>
-          <div class="fac">
+          <div class="fac rv d2">
             <div class="n">03</div>
             <h4>Duration</h4>
             <p>Longer commitments are priced differently from short stays.</p>
           </div>
-          <div class="fac">
+          <div class="fac rv d3">
             <div class="n">04</div>
             <h4>Customisation</h4>
             <p>Branding, layout changes and fit-out on enterprise offices.</p>
           </div>
         </div>
-        <div class="center" style="margin-top: 48px">
-          <a class="btn line" href="#cta">Request pricing</a>
+        <div class="center" style="margin-top: 38px">
+          <a class="btn gold rv" href="#cta">Request pricing</a>
         </div>
       </div>
     </section>
 
-    <!-- 09 LOCATION AND CONNECTIVITY -->
+    <!-- ===== 06 LOCATION AND CONNECTIVITY ===== -->
     <section>
       <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Getting here</div>
-          <h2>Location and Connectivity</h2>
-          <div class="hr"></div>
+        <div class="sechead rv">
+          <h2>LOCATION <span class="x">&#10005;</span> CONNECTIVITY</h2>
+          <p>How to reach Dextrus Crescenzo in Bandra Kurla Complex.</p>
         </div>
         <div class="conn">
-          <div>
+          <div class="rv">
             <div class="route">
               <div class="rt">
                 <div class="nm">
                   Nearest railway station<small>Suburban rail</small>
                 </div>
-                <div class="ds tbc">To be confirmed</div>
+                <div class="ds tbc">To confirm</div>
               </div>
               <div class="rt">
                 <div class="nm">
                   Nearest metro station<small>Mumbai Metro</small>
                 </div>
-                <div class="ds tbc">To be confirmed</div>
+                <div class="ds tbc">To confirm</div>
               </div>
               <div class="rt">
                 <div class="nm">
                   Major road access<small>Arterial connectivity</small>
                 </div>
-                <div class="ds tbc">To be confirmed</div>
+                <div class="ds tbc">To confirm</div>
               </div>
               <div class="rt">
                 <div class="nm">
                   Nearby landmark<small>Reference point</small>
                 </div>
-                <div class="ds tbc">To be confirmed</div>
+                <div class="ds tbc">To confirm</div>
               </div>
               <div class="rt">
                 <div class="nm">Airport<small>CSMIA</small></div>
-                <div class="ds tbc">To be confirmed</div>
+                <div class="ds tbc">To confirm</div>
               </div>
               <div class="rt">
                 <div class="nm">Parking<small>On site</small></div>
-                <div class="ds tbc">To be confirmed</div>
+                <div class="ds tbc">To confirm</div>
               </div>
             </div>
-            <p style="margin-top: 26px; font-size: 14.5px; color: var(--muted)">
-              Distances and travel times to be supplied by the Dextrus team and
-              verified before publishing.
-            </p>
             <div class="gmb">
-              <a class="btn line" href="#">Open in Google Maps</a>
-              <a class="tlink" href="#" style="align-self: center"
+              <a class="btn" href="#">Open in Google Maps</a>
+              <a
+                href="#"
+                style="
+                  font-size: 12.5px;
+                  letter-spacing: 0.13em;
+                  text-transform: uppercase;
+                  border-bottom: 1px solid var(--gold-lt);
+                  padding-bottom: 3px;
+                "
                 >Google Business Profile</a
               >
             </div>
           </div>
-          <div>
+          <div class="rv d1">
             <div class="mapbox">
               <div class="mk"></div>
               <span>Embedded Google Map</span>
             </div>
-            <p style="margin-top: 16px; font-size: 14px; color: var(--muted)">
+            <p style="margin-top: 14px; font-size: 14px; color: var(--muted)">
               Crescenzo Business District, A-802, G Block BKC, Bandra Kurla
               Complex, Bandra East, Mumbai 400051
             </p>
@@ -2366,16 +2452,169 @@
       </div>
     </section>
 
-    <!-- 10 FAQ -->
-    <section class="alt">
+    <!-- ===== 07 TRUST AND CLIENT EXPERIENCES (live layout) ===== -->
+    <section style="background: var(--ivory)">
       <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Frequently asked questions</div>
-          <h2>Questions, Answered</h2>
-          <div class="hr"></div>
+        <div class="sechead rv" style="margin-bottom: 34px">
+          <h2>TRUST <span class="x">&#10005;</span> CLIENT EXPERIENCES</h2>
+        </div>
+        <div class="test">
+          <div class="g">
+            <div class="tcard rv">
+              <div class="arw l">&#171;</div>
+              <div class="arw r">&#187;</div>
+              <p>
+                "It is such a pleasure working with Dextrus. We are living the
+                best experience. It is a very delightful, fascinating and
+                balanced combination of classic and modern art. In all the
+                aspects, we are still growing and Dextrus is like a major
+                support system in our business. The community helped us a lot to
+                understand Indian culture better and make us truly feel at
+                home."
+              </p>
+              <div class="who">
+                Mr. Matthew Kang, Director General, Korea Land and Housing
+                Corporation
+              </div>
+              <div class="tav"><i></i><i></i><i></i></div>
+            </div>
+            <div class="ttl2 rv d1">What <b>CLIENTS</b> say</div>
+          </div>
+        </div>
+        <div class="proof">
+          <div class="pf rv">
+            <h4>Awards</h4>
+            <p>Recognition and industry features</p>
+          </div>
+          <div class="pf rv d1">
+            <h4>Case Studies</h4>
+            <p>How teams use this centre</p>
+          </div>
+          <div class="pf rv d2">
+            <h4>Workspace Images</h4>
+            <p>Original photography of Crescenzo</p>
+          </div>
+        </div>
+        <div class="logos">
+          <div class="rv">CLIENT LOGO</div>
+          <div class="rv d1">CLIENT LOGO</div>
+          <div class="rv d2">CLIENT LOGO</div>
+          <div class="rv d3">CLIENT LOGO</div>
+          <div class="rv d4">CLIENT LOGO</div>
+          <div class="rv d5">CLIENT LOGO</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 08 FINAL CALL TO ACTION ===== -->
+    <section id="cta">
+      <div class="wrap">
+        <div class="sechead rv">
+          <h2>VISIT DEXTRUS BKC, CRESCENZO</h2>
+          <p>
+            Tell us your team size and preferred workspace type, and we will
+            show you what is available at Crescenzo.
+          </p>
+        </div>
+        <div class="ctagrid">
+          <div class="ctab rv">
+            <div class="n">01</div>
+            <h4>Book a Tour</h4>
+            <p>Visit the centre in person</p>
+          </div>
+          <div class="ctab rv d1">
+            <div class="n">02</div>
+            <h4>Request Pricing</h4>
+            <p>Get a quote for your team</p>
+          </div>
+          <div class="ctab rv d2">
+            <div class="n">03</div>
+            <h4>Check Availability</h4>
+            <p>See what is open right now</p>
+          </div>
+          <div class="ctab rv d3">
+            <div class="n">04</div>
+            <h4>Book a Meeting Room</h4>
+            <p>Reserve by the hour</p>
+          </div>
+        </div>
+        <div class="center" style="margin-top: 34px">
+          <a class="btn rv" href="#contact">Book a tour</a>
+        </div>
+        <div
+          class="center rv"
+          style="
+            margin-top: 28px;
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-size: 22px;
+          "
+        >
+          <a href="tel:18004120866">1800 412 0866</a> &nbsp;&middot;&nbsp;
+          <a href="mailto:sales@dextrus.in">sales@dextrus.in</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 09 CONTACT (live) ===== -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact rv">
+          <div class="g">
+            <div>
+              <h2>Contact Us</h2>
+              <div class="pencil"></div>
+            </div>
+            <div>
+              <div class="req"><b>*</b> indicates required fields</div>
+              <div class="frow">
+                <label>Full Name <b>*</b></label
+                ><input type="text" />
+              </div>
+              <div class="frow">
+                <label>Phone <b>*</b></label
+                ><input type="tel" placeholder="+91 81234 56789" />
+              </div>
+              <div class="frow">
+                <label>Email <b>*</b></label
+                ><input type="email" />
+              </div>
+              <div class="frow">
+                <label>Location <b>*</b></label
+                ><select>
+                  <option>BKC, Crescenzo</option>
+                  <option>BKC, One BKC</option>
+                  <option>Lower Parel, Peninsula Corporate Park</option>
+                  <option>Andheri, Mint</option>
+                </select>
+              </div>
+              <div class="frow">
+                <label>Company Name</label><input type="text" />
+              </div>
+              <div class="frow">
+                <label>Team Size</label><input type="text" />
+              </div>
+              <div class="frow top">
+                <label>Message</label><textarea></textarea>
+              </div>
+              <div class="capt">
+                <div class="bx"></div>
+                <span>I'm not a robot</span><em>reCAPTCHA</em>
+              </div>
+              <a class="btn" href="#">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 10 FAQ (above footer) ===== -->
+    <section id="faq" style="background: var(--ivory)">
+      <div class="wrap">
+        <div class="sechead rv">
+          <h2>FREQUENTLY ASKED QUESTIONS</h2>
         </div>
         <div class="faq">
-          <details open>
+          <details class="rv" open>
             <summary>Where exactly is Dextrus BKC Crescenzo located?</summary>
             <p>
               Dextrus BKC Crescenzo is at Crescenzo Business District, A-802, G
@@ -2383,7 +2622,7 @@
               400051.
             </p>
           </details>
-          <details>
+          <details class="rv d1">
             <summary>
               Which is the nearest station to Dextrus BKC Crescenzo?
             </summary>
@@ -2392,36 +2631,36 @@
               approximate distance and travel time.
             </p>
           </details>
-          <details>
+          <details class="rv d2">
             <summary>What are the operating hours at this location?</summary>
             <p>
               Answer required: standard hours, weekend access, and whether 24x7
               access is available on any plan.
             </p>
           </details>
-          <details>
+          <details class="rv d3">
             <summary>Are private offices available at BKC Crescenzo?</summary>
             <p>
               Private offices are available at this location from &#8377;47,750
-              per desk per month. Answer required: smallest and largest cabin
-              sizes and current availability.
+              per desk per month. Answer required: cabin sizes and current
+              availability.
             </p>
           </details>
-          <details>
+          <details class="rv d4">
             <summary>Does this location offer day passes?</summary>
             <p>
               Answer required: day pass price at Crescenzo BKC and how to book
               one.
             </p>
           </details>
-          <details>
+          <details class="rv d5">
             <summary>How do I book a meeting room at BKC Crescenzo?</summary>
             <p>
               Answer required: booking method, minimum duration, room
               capacities, and whether non-members can book.
             </p>
           </details>
-          <details>
+          <details class="rv">
             <summary>
               Is parking available at Crescenzo Business District?
             </summary>
@@ -2430,96 +2669,35 @@
               chargeable, and two-wheeler versus four-wheeler provision.
             </p>
           </details>
-          <details>
+          <details class="rv d1">
             <summary>Can I use this address for GST registration?</summary>
             <p>
               Answer required: whether the virtual office plan supports company
               and GST registration, and what documentation is provided.
             </p>
           </details>
-          <details>
+          <details class="rv d2">
             <summary>What does a fixed desk cost at this location?</summary>
             <p>
               A fixed desk at BKC Crescenzo is &#8377;29,750 per desk per month.
               Rates vary by team size and commitment length.
             </p>
           </details>
-          <details>
-            <summary>Which plan is best for a small team of five?</summary>
-            <p>
-              Answer required: recommended plan and indicative monthly cost for
-              a five-person team at this centre.
-            </p>
-          </details>
         </div>
       </div>
     </section>
 
-    <!-- 11 FINAL CTA -->
-    <section class="cta-sec dark" id="cta">
-      <div class="wrap">
-        <div class="center">
-          <div class="eyebrow">Next steps</div>
-          <h2>Visit Dextrus BKC Crescenzo</h2>
-          <div class="hr" style="background: #a9b6bc"></div>
-          <p style="color: #d5dadd; max-width: 60ch">
-            Tell us your team size and preferred workspace type, and we will
-            show you what is available at Crescenzo.
-          </p>
-        </div>
-        <div class="cta-grid">
-          <div class="cta-b">
-            <div class="n">01</div>
-            <h4>Book a Tour</h4>
-            <p>Visit the centre in person</p>
-          </div>
-          <div class="cta-b">
-            <div class="n">02</div>
-            <h4>Request Pricing</h4>
-            <p>Get a quote for your team</p>
-          </div>
-          <div class="cta-b">
-            <div class="n">03</div>
-            <h4>Check Availability</h4>
-            <p>See what is open right now</p>
-          </div>
-          <div class="cta-b">
-            <div class="n">04</div>
-            <h4>Book a Meeting Room</h4>
-            <p>Reserve by the hour</p>
-          </div>
-        </div>
-        <div class="center" style="margin-top: 44px">
-          <a class="btn white" href="#">Book a tour</a>
-        </div>
-        <div
-          class="center"
-          style="
-            margin-top: 30px;
-            font-family: &quot;Cormorant Garamond&quot;, serif;
-            font-size: 22px;
-            color: #eaf0f2;
-          "
-        >
-          <a href="tel:18004120866" style="color: #fff">1800 412 0866</a>
-          &nbsp;&middot;&nbsp;
-          <a href="mailto:sales@dextrus.in" style="color: #fff"
-            >sales@dextrus.in</a
-          >
-        </div>
-      </div>
-    </section>
-
+    <!-- ===== FOOTER (live) ===== -->
     <footer>
       <div class="wrap">
-        <div class="fcols">
+        <div class="fc">
           <div class="rv">
             <h5>About Us</h5>
             <ul>
               <li>
-                <a href="dextrus-homepage.html#story">The Dextrus Story</a>
+                <a href="index.html#story">The Dextrus Story</a>
               </li>
-              <li><a href="#">FAQs</a></li>
+              <li><a href="#faq">FAQs</a></li>
             </ul>
           </div>
           <div class="rv d1">
@@ -2527,15 +2705,15 @@
             <ul>
               <li><a href="bkc-crescenzo.html">BKC, Crescenzo</a></li>
               <li>
-                <a href="dextrus-homepage.html#locations"
+                <a href="index.html#locations"
                   >Lower Parel, Peninsula Corporate Park</a
                 >
               </li>
               <li>
-                <a href="dextrus-homepage.html#locations">BKC, One BKC</a>
+                <a href="index.html#locations">BKC, One Bkc</a>
               </li>
               <li>
-                <a href="dextrus-homepage.html#locations">Andheri, Mint</a>
+                <a href="index.html#locations">Andheri, Mint</a>
               </li>
             </ul>
           </div>
@@ -2543,17 +2721,23 @@
             <h5>Plans &amp; Pricing</h5>
             <ul>
               <li><a href="fixed-desks.html">Fixed Desks</a></li>
-              <li><a href="#">Flexible Desks</a></li>
-              <li><a href="#">Membership Plans</a></li>
-              <li><a href="#">Daily &amp; Virtual Plans</a></li>
+              <li><a href="fixed-desks.html">Flexible Desks</a></li>
+              <li>
+                <a href="index.html#plans">Membership Plans</a>
+              </li>
+              <li>
+                <a href="index.html#plans"
+                  >Daily &amp; Virtual Plans</a
+                >
+              </li>
             </ul>
           </div>
           <div class="rv d3">
             <h5>Dextrus Plus</h5>
             <ul>
-              <li><a href="#">Enterprise Office</a></li>
-              <li><a href="#">Private Office</a></li>
-              <li><a href="#">Meetings &amp; Events</a></li>
+              <li><a href="#cta">Enterprise Office</a></li>
+              <li><a href="#cta">Private Office</a></li>
+              <li><a href="#cta">Meetings &amp; Events</a></li>
             </ul>
           </div>
           <div class="rv d4">
@@ -2570,7 +2754,7 @@
           <div class="rv d5">
             <h5>Connect</h5>
             <ul>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
               <li><a href="#">Brokers</a></li>
               <li><a href="#">Landlords</a></li>
               <li><a href="#">TEDxHost Space</a></li>
@@ -2578,9 +2762,9 @@
             </ul>
           </div>
         </div>
-        <div class="fbtm">
+        <div class="fb">
           <div class="rv">
-            <a class="flogo" href="dextrus-homepage.html">DE<b>X</b>TRUS</a>
+            <a class="flogo" href="index.html">DE<b>X</b>TRUS</a>
             <div class="ftag">
               &mdash; BECAUSE WHERE YOU WORK, MATTERS &mdash;
             </div>
@@ -2607,54 +2791,12 @@
 
     <script>
       (function () {
-        var reduce = window.matchMedia(
-          "(prefers-reduced-motion: reduce)",
-        ).matches;
-        var hero = document.querySelector(".hero");
-        if (reduce) {
-          if (hero) hero.classList.add("go");
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
           document.querySelectorAll(".rv").forEach(function (e) {
             e.classList.add("in");
           });
           return;
         }
-        requestAnimationFrame(function () {
-          setTimeout(function () {
-            if (hero) hero.classList.add("go");
-          }, 90);
-        });
-        var groups = [
-          ".wo",
-          ".am",
-          ".su",
-          ".why",
-          ".plan",
-          ".fac",
-          ".pf",
-          ".logos div",
-          ".cta-b",
-          ".facts .fr",
-          ".rt",
-        ];
-        groups.forEach(function (sel) {
-          document.querySelectorAll(sel).forEach(function (el, i) {
-            el.classList.add("rv");
-            if (i % 6) el.classList.add("d" + (i % 6));
-          });
-        });
-        [
-          "section:not(.hero) .center",
-          ".quote-card",
-          ".faq details",
-          ".mapbox",
-          ".gmb",
-        ].forEach(function (sel) {
-          document.querySelectorAll(sel).forEach(function (el, i) {
-            el.classList.add("rv");
-            if (sel.indexOf("details") > -1 && i % 6)
-              el.classList.add("d" + (i % 6));
-          });
-        });
         var io = new IntersectionObserver(
           function (en) {
             en.forEach(function (e) {
@@ -2664,11 +2806,16 @@
               }
             });
           },
-          { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
+          { threshold: 0.1, rootMargin: "0px 0px -6% 0px" },
         );
         document.querySelectorAll(".rv").forEach(function (el) {
           io.observe(el);
         });
+        setTimeout(function () {
+          document.querySelectorAll(".lhero .rv").forEach(function (e) {
+            e.classList.add("in");
+          });
+        }, 80);
       })();
     </script>
   </body>
